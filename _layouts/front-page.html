@@ -1,0 +1,19 @@
+{% include header.html %}
+<div class="article-wrapper">
+    {% for post in site.posts %}
+    <article class="single__article">
+        <hgroup class="article__header">
+            <h1 class="article__headline">{{ post.date }}</h1>
+            <time pubdate="{{ post.time }}">{{ post.time }}</time> 
+            {% if post.category %} 
+                <span class="article__category">{{ post.category }}</span>
+            {% endif %}
+        </hgroup>
+
+        <section class="article__body">
+            {{ content }}
+        </section>
+    </article>
+    {% endfor %}
+</div>
+{% include footer.html %}
