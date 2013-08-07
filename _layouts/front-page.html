@@ -9,7 +9,7 @@
         {% for post in site.posts %}
             <div class="latest-posts__single-post">
                 <h3><a href="{{post.url}}">{{ post.title }}</a></h3>
-                <time pubdate="{{ post.date | date_to_rfc822 }}">{{ post.date | date_to_long_string }}</time> 
+                <time class="article__date-time" pubdate="{{ post.date | date_to_rfc822 }}">{{ post.date | date_to_long_string }}</time> 
                 {% if post.category %} 
                     <span class="article__category">{{ post.category }}</span>
                 {% endif %}

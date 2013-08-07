@@ -91,7 +91,7 @@ a {
 
 .nav {
 	display: block;
-	width: 15em;
+	width: 17em;
 	margin: 1em auto;
 }
 
@@ -119,17 +119,6 @@ a {
 	height: auto;
 	width: 60%;
 	margin: 0 0 0 30em;
-}
-
-.latest-posts {
-	width: 100%;
-	height: auto;
-	margin: 1.5em 0 5em 0;
-}
-
-.latest-posts__single-post {
-	margin: 1em 0;
-	padding: 1.5em 0;
 }
 
 .single-section__header--headline {
@@ -264,27 +253,21 @@ a {
 
 */
 
-.cv {
-	margin: 1.5em 0 0 0;
+.page--cv, .page--archive {
+	width: 60%;
+	height: auto;
+	margin: 1.5em 0 1.5em 30em;
 }
+.page--cv {
 
-.cv__skills, .cv__work, .cv__school {
-	border-top:2px solid $accentColor;
-}
+		h3 {
+		border-top:2px solid $accentColor;
+		margin:2.5em 0 0 0 ;
+		padding: .5em 0  1em 0;
+		}
 
-.cv__list--headline {
-	font-size: 1.2em;
-}
+		p {
+		padding: .5em 0;
+		}
 
-.cv__list--name {
-	font-size: 1.5em;
-}
-
-.cv__list {
-	margin: 1.5em 0;
-}
-
-.cv__list--item {
-	list-style-type: none;
-	margin: .5em 0;
 }

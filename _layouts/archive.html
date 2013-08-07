@@ -1,0 +1,14 @@
+{% include header.html %}
+
+<h1>Archives</h1>
+
+ {% for post in site.posts %}
+            <div class="latest-posts__single-post--archive">
+                <h3><a href="{{post.url}}">{{ post.title }}</a></h3>
+                <time class="article__date-time" pubdate="{{ post.date | date_to_rfc822 }}">{{ post.date | date_to_long_string }}</time> 
+                {% if post.category %} 
+                    <span class="article__category">{{ post.category }}</span>
+                {% endif %}
+            </div>
+        {% endfor %}
+{% include footer.html %}

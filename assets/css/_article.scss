@@ -5,8 +5,8 @@
 }
 
 .article__header {
-    background: #f1f1f1;
-    padding: 1.5em;
+    padding: 1.5em 0;
+    border-bottom:1px solid $accentColor;
 }
 
 .article__headline   {
@@ -20,7 +20,7 @@
 }
 
 .article__category {
-    background: $accentColor;
+    background: $grey;
     color:white;
     padding: .3em .5em;
     font-size: 70%;
@@ -38,4 +38,21 @@
         font-style: italic;
         border-left:1px solid $accentColor;
     }
+}
+
+.latest-posts {
+    width: 100%;
+    height: auto;
+    margin: 1.5em 0 5em 0;
+}
+
+.latest-posts__single-post {
+    margin: 1em 0;
+    padding: 1.5em 0;
+}
+
+.latest-posts__single-post--archive {
+    margin:.5em 0 .5em 0;
+    padding: .5em 0 1em 0;
+    border-bottom:1px solid $grey;
 }
