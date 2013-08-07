@@ -1,0 +1,41 @@
+.article-wrapper {
+    margin: 2.5em 0 2.5em 2.5em;
+    width: 100%;
+    max-width: 40em;
+}
+
+.article__header {
+    background: #f1f1f1;
+    padding: 1.5em;
+}
+
+.article__headline   {
+    font-size: 180%;
+    line-height: 130%;
+}
+
+.article__date-time {
+    display: inline;
+    font-size: 70%;
+}
+
+.article__category {
+    background: $accentColor;
+    color:white;
+    padding: .3em .5em;
+    font-size: 70%;
+    @include border-radius(3px);
+}
+
+.article__body {
+    h3,h4,h5,h6,p {
+        padding: 1em 0;
+    }
+
+    blockquote {
+        margin: 1.5em 0;
+        padding: 1em 1em 1em 2em;
+        font-style: italic;
+        border-left:1px solid $accentColor;
+    }
+}

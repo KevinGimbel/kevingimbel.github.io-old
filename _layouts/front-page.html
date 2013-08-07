@@ -1,19 +1,69 @@
 {% include header.html %}
-<div class="article-wrapper">
-    {% for post in site.posts %}
-    <article class="single__article">
-        <hgroup class="article__header">
-            <h1 class="article__headline">{{ post.date }}</h1>
-            <time pubdate="{{ post.time }}">{{ post.time }}</time> 
-            {% if post.category %} 
-                <span class="article__category">{{ post.category }}</span>
-            {% endif %}
-        </hgroup>
 
-        <section class="article__body">
-            {{ content }}
-        </section>
-    </article>
-    {% endfor %}
-</div>
+<section class="latest-posts">
+
+        <header class="latest-posts__header">
+            <h4 class="single-section__header--headline">Latest Blogposts</h4>
+        </header>
+
+        {% for post in site.posts %}
+            <div class="latest-posts__single-post">
+                <h3><a href="{{post.url}}">{{ post.title }}</a></h3>
+                <time pubdate="{{ post.date | date_to_rfc822 }}">{{ post.date | date_to_long_string }}</time> 
+                {% if post.category %} 
+                    <span class="article__category">{{ post.category }}</span>
+                {% endif %}
+
+                <section class="article__body">
+                {{ post.excerpt }}
+            </section>
+            </div>
+        {% endfor %}
+</section> <!-- latest-post -->
+
+<section class="resume">
+            <h2 class="single-section__header--headline">About</h2>
+                <div class="resume__description">
+                    <p>Born in the early 1990's I was raised by my mother in a small town near to Frankfurt am Main
+                    in Germany. But who want's to hear boring stories?</p>
+                    <p>My interest in webdesign started in 2008/2009 when I ran my first blog and started taking pictures. So I needed a place to showcase 
+                    them and created a blog (closed), a few free-hosted websites (deleted) and finally bought my own domains in 2010 (kevingimbel.de and atarijunge.de).
+                    The time has passed and I bought a new one: kevingimbel.com to be more international - because in fact the internet and all the good communities
+                    require you to be international.</p>
+                    <p>Anyway after graduating from school I decided to work at a Advertisment and Design Agency called WERBEZWERG for one year. Afterwards
+                    I signed up to learn IT related things at Werner-Heisenberg-Schule in 2011, worked for 4 weeks in France in summer 2012 and graduated in 2013. 
+                    I'm now a nationally certified IT Assistant.</p>
+                </div>
+    </section> <!-- resume -->
+
+    <section class="codepen">
+        <h2 class="single-section__header--headline">Codepen</h2>
+        <div class="my-pens"></div>
+    <script type="text/javascript">
+  $(function() {
+    $('.my-pens').pentizr({
+      username: 'kevingimbel',
+      type: 'owned',
+      limit: 6,
+      template:
+        '<article class="codepen__pen">'+
+          '<aside class="codepen__pen--image">'+
+            '<iframe src="{{urlFull}}" frameborder="0"></iframe>'+
+          '</aside>'+
+          '<div class="codepen__info">'+
+            '<header class="codepen__header">'+
+                  '<h1 class="codepen__header--title"><a href="{{urlPen}}">{{title}}</a></h1>'+
+                '</header>'+
+                '<div class="codepen__description">'+
+                  '<p>{{description}}</p>'+
+                '</div>'+
+                  '<footer class="codepen__footer">'+
+                      '<p class="codepen__footer--stats">This pen got <b>{{hearts}} hearts</b> and has been viewed <b>{{views}} times</b>. See the full Code <a href="{{urlPen}}">on Codepen</a>.</p>'+
+                    '</footer>'+
+                  '</div>'+
+                '</article>'
+    });
+  });
+</script>
+    </section>
 {% include footer.html %}

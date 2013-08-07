@@ -5,16 +5,14 @@ layouts:     _layouts
 include:     ['.htaccess']
 exclude:     []
 keep_files:  ['.git','.svn']
-timezone:    nil
 
 future:      true
 show_drafts: nil
-limit_posts: nil
+limit_posts: 10
 pygments:    true
 
-relative_permalinks: true
 
-permalink:     date
+permalink:     :year/:month/:title
 paginate_path: 'page:num'
 
 markdown:      maruku
@@ -24,12 +22,8 @@ textile_ext:   textile
 excerpt_separator: "\n\n"
 
 safe:        false
-watch:       false    # deprecated
-server:      false    # deprecated
 host:        127.0.0.1
 port:        4000
-baseurl:     http://atarijunge.de/
-url:         http://atarijunge.de/
 lsi:         false
 
 maruku:
