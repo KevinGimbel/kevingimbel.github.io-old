@@ -20,21 +20,9 @@ Something went wrong with my Jekyll installation on Ubuntu 13.04. and I had no i
 Nothing worked so I opened all my files in [Sublime Text](http://sublimetext.com) and tried to find a bug, a spelling mistake or whatever could get me this errors.
 Later my research showed that many people running Jekyll on Ubuntu do have the same or equal problems. Finally, a first step to get Jekyll working was to remove Jekyll and Ruby and re-install both (Note: Someone on StackOverflow pointed out that he installed the Ruby Developer Preview to get things to work).
 
-{% highlight ruby %}
-$ sudo apt-get remove jekyll
-$ sudo apt-get remove ruby 
-
-$ sudo apt-get install jekyll
-$ sudo apt-get install ruby1.9.3-dev
-{% endhighlight %}
 
 When I now run jekyll build safe I get only one Error. Win? Win! 
 
-{% highlight ruby %}
-$ jekyll build safe
-Configuration file: /_config.yml
-error: comparison of String with 0 failed. Use --trace to view backtrace
-{% endhighlight %}
 
 So, what's that error? My first thought was it's inside Jekylls core, but my second thought was "Why should I have an error inside the core when others can run Jekyll?". So I started searching. It was, guess where?, inside \_config.yml!
 I changed limit_posts to nil because the previous Jekyll errors sad it must be nil and not 0 (like the copy-pasted version I used was). So, at this point everything was working again.

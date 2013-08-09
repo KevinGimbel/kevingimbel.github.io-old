@@ -1,0 +1,39 @@
+@media all and (max-width: 60em) {
+	.main-sidebar {
+		width:100%;
+		height:auto;
+		margin: -2.5em 0 2.5em 0;
+		position: relative;
+	}
+
+	.main-sidebar__description {
+		padding: 0 2em;
+	}
+
+	.nav {
+		width: auto;
+		padding: 0 2em;
+		margin: 1em auto;
+	}
+
+	.nav__item, .nav__item a {
+		display: block;
+		margin: .5em auto;
+		width:5em !important;
+		text-align: center;
+	}
+
+
+	.main-content {
+		height: auto;
+		width: 100%;
+		margin: 2.5em auto;
+		padding: 1.5em 2em;
+		font-size:120%;
+	}
+
+	.article-wrapper {
+	    margin: 2.5em 0 0 0;
+	    width: 100%;
+	}
+}

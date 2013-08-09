@@ -6,8 +6,7 @@ $mainFont  : 'Droid Sans', sans-serif;
 $secnFont  : 'Droid Serif', serif;
 
 
-$grey : darken(white,50%);
-
+$grey  : lighten(gray,10%);
 $accentColor : #C0392B;
 
 $link 		 : $accentColor;
@@ -38,83 +37,6 @@ a {
 		}
 }
 
-
-/*
-	-article.scss
-	
-	Contents:
-		- article-wrapper
-		- article__header
-		- article__headline
-		- article__date-time
-		- article__category
-		- article__body
-
-*/
-
-@import "article";
-
-.main-sidebar {
-	width:25em;
-	height:100%;
-	position: fixed;
-	top:0;
-	left:0;
-	border-right:1px solid darken(#fff,30%);
-}
-.main-sidebar__img--background {
-	width:100%;
-	height: auto;
-}
-.main-sidebar__img--avatar {
-	@include border-radius(100%);
-	width:8em;
-	height: 8em;
-	border:3px solid darken(#fff,10%);
-	margin: -4em  auto 0 auto;
-	display: block;
-}
-
-.main-sidebar__headline {
-	font-size: 1.6em;
-	padding: .5em .5em 0 .5em;
-}
-.main-sidebar__description {
-	font-size: .95em;
-	color:darken(#fff,60%);
-}
-
-.main-sidebar__headline, .main-sidebar__description {
-	padding: .5em .5em 0 .5em;
-	text-align: center;
-}
-
-.nav {
-	display: block;
-	width: 17em;
-	margin: 1em auto;
-}
-
-.nav__item {
-	display: inline-block;
-	list-style-type: none;
-	margin: .5em;
-		a {
-			color:#fff;
-			background: $link;
-			padding: .5em .7em;
-			@include border-radius(3px);
-			@include transition(all .2s linear);
-		}
-
-		a:hover {
-			background: $linkHover;
-			color:#fff;
-		}
-}
-
-
-
 .main-content {
 	height: auto;
 	width: 60%;
@@ -132,186 +54,197 @@ a {
 	letter-spacing: 0em;
 }
 
-/*
-*	RESUME
-*
-*
-*
-*
-*/
-
-.resume {
-
+.description--small {
+	font-size: 70%;
+	color:$grey;
 }
 
-.resume__headline {
-	line-height: 2em;
-}
 
-.resume__description {
 
-		p {
-			line-height: 1.4em;
-			padding: .5em 0;
-		}
-}
+
+
+
+
+
 
 
 /*
-*	PHOTOGRAPHY
-*
-*
-*
-*
-*/
-
-.photography {
-	margin: 0 0 5em 0;
-	border:1px solid red;
-}
-
-.photography__container {
-	display: block;
-	letter-spacing: -0.31em;
-}
-
-.photography-single {
-	display: inline-block;
-	letter-spacing: 0em;
-	height: 10em;
-	width: 49%;
-	overflow: hidden;
-
-		img {
-			width: 100%;
-			height: auto;
-		}
-}
-
-.photography-single--title-img {
-	width: 10em;
-	height: auto;
-}
-
-
-.codepen {
-	display: block;
-	width: 100%;
-}
-
-
-.codepen__pen {
-	display: block;
-	width:100%;
-	height: auto;
-	margin: .5em 0 5em 0;
-}
-
-.codepen__pen--image  {
-	width: 100%;
-	height: 25em;
-	overflow: hidden;
-		iframe {
-			width: 100%;
-			height: 30em;
-		}
-}
-
-.codepen__info {
-	width: 100%;
-	height: auto;
-	padding: .5em;
-	background: #f1f1f1;
-}
-
-.codepen__header {
-
-}
-
-.codepen__header--title {
-	font-size: 1.8em;
-	line-height: 2em;
-}
-
-.codepen__description {
-	font-size: 1.3em;
-	padding: .3em 0;
-}
-
-.codepen__footer {
-	padding: .3em 0;
-}
-
-.codepen__footer--stats {
-	font-size: .9em;
-}
-
-
-/*
+	_includes/_article.scss
 	
-	CV
+	Contents:
+		- article-wrapper
+		- article__header
+		- article__headline
+		- article__date-time
+		- article__category
+		- article__body
 
 */
+@import "article";
 
-.page--cv, .page--archive {
-	width: 60%;
-	height: auto;
-	margin: 1.5em 0 1.5em 30em;
-}
-.page--cv {
 
-		h3 {
-		border-top:2px solid $accentColor;
-		margin:2.5em 0 0 0 ;
-		padding: .5em 0  1em 0;
-		}
 
-		p {
-		padding: .5em 0;
-		}
 
-}
+
+
+
+
+
 
 /*
-	RESPONSIVE 
+	$SIDEBAR
+
+	_includes/_sidebar.scss
+
+	Contents:
+		- main-sidebar
+		- main-sidebar__img--background
+		- main-sidebar__img--avatar
+		- main-sidebar__headline
+		- main-sidebar__description
+
+
 */
-
-@media all and (max-width: 60em) {
-	.main-sidebar {
-		width:100%;
-		height:auto;
-		margin: -2.5em 0 2.5em 0;
-		position: relative;
-	}
-
-	.main-sidebar__description {
-		padding: 0 2em;
-	}
-
-	.nav {
-		width: auto;
-		padding: 0 2em;
-		margin: 1em auto;
-	}
-
-	.nav__item, .nav__item a {
-		display: block;
-		margin: .5em auto;
-		width:5em !important;
-		text-align: center;
-	}
+@import "_includes/sidebar";
 
 
-	.main-content {
-		height: auto;
-		width: 100%;
-		margin: 2.5em auto;
-		padding: 1.5em 2em;
-		font-size:120%;
-	}
 
-	.article-wrapper {
-	    margin: 2.5em 0 0 0;
-	    width: 100%;
-	}
-}
+
+
+
+
+
+
+
+/*
+	$NAV
+
+	_includes/_nav.scss
+
+	Contents:
+		- nav
+		- nav__item
+		- nav__item a & a:hover
+*/
+@import "_includes/nav";
+
+
+
+
+
+
+
+
+
+
+/*
+	$RESUME
+
+	_includes/_resume.scss
+
+	Contents:
+		- resume
+		- resume__headline
+		- resume__description
+		- resume__description p
+*/
+@import "_includes/resume";
+
+
+
+
+
+
+
+
+
+
+/*
+
+	$CODEPEN
+
+	_includes/_codepen.scss
+
+	Contents:
+		- codepen
+		- codepen__pen
+		- codepen__pen--image
+		- codepen__info
+		- codepen__header
+		- codepen__header--title
+		- codepen__description
+		- codepen__footer
+		- codepen__footer--stats
+*/
+@import "_includes/codepen";
+
+
+
+
+
+
+
+
+
+
+/*	$CV
+
+	_includes/_cv.scss
+
+	Contents:
+		- page--cv
+		- page--archive
+		- page--cv h3
+		- page--cv p
+
+*/
+@import "_includes/cv";
+
+
+
+
+
+
+
+
+
+/*	$GUIDE
+
+	_includes/_guide.scss
+
+	Contents:
+		- guide__nav
+		- guide__nav--link
+		- prev
+		- next
+
+*/
+@import "_includes/guide";
+
+
+
+
+
+
+
+
+
+
+/*
+
+	$RESPONSIVE
+
+	_includes/_responsive.scss
+
+	@media all, max-width: 60em
+
+	Contents:
+		- main-sidebar
+		- main-sidebar__description
+		- nav
+		- nav__item
+		- nav__item a
+		- main-content
+		- article-wrapper
+*/
+@import "_includes/responsive";

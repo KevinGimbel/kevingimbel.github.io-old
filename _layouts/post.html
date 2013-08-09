@@ -2,7 +2,7 @@
 <article class="article-wrapper">
         <hgroup class="article__header">
             <h1 class="article__headline">{{ page.title}}</h1>
-            <time class="article__date-time" pubdate="{{ page.date | date_to_rfc822 }}">{{ page.date | date_to_long_string }}</time> 
+            <time class="article__date-time" pubdate="{{ page.date | date_to_long_string }}">{{ page.date | date_to_long_string }}</time> 
             {% if page.category %} 
                 <span class="article__category">{{ page.category }}</span>
             {% endif %}

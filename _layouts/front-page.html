@@ -6,7 +6,7 @@
             <h4 class="single-section__header--headline">Latest Blogposts</h4>
         </header>
 
-        {% for post in site.posts %}
+        {% for post in site.posts limit:3 %}
             <div class="latest-posts__single-post">
                 <h3><a href="{{post.url}}">{{ post.title }}</a></h3>
                 <time class="article__date-time" pubdate="{{ post.date | date_to_rfc822 }}">{{ post.date | date_to_long_string }}</time> 
@@ -19,6 +19,7 @@
             </section>
             </div>
         {% endfor %}
+        <p class="description--small">You can find more articles in the <a href="/archive/">Archive</a></p>
 </section> <!-- latest-post -->
 
 <section class="resume">
@@ -33,6 +34,7 @@
                     <p>Anyway after graduating from school I decided to work at a Advertisment and Design Agency called WERBEZWERG for one year. Afterwards
                     I signed up to learn IT related things at Werner-Heisenberg-Schule in 2011, worked for 4 weeks in France in summer 2012 and graduated in 2013. 
                     I'm now a nationally certified IT Assistant.</p>
+                    
                 </div>
     </section> <!-- resume -->
 

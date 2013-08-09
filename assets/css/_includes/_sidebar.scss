@@ -1,0 +1,34 @@
+.main-sidebar {
+	width:25em;
+	height:100%;
+	position: fixed;
+	top:0;
+	left:0;
+	border-right:1px solid darken(#fff,30%);
+}
+.main-sidebar__img--background {
+	width:100%;
+	height: auto;
+}
+.main-sidebar__img--avatar {
+	@include border-radius(100%);
+	width:8em;
+	height: 8em;
+	border:3px solid darken(#fff,10%);
+	margin: -4em  auto 0 auto;
+	display: block;
+}
+
+.main-sidebar__headline {
+	font-size: 1.6em;
+	padding: .5em .5em 0 .5em;
+}
+.main-sidebar__description {
+	font-size: .95em;
+	color:darken(#fff,60%);
+}
+
+.main-sidebar__headline, .main-sidebar__description {
+	padding: .5em .5em 0 .5em;
+	text-align: center;
+}
