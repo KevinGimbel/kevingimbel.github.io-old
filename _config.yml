@@ -12,7 +12,7 @@ limit_posts: 10
 pygments:    true
 
 
-permalink:     :year/:month/:title
+permalink:     :title
 relative_permalinks: true
 paginate_path: 'page:num'
 
