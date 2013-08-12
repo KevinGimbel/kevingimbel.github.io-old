@@ -14,7 +14,7 @@ Within the next posts I'll explain how to get Jekyll running on Ubuntu 13.04. (b
 
 ### The Shell
 
-When you're on Ubuntu I assume you know how to handle your Shell. When you follow the installation steps as shown on [Jekyll's Page](http://jekyllrb.com) you'll maybe run into some unexpected problems. After researching for a long time and re-installing Jekyll for a few times I found a solution (Some Sources: [Github Issue #](https://github.com/mojombo/jekyll/issues/762#issuecomment-17779206), [AskUbuntu](http://askubuntu.com/questions/305884/how-to-install-jekyll) and again [AskUbuntu](http://askubuntu.com/questions/259823/installing-jekyll-with-gem/302443#302443)).
+When you're on Ubuntu I assume you know how to handle your Shell. When you follow the installation steps as shown on [Jekyll's Page](http://jekyllrb.com) you'll maybe run into some unexpected problems. After researching for a long time and re-installing Jekyll for a few times I found a solution (Some Sources: [Github Issue #762](https://github.com/mojombo/jekyll/issues/762#issuecomment-17779206), [AskUbuntu](http://askubuntu.com/questions/305884/how-to-install-jekyll) and again [AskUbuntu](http://askubuntu.com/questions/259823/installing-jekyll-with-gem/302443#302443)).
 
 I combined these solution to the following steps
 
@@ -32,7 +32,7 @@ $ sudo gem install Rdoc
 {% endhighlight %}
 
 
-If you run ruby -v & ri -v & rdoc --version you should see the following now (as of today, 9. August 2013)
+If you run `ruby -v & ri -v & rdoc --version` you should see the following now (as of today, 9. August 2013; *notice: `rdoc -v` doesn't show the Version, it creates an Doc Folder and - whatever it does, too - Jekyll won't work then.)
 
 {% highlight bash %}
 ruby 1.9.3p194 (2012-04-20 revision 35410)
@@ -41,7 +41,7 @@ rdoc 4.0.1
 {% endhighlight %}
 
 
-The last thing you'll have to do now is running the following
+The last thing you'll have to do now is running
 
 {% highlight bash %}
 $ sudo gem install jekyll
@@ -50,4 +50,6 @@ $ cd my-awesome-blog
 $ jekyll serve --watch
 {% endhighlight %}
 
-That's it, your Jekyll development enviourment should be working now. What's next? You can start developing and read the [Jekyll Docs](http://jekyllrb.com/docs/home/) or follow my ["Jekyll Guide"](/jekyll-guide/structure) tutorial.
+That's it, your Jekyll development enviourment should be working now. Navigate your browser to [localhost:4000][http://localhost:4000] and see your brand-new Jekyll page in action.
+
+What's next? You can start developing and read the [Jekyll Docs](http://jekyllrb.com/docs/home/) or follow my ["Jekyll Guide"](/jekyll-guide/structure) tutorial.
