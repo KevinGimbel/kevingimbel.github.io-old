@@ -8,7 +8,7 @@ In case you don't know Jekyll, this Blog and Portfolio is build with it. Jekyll 
 
 >Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project's page or blog right here from GitHub.
 
-"Static Site Generator" was the thing that kept me away from Jekyll for some time. I always thought Jekyll was a System that let's me write static pages and builds an website out of them but in fact I was more wrong then ever before: Jekyll works like any other Markdown-Flavored CMS - only without databases and an amazing easy structur. 
+"Static Site Generator" was the thing that kept me away from Jekyll for some time. I always thought Jekyll was a System that let's me write static pages and builds an website out of them but in fact I was more wrong then ever before: Jekyll works like any other Markdown-Flavored CMS - only without databases and an amazing easy structure. 
 
 Within the next posts I'll explain how to get Jekyll running on Ubuntu 13.04. (because there are some problems and you can save a lot of time following this tutorial), how to start developing your first page, some tricks I found on my way to create my first site and how to set up your Jekyll Blog repo on Github.
 
@@ -50,6 +50,6 @@ $ cd my-awesome-blog
 $ jekyll serve --watch
 {% endhighlight %}
 
-That's it, your Jekyll development enviourment should be working now. Navigate your browser to [localhost:4000][http://localhost:4000] and see your brand-new Jekyll page in action.
+That's it, your Jekyll development environment should be working now. Navigate your browser to [localhost:4000][http://localhost:4000] and see your brand-new Jekyll page in action.
 
 What's next? You can start developing and read the [Jekyll Docs](http://jekyllrb.com/docs/home/) or follow my ["Jekyll Guide"](/jekyll-guide/structure) tutorial.

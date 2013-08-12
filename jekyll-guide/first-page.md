@@ -12,7 +12,7 @@ So you came until here, sweet! I'll now give you the basic idea of building own 
 
 This one is actually pretty simple because all you need to do is creating a folder with the name your page should have, for example `yourdomain.com/about` would equal to a folder about that contains a index.html with the contents of your about page. 
 
-Below you see your folder structur with a new folder named "about" that contains an index.html
+Below you see your folder structure with a new folder named "about" that contains an index.html
 
 {% highlight bash %}
 '- \_posts
@@ -35,7 +35,7 @@ When you navigate your browser to yourdomain.com/about the index.html should sho
 
 ### Markdown-based Pages
 
-I prefer this way. The starting point is equal, you create a new folder in your root directory but this time insted of an index.html you put and index.md inside. Now you can write your pages in Markdown so as I do with this guide. It's a folder called `jekyll-guide` with a few Markdown files inside.
+I prefer this way. The starting point is equal, you create a new folder in your root directory but this time instead of an index.html you put and index.md inside. Now you can write your pages in Markdown so as I do with this guide. It's a folder called `jekyll-guide` with a few Markdown files inside.
 
 {% highlight bash %}
 '- jekyll-guide
@@ -56,7 +56,7 @@ prev_page: /jekyll-guide/structure/
 ---
 {% endhighlight %}
 
-I prefere this because I can write in Markdown (I really love Markdown!) and can use the `layout` variable to give those pages an unique look if I want to. 
+I prefer this because I can write in Markdown (I really love Markdown!) and can use the `layout` variable to give those pages an unique look if I want to. 
 
 Whatever technique you choose, here are some resources:
 - [Jekyll Docs: Pages with Folders](http://jekyllrb.com/docs/pages/)

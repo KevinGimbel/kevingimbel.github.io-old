@@ -4,9 +4,9 @@ title: Hello World
 category: personal
 ---
 
-Recently I decided to redesign, redefine and reimagine my online appereance and the way I publish content to the internet. I switched from using 2 domains as Blog and Portfolio to one new Domain for both: *kevingimbel.com*
+Recently I decided to redesign and redefine my online appearance and the way I publish content to the internet. I switched from using 2 domains as Blog and Portfolio to one new Domain for both: *kevingimbel.com*
 
-This page is build with [Jekyll](http://jekyllrb.com) a blog-aware static site generator you're going to love. I wrote a [Guide to get started](/jekyll-guide/) - so if you considere doing so give it a look.
+This page is build with [Jekyll](http://jekyllrb.com) a blog-aware static site generator you're going to love. I wrote a [Guide to get started](/jekyll-guide/) - so if you consider doing so give it a look.
 
 Beside switching to a new domain I also switched my hoster. This page is [hosted at Github](https://github.com/kevingimbel/kevingimbel.github.io) and my domain(s) and everything else will be moved to [Uberspace.de](http://uberspace.de) an amazing hosting service from Germany.
 

@@ -6,7 +6,7 @@ next_page: /jekyll-guide/first-page/
 prev_page: /jekyll-guide/
 ---
 
-If you used `jekyll new my-site` you'll see a new directory tht contains the following folders and files:
+If you used `jekyll new my-site` you'll see a new directory that contains the following folders and files:
 
 {% highlight bash %}
 '- \_posts

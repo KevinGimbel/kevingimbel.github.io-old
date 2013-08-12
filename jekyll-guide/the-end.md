@@ -7,7 +7,7 @@ prev_page: /jekyll-guide/layouts
 
 By now you should now a bit about Jekyll and how it works. It's always a great idea to look around for Github hosted Jekyll blogs so you can see how others create their blogs.
 
-There is also an [Online Editor for Jekyll](http://prose.io/) so you don't need to write your posts with a Text Editor. (via [erikschwartz.net](http://erikschwartz.net/jekyll-for-the-masses/), contributed by []())
+There is also an [Online Editor for Jekyll](http://prose.io/) so you don't need to write your posts with a Text Editor. (via [erikschwartz.net](http://erikschwartz.net/jekyll-for-the-masses/), contributed by [Felix De Montis](https://github.com/dervondenbergen))
 
 The last thing we need to do is publishing the brand-new Jekyll page to Github. You can use their Apps for [Windows](http://windows.github.com/) or [Mac OS](http://mac.github.com/) to push your site to Github or do it via command line. (Don't be afraid, it's actually not that complicated!)
 
@@ -60,13 +60,13 @@ So far your page is initialized and added to the current commit by git, next it 
 
 {% highlight bash %}
 $ git push origin master
-# pushs all the files to the previously 
+# pushes all the files to the previously 
 # set Git Repos Master branch
 {% endhighlight %}
 
-If your Repo is named your_username.github.io it will be published within minutes and you can see your brand new Jekyll page by brosing to http://your_username.github.io - That's it!
+If your Repo is named your_username.github.io it will be published within minutes and you can see your brand new Jekyll page by browsing to http://your_username.github.io - That's it!
 
-Whenenver you write a new post simply save it in \_posts, navigate to the folder using your command line and then do the following
+Whenever you write a new post simply save it in \_posts, navigate to the folder using your command line and then do the following
 
 {% highlight bash %}
 $ git add .
