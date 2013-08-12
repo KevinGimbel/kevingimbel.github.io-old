@@ -37,6 +37,27 @@ a {
 		}
 }
 
+/*
+	CUSTOM SCROLLBAR
+
+*/
+
+::-webkit-scrollbar {
+	background: #ccc;
+	width:.5em;
+}
+::-webkit-scrollbar-button {
+	display: none;
+}
+::-webkit-scrollbar-track {
+	background: #ccc;
+}
+::-webkit-scrollbar-thumb {
+	background: #222;
+}
+
+
+
 .main-content {
 	height: auto;
 	width: 60%;
