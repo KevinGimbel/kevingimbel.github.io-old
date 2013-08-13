@@ -12,4 +12,4 @@ Beside switching to a new domain I also switched my hoster. This page is [hosted
 
 Another point on the list is to write more posts about web related stuff. I think it's interesting to get a deeper look into the technique or idea of some CodePen experiments, new Technologies (such as [CSS4's Drag Pseudo Class Draft](http://dev.w3.org/csswg/selectors4/#drag-pseudos)) and much more. 
 
-Got any ideas? Just [tweet me](http://twitter.com/_kevinatari).
+If you'd like to have a tutorial for any of my [CodePens](http://codepen.io/kevingimbel) simply [tweet me](http://twitter.com/_kevinatari). the Link to it.

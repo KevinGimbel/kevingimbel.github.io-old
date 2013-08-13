@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Jekyll on Ubuntu
+title: Jekyll Guide
 next_page: structure
 ---
 
@@ -32,7 +32,7 @@ $ sudo gem install Rdoc
 {% endhighlight %}
 
 
-If you run `ruby -v & ri -v & rdoc --version` you should see the following now (as of today, 9. August 2013; notice: `rdoc -v` doesn't show the Version, it creates an Doc Folder and - whatever it does, too - Jekyll won't work then.)
+If you run `ruby -v & ri -v & rdoc --version` you should see the following now (as of today, 9. August 2013; notice: `rdoc -v` doesn't show the Version, it creates a Doc Folder and - whatever it does, too - Jekyll won't work then.)
 
 {% highlight bash %}
 ruby 1.9.3p194 (2012-04-20 revision 35410)
@@ -50,6 +50,6 @@ $ cd my-awesome-blog
 $ jekyll serve --watch
 {% endhighlight %}
 
-That's it, your Jekyll development environment should be working now. Navigate your browser to [localhost:4000][http://localhost:4000] and see your brand-new Jekyll page in action.
+That's it, your Jekyll development environment should be working now. Navigate your browser to localhost:4000 and see your brand-new Jekyll page in action.
 
 What's next? You can start developing and read the [Jekyll Docs](http://jekyllrb.com/docs/home/) or follow my ["Jekyll Guide"](/jekyll-guide/structure) tutorial.

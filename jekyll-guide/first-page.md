@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Jekyll on Ubuntu - Building your first page
+title: Jekyll Guide - Building your first page
 permalink: /first-page/
 next_page: /jekyll-guide/layouts
 prev_page: /jekyll-guide/structure/

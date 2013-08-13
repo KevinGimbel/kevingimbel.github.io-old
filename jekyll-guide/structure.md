@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Jekyll on Ubuntu - Structure
+title: Jekyll Guide - Structure
 permalink: /structure/
 next_page: /jekyll-guide/first-page/
 prev_page: /jekyll-guide/
