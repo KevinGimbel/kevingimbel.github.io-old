@@ -32,7 +32,7 @@ $ sudo gem install Rdoc
 {% endhighlight %}
 
 
-If you run `ruby -v & ri -v & rdoc --version` you should see the following now (as of today, 9. August 2013; *notice: `rdoc -v` doesn't show the Version, it creates an Doc Folder and - whatever it does, too - Jekyll won't work then.)
+If you run `ruby -v & ri -v & rdoc --version` you should see the following now (as of today, 9. August 2013; notice: `rdoc -v` doesn't show the Version, it creates an Doc Folder and - whatever it does, too - Jekyll won't work then.)
 
 {% highlight bash %}
 ruby 1.9.3p194 (2012-04-20 revision 35410)
