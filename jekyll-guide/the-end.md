@@ -74,4 +74,4 @@ $ git commit -m "New Blogpost!"
 $ git push origin master
 {% endhighlight %}
 
-That's it. Thanks for viewing this guide and I hope I could help you getting started with Jekyll. If you found any issue simply [open a new issue on Github](https://github.com/kevingimbel/kevingimbel.github.io/issues) or [tweet me](http://twitter.com/_kevinatari). Want to contribute a Link, Tutorial or whatever? Simply follow the [Guide on contribution](/jekyll-guide/contributor-guide/) and submit it as [Pull Request](https://github.com/kevingimbel/kevingimbel.github.io/pulls) 
+That's it. Thanks for viewing this guide and I hope I could help you getting started with Jekyll. If you found any issue simply [open a new issue on Github](https://github.com/kevingimbel/kevingimbel.github.io/issues) or [tweet me](http://twitter.com/_kevinatari). Want to contribute a Link, Tutorial or whatever? Simply follow the [Guide on contribution](/jekyll-guide/contributor-guide/) and submit it as [Pull Request](https://github.com/kevingimbel/kevingimbel.github.io/pulls).

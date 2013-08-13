@@ -70,3 +70,5 @@ More reads on Jekyll Layouts:
 {% endraw %}
 {% endhighlight %}
 
+Got your article/page ready? Nice! Contribute via [Pull Request](https://github.com/kevingimbel/kevingimbel.github.io/pulls) on Github.
+
