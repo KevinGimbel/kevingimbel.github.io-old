@@ -8,7 +8,6 @@ prev_page: /jekyll-guide/the-end
 So you want to contribute to this Jekyll Guide? Thanks! There are a few "rules" you should consider before contributing.
 
 ### 1. Markdown
-
 If you're not familiar with Markdown you should really get familiar now. It's a great language to write without formating text by clicking on fancy icons - it'll be worth it. 
 
 Resources on Markdown:
@@ -18,7 +17,6 @@ Resources on Markdown:
 
 
 #### 1.2 Front Matter
-
 For sure I want to display your name and URL so your contribution is worth for you. You can give any name and URL your like as long as the websites content is yours (for example your Twitter URL, Github URL, Portfolio/Blog)
 
 Below is an example of a contributors Front Matter
@@ -37,7 +35,6 @@ Below is an example of a contributors Front Matter
 
 
 #### 1.3 Code Snippets
-
 I assume you have some code examples to share, so you may need to highlight them. You can do so adding the Liquid Tags to your markdown.
 
 {% highlight bash %}
@@ -60,7 +57,6 @@ If you want to use Liquid Tags in your Code Snippet you need to use the [RAW Liq
 {% endhighlight %}
 
 ### 2. Further Readings
-
 At the end of each page I linked some pages that have related content so any visitor can read on with the topic he's/she's interested in. I'd like you to do so, too. It can be a link to your own website if it's a related article to your topic. 
 
 Below you see an example on how to link your further readings
