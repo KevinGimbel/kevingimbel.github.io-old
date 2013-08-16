@@ -31,6 +31,7 @@
 .article__body {
     h3,h4,h5,h6,p {
         padding: 1em 0;
+        line-height: 1.2em;
     }
 
     blockquote {
@@ -38,6 +39,17 @@
         padding: 1em 1em 1em 2em;
         font-style: italic;
         border-left:1px solid $accentColor;
+    }
+
+    code {
+        background: #f1f1f1;
+        padding: .2em;
+        @include border-radius(3px);
+    }
+
+    pre > code {
+        background: none;
+        padding: none;
     }
 }
 
