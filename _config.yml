@@ -16,7 +16,7 @@ permalink:     :title
 relative_permalinks: true
 paginate_path: 'page:num'
 
-markdown:      maruku
+markdown:      rdiscount
 markdown_ext:  markdown,mkd,mkdn,md
 textile_ext:   textile
 

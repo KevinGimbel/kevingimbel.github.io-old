@@ -91,6 +91,9 @@ a {
 
 
 /*
+
+	$ARTICLE
+
 	_includes/_article.scss
 	
 	Contents:
@@ -100,6 +103,9 @@ a {
 		- article__date-time
 		- article__category
 		- article__body
+		- further-reading
+		- further-reading--headline
+		- further-reading--list
 
 */
 @import "_includes/article";
