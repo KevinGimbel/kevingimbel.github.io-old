@@ -5,7 +5,7 @@ category: UI/X
 tags: [code,coding,UI,UX,thoughts]
 ---
 
-If you see Apps (no matter if native or web) and websites like I do, you'll probably now the worth thing that can happen to an endless scrolling page: No shortcut to get back to top. Even Facebook doesn't offer a way to get back to top on their website nor do they on Facebook for Android. 
+If you see Apps (no matter if native or web) and websites like I do, you'll probably now the worst thing that can happen to an endless scrolling page: No shortcut to get back to top. Even Facebook doesn't offer a way to get back to top on their website nor do they on Facebook for Android. 
 
 On Android you can simply hit the menu button and the sidebar-like menu will fade in, so there is no problem with not having an "scroll to top" action because there is no need to get back to the top. I've nothing more to say on their app in this case (beside that it's the slowest Social Network App I can think of but that's another point).
 
