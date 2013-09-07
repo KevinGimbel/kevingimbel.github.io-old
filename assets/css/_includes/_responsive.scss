@@ -11,14 +11,14 @@
 	}
 
 	.nav {
-		width: auto;
-		padding: 0 2em;
+		width: 20em;
+		padding: 1.5em 0;
 		margin: 1em auto;
 	}
 
 	.nav__item, .nav__item a {
-		display: block;
-		margin: .5em auto;
+		display: inline;
+		margin: .5em;
 		width:5em !important;
 		text-align: center;
 	}
