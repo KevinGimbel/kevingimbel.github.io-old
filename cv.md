@@ -28,8 +28,7 @@ High School Diploma
 Advanced HTML(5) and CSS(3), JavaScript, Basic PHP and MySQL
 
 #### Software and Operating Systems
-Sublime Text 2,Open Office and Microsoft Office, Adobe PhotoShop, Adobe InDesign 
-    Windows XP to 7, Ubuntu
+Sublime Text 2,Open Office and Microsoft Office, Adobe PhotoShop, Adobe InDesign Windows XP to 7, Ubuntu
 
 #### Languages
 German (native), English (fluent)
