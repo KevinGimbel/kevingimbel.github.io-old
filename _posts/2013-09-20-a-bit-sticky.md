@@ -40,7 +40,7 @@ What `position:sticky` does is:
 -   It sticks the header to the top of the page (in other words it gets `fixed`)
 -   And scrolls it with until the Parent gets out of the way
 
-That's all. And it is very handy compaired to the JavaScript and CSS usually needed for this (taken from HTML5 Rocks).
+That's all. And it is very handy compared to the JavaScript and CSS usually needed for this (taken from HTML5 Rocks).
 {% highlight js %}
 var header = document.querySelector('.header');
 var origOffsetY = header.offsetTop;
