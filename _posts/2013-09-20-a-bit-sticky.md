@@ -67,7 +67,7 @@ document.addEventListener('scroll', onScroll);
 }
 {% endhighlight %}
 
-As far as I found out it's only working in Chrome and Chromium with [this Flag enabled](chrome://flags/#enable-experimental-webkit-features).
+As far as I found out it's only working in Chrome and Chromium with the experimental Webkit Features Flag enabled (see at chrome://flags/#enable-experimental-webkit-features).
 
 [See the Demo on CodePen](http://codepen.io/kevingimbel/pen/Cybof)
 
