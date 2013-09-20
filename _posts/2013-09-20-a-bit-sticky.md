@@ -4,7 +4,7 @@ title: A bit sticky
 category: coding
 ---
 
-I just stumbled upon a very handy CSS Property: `position:sticky`.
+I just stumbled upon a very handy CSS Property: `position:sticky`. As far as I found out it's only working in Chrome and Chromium with the experimental Webkit Features Flag enabled (see at chrome://flags/#enable-experimental-webkit-features).
 
 `position:sticky` is a pretty handy feature that allows you to stick an element to the top of the page (or wherever you want) until the parent element is moved out of the screen. 
 
@@ -66,8 +66,6 @@ document.addEventListener('scroll', onScroll);
   padding: 25px 0;
 }
 {% endhighlight %}
-
-As far as I found out it's only working in Chrome and Chromium with the experimental Webkit Features Flag enabled (see at chrome://flags/#enable-experimental-webkit-features).
 
 [See the Demo on CodePen](http://codepen.io/kevingimbel/pen/Cybof)
 
