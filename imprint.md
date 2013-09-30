@@ -2,7 +2,7 @@
 layout: default
 title: Imprint
 permalink: /imprint/
-customclass: page--cv
+customclass: page--imprint
 ---
 
 Responsible for the content of this site:
