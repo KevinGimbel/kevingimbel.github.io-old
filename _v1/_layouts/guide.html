@@ -1,11 +1,12 @@
 {% include header.html %}
-<section class="single__page">
+<div class="article-wrapper">
         <section class="article__body">
             <h1>{{page.title}}</h1>
             <nav class="guide__nav">
             	{% if page.prev_page %} 
             		<a href="{{ page.prev_page }}" class="guide__nav--link prev">Previous Page</a> 
             		{% endif %}
+
             	{% if page.next_page %} 
             		<a href="{{ page.next_page }}" class="guide__nav--link next">Next Page</a> 
             	{% endif %}
@@ -24,5 +25,4 @@
         </section>
     </article>
 </div>
-</section>
 {% include footer.html %}

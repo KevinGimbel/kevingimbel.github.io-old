@@ -1,0 +1,23 @@
+.nav {
+	display: block;
+	width: 17em;
+	margin: 1em auto;
+}
+
+.nav__item {
+	display: inline-block;
+	list-style-type: none;
+	margin: .5em;
+		a {
+			color:#fff;
+			background: $link;
+			padding: .5em .7em;
+			@include border-radius(3px);
+			@include transition(all .2s linear);
+		}
+
+		a:hover {
+			background: $linkHover;
+			color:#fff;
+		}
+}

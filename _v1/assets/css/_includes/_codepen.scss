@@ -1,0 +1,53 @@
+
+.codepen {
+	display: block;
+	width: 100%;
+	margin: 0 0 2.5em 0;
+}
+
+
+.codepen__pen {
+	display: block;
+	width:100%;
+	height: auto;
+	margin: .5em 0 5em 0;
+}
+
+.codepen__pen--image  {
+	width: 100%;
+	height: 25em;
+	overflow: hidden;
+		iframe {
+			width: 100%;
+			height: 30em;
+		}
+}
+
+.codepen__info {
+	width: 100%;
+	height: auto;
+	padding: .5em;
+	background: #f1f1f1;
+}
+
+.codepen__header {
+
+}
+
+.codepen__header--title {
+	font-size: 1.8em;
+	line-height: 2em;
+}
+
+.codepen__description {
+	font-size: 1.3em;
+	padding: .3em 0;
+}
+
+.codepen__footer {
+	padding: .3em 0;
+}
+
+.codepen__footer--stats {
+	font-size: .9em;
+}

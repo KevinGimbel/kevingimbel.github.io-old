@@ -13,18 +13,26 @@
 	<script type="text/javascript" src="/assets/js/pentizr.js"></script>
 </head>
 <body>
-<aside class="main-sidebar">
-	<img src="/assets/img/architecture.jpg" class="main-sidebar__img--background" />
-	<a href="/"><img src="/assets/img/kevin_august_13.jpeg" class="main-sidebar__img--avatar" /></a>
-	<h1 class="main-sidebar__headline">Kevin Gimbel</h1>
-	<p class="main-sidebar__description">I'm a self-taught Front-End Developer with a passion for UI/UX, Technology and Photography.</p>
-	<ul class="nav">
-		<li class="nav__item"><a href="/">Home</a></li>
-		<li class="nav__item"><a href="/cv/">CV</a></li>
-		<li class="nav__item"><a href="/archive/">Archive</a></li>
-	</ul>
-	<p class="description--small">Build with <a href="http://jekyllrb.com">Jekyll</a>. The source code can be found on <a href="https://github.com/kevingimbel/kevingimbel.github.io/">Github</a>.</p>
-</aside>
-</head>
-<body>
-<section class="main-content {% if page.customclass %} {{page.customclass}} {% endif %}">
+<img class=" blurred-supermegahero" src="http://cdn.eyeem.com/thumb/h/800/bce02b5cec78a8fd45772530775ecc5fe610524a-1379255277" alt="" />
+<main class="wrapper">
+  <img src="http://cdn.eyeem.com/thumb/h/800/bce02b5cec78a8fd45772530775ecc5fe610524a-1379255277" alt="Architecture" class ="super-hero-image"/>
+<header class="site-header" role="header">
+  <div class="info__box">
+    <a href="/">
+      <img src="http://kevingimbel.com/assets/img/kevin_august_13.jpeg" alt="Kevin Gimbel - Face" class="info__box--avatar" />
+    </a>
+    <div class="phrase">
+          <span>I'm a self-taught Front-End Developer with a passion for UI/UX, Technology and Photography.</span>
+    </div>
+  </div>
+  <nav class="site-navigation" role="navigation">
+    <a href="/" class="nav-item">Home</a>
+    <a href="/about" class="nav-item">About</a>
+    <a href="/cv" class="nav-item">CV</a>
+    <a href="/jekyll-guide" class="nav-item i-info" title="A guide on getting started with Jekyll">Jekyll Guide</a>
+    <a href="http://codepen.io/kevingimbel" class="nav-item">CodePen</a>
+    <a href="http://github.com/kevingimbel" class="nav-item">Github</a>
+  </nav>
+</header>
+  
+  <section class="main-content {% if page.customclass %} {{page.customclass}} {% endif %}">

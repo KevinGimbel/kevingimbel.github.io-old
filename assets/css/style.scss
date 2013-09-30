@@ -1,278 +1,281 @@
 @import "compass";
 @import "_includes/mixins"; /* own mixins */
 @import "_includes/syntax"; /* syntax highlighting */
+/** 
+ * Colors 
+ */
+$emw--color-alpha: #C0392B;
+$emw--color-beta: #98d575;
+$emw--color-gamma: #70baf7;
+$emw--color-delta: #e9e9e8;
+$emw--color-epsilon: #404040;
 
-$mainFont  : 'Droid Sans', sans-serif;
-$secnFont  : 'Droid Serif', serif;
 
 
-$grey  : lighten(gray,10%);
-$accentColor : #C0392B;
+/** 
+ * Units 
+ */
+$emw--unit-alpha: .5em;
+$emw--unit-beta: 1em;
+$emw--unit-gamma: 1.5em;
+$emw--unit-delta: 2em;
+$emw--unit-epsilon: 2.5em;
 
-$link 		 : $accentColor;
-$linkHover : darken($link, 15%);
+$baseFont: 'Ubuntu', sans-serif;
 
-* {
-	margin: 0;
-	padding: 0;
-	position: relative;
-	@include box-sizing(border-box);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
 }
 
-body {
-	width: 100%;
-	height: 100%;
-	min-height: 100%;
-	font-family: $mainFont;
-	color:#222222;
-	background: #fff;
+
+* {
+  margin:0;
+  padding:0;
+  position:relative;
+  @include box-sizing(border-box);
+}
+
+body,html {
+  font-size:1em;
+  background:black;
+  font-family: $baseFont;
+  overflow-x:hidden;
 }
 
 a {
-	color:$link;
-	text-decoration: none;
-	@include transition(all .2s linear);
-		&:hover {
-			color:$linkHover;
-		}
+  color:$emw--color-alpha;
+  text-decoration: none;
+
+  &:hover {
+    color:$emw--color-gamma;
+  }
 }
 
-/*
-	CUSTOM SCROLLBAR
-
-*/
-
-::-webkit-scrollbar {
-	background: #ccc;
-	width:.5em;
-}
-::-webkit-scrollbar-button {
-	display: none;
-}
-::-webkit-scrollbar-track {
-	background: #ccc;
-}
-::-webkit-scrollbar-thumb {
-	background: #222;
+.wrapper {
+  width:100%;
+  max-width:50em;
+  height:auto;
+  margin:$emw--unit-epsilon 0 0 $emw--unit-epsilon;
+  background:$emw--color-epsilon;
+  padding:$emw--unit-epsilon;
 }
 
-
-
-.main-content {
-	height: auto;
-	
-	max-width:40em;
-	margin: 0 0 0 30em;
+.blurred-supermegahero {
+  position:absolute;
+  top:-10px;
+  left:-10px;
+  right:0;
+  @include filter(blur(2px));
+}
+.super-hero-image {
+  width:100%;
+  max-width:50em;
+  position:absolute;
+  top:0;
+  left:0;
 }
 
-.single-section__header--headline {
-	text-transform: uppercase;
-	font-size: .8em;
-	color:$grey;
-	padding:.8em 0;
-	margin:1em 0;
-	border:0 solid #ccc;
-	border-width:1px 0;
-	letter-spacing: 0em;
+.site-header {
+  margin:$emw--unit-epsilon*2 0;
 }
 
-.description--small {
-	font-size: 70%;
-	color:$grey;
+.info__box {
+  width:100%;
+  height:auto;
+  background:rgba(white,.6);
+  padding:$emw--unit-delta;
+  letter-spacing:-0.31em;
+}
+
+.site-navigation {
+  width: 100%;
+  background: rgba($emw--color-alpha,.6);
+  padding: 1.5em 1em;
+  a {
+    color:#fff;
+    &:hover {
+      color:$emw--color-epsilon;
+    }
+  }
+}
+
+.nav-item {
+  padding: .5em;
+  margin: 0 .5em;
+}
+
+.i-info:after {
+  content:"\e705";
+  font-family: 'entypo', sans-serif;
+  position:absolute;
+  right:0;
+  top:0;
+  font-size: .8em;
+}
+
+.phrase {
+  letter-spacing:0em;
+  width:80%;
+  font-size:1.5em;
+  display:inline-block;
+  padding-left:1.5em;
+}
+
+.info__box--avatar {
+  width:5em;
+  height:auto;
+  display:inline-block;
+  
+}
+
+.single__article, .single__page {
+   color:$emw--color-epsilon;
+   background:$emw--color-delta;
+   margin: $emw--unit-gamma 0;
+
+  &:hover h1 {
+      background:#d5d5d5;
+        color:$emw--color-epsilon;
+      &:after {
+              content:'';
+              position:absolute;
+              bottom:-.1em;
+              left:0;
+              width:100%;
+              height:.1em;
+              background:$emw--color-alpha;
+    }
+  }
+  h1 {
+    padding:$emw--unit-gamma;
+    background:transparent;
+    &:after {
+      content:'';
+      position:absolute;
+      bottom:-.1em;
+      left:0;
+      width:0%;
+      height:.1em;
+      background:$emw--color-alpha;
+      
+      @include transition(width linear .4s);
+    }
+      &:hover {
+        background:#d5d5d5;
+        color:$emw--color-epsilon;
+      
+            &:after {
+              content:'';
+              position:absolute;
+              bottom:-.1em;
+              left:0;
+              width:100%;
+              height:.1em;
+              background:$emw--color-alpha;
+            }
+      } // end of h1
+  }
+  
+  p {padding:$emw--unit-epsilon $emw--unit-gamma;}
+}
+
+.page--cv {
+  h3 {
+    padding: $emw--unit-epsilon $emw--unit-gamma $emw--unit-gamma $emw--unit-gamma;  
+    border-bottom: 1px solid $emw--color-alpha;
+    margin:0 0 $emw--unit-beta 0;  
+  }
+  h4 {
+    padding:0 $emw--unit-gamma 0 $emw--unit-gamma;
+  }
+
+  p {
+    padding: 0 $emw--unit-gamma $emw--unit-epsilon $emw--unit-gamma;
+  }
+}
+
+.article__category {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: .5em 1em;
+  background: $emw--color-epsilon;
+  color:#fff;
+}
+
+.single__article--archive {
+  padding: .5em 1em;
+}
+
+.guide__nav {
+  width:100%;
+  height: auto;
+  padding: $emw--unit-epsilon;
+  background: rgba($emw--color-alpha,.4);
+
+    a {
+      color:white;
+      
+      &:hover {
+        color:$emw--color-beta;
+      }
+    }
+}
+
+.guide__nav--link {
+  background: $emw--color-epsilon;
+  color:$emw--color-alpha;
+  padding:.5em;
+}
+
+  .prev,.next {
+    position: absolute;
+    bottom:$emw--unit-epsilon/2;
+  }
+  
+  .prev {
+    left:1em;
+  }
+  .next {
+    right:1em;  
 }
 
 
 
-
-
-
-
-
-
-
-/*
-
-	$ARTICLE
-
-	_includes/_article.scss
-	
-	Contents:
-		- article-wrapper
-		- article__header
-		- article__headline
-		- article__date-time
-		- article__category
-		- article__body
-		- further-reading
-		- further-reading--headline
-		- further-reading--list
-
-*/
-@import "_includes/article";
-
-
-
-
-
-
-
-
-
-
-/*
-	$SIDEBAR
-
-	_includes/_sidebar.scss
-
-	Contents:
-		- main-sidebar
-		- main-sidebar__img--background
-		- main-sidebar__img--avatar
-		- main-sidebar__headline
-		- main-sidebar__description
-
-
-*/
-@import "_includes/sidebar";
-
-
-
-
-
-
-
-
-
-
-/*
-	$NAV
-
-	_includes/_nav.scss
-
-	Contents:
-		- nav
-		- nav__item
-		- nav__item a & a:hover
-*/
-@import "_includes/nav";
-
-
-
-
-
-
-
-
-
-
-/*
-	$RESUME
-
-	_includes/_resume.scss
-
-	Contents:
-		- resume
-		- resume__headline
-		- resume__description
-		- resume__description p
-*/
-@import "_includes/resume";
-
-
-
-
-
-
-
-
-
-
-/*
-
-	$CODEPEN
-
-	_includes/_codepen.scss
-
-	Contents:
-		- codepen
-		- codepen__pen
-		- codepen__pen--image
-		- codepen__info
-		- codepen__header
-		- codepen__header--title
-		- codepen__description
-		- codepen__footer
-		- codepen__footer--stats
-*/
-@import "_includes/codepen";
-
-
-
-
-
-
-
-
-
-
-/*	$CV
-
-	_includes/_cv.scss
-
-	Contents:
-		- page--cv
-		- page--archive
-		- page--cv h3
-		- page--cv p
-
-*/
-@import "_includes/cv";
-
-
-
-
-
-
-
-
-
-/*	$GUIDE
-
-	_includes/_guide.scss
-
-	Contents:
-		- guide__nav
-		- guide__nav--link
-		- prev
-		- next
-
-*/
-@import "_includes/guide";
-
-
-
-
-
-
-
-
-
-
-/*
-
-	$RESPONSIVE
-
-	_includes/_responsive.scss
-
-	@media all, max-width: 60em
-
-	Contents:
-		- main-sidebar
-		- main-sidebar__description
-		- nav
-		- nav__item
-		- nav__item a
-		- main-content
-		- article-wrapper
-*/
-@import "_includes/responsive";
+.site-footer {
+  color:white;
+  font-size:.8em;
+  
+  a {
+    color:$emw--color-delta;
+    padding:.1em .3em;
+    text-decoration:none;
+    border-bottom:1px solid $emw--color-delta;
+    
+    &:hover {
+      text-decoration:none;
+      background:none;
+      color:white;
+      border-bottom:none;
+    }
+  }
+  .love {color:$emw--color-alpha;}
+}
+
+@media all and (max-width:60em) {
+    .wrapper {
+      width:100%;
+      margin:0em;
+    }
+    
+    .phrase {
+    letter-spacing:0em;
+    width:80%;
+    font-size:1.5em;
+    display:inline-block;
+    padding-left:1.5em;
+    }
+}
