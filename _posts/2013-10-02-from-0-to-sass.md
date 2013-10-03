@@ -1,6 +1,6 @@
 ---
 layout: post
-title: From 0 to Sass
+title: From 0 To Sass
 category: coding
 ---
 
@@ -134,7 +134,7 @@ Let's start with Variables because I assume you know what they are and have alre
 $main-color: #85c226;
 {% endhighlight %}
 
-Variables must be declared **before** they're used, that's why I recommand to declare all variables at the top of the document (or inside a other stylesheet that can be included, more later on).
+Variables must be declared **before** they're used, that's why I recommend to declare all variables at the top of the document (or inside a other stylesheet that can be included, more later on).
 To use a variable you simply write it to the place you want it to be used. Logical, isn't it?
 
 {% highlight scss %}
@@ -157,7 +157,13 @@ Basically that's it. You can store Strings, Colors, and other variables inside a
 
 ### Mixins
 
-Mixins are getting a little bit more interesting. They're snippets of code you can use, for example, to save the vendor prefixing. Compass comes with build-in Mixins but you can also create your own mixins. 
+Mixins are getting a little bit more interesting. They're snippets of code you can use, for example, to save the vendor prefixing. Compass comes with build-in Mixins but you can also create your own Mixins. To use the Compass Mixins you have to include Compass on top of your style.scss as followed:
+{% highlight scss %}
+# import everything that compass has
+@import "compass";
+# import special library (e.g. css3)
+@import "compass/css3";
+{% endhighlight %}
 
 {% highlight scss %}
 # creating a mixin
@@ -217,7 +223,7 @@ Before this Guideline to Sass ends I want to talk about structures, files and fo
     '- style.css
 {% endhighlight %}
 
-The amazing thing about Compass is: every file that starts with `_` is not compiled. So in the above folder three there's still only `style.scss` that will be compiled - but all the others can be included. **Wow but what about performance with all those files?** you'll maybe ask yourself? The point is: There's still just one file, the style.*css* that will be included to the page later - so all the other files only exist locally on your computer. 
+The amazing thing about Compass is: every file that starts with `_` is not compiled. So in the above folder tree there's still only `style.scss` that will be compiled - but all the others can be included. **Wow but what about performance with all those files?** you'll maybe ask yourself? The point is: There's still just one file, the style.*css* that will be included to the page later - so all the other files only exist locally on your computer. 
 If you want to have an example what the `style.scss` would look like, here's the one I [used for my blog](https://github.com/kevingimbel/kevingimbel.github.io/blob/v1/assets/css/style.scss).
 
 Sass and Compass are amazing, powerful tools and you, as a Front-End Developer, should be able to work with both. This small summary of the basic Sass features is just the top of the iceberg - there's a lot more to explore about [Sass](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html) and [Compass](http://compass-style.org/reference/compass/).
