@@ -17,11 +17,7 @@ For some super-interesting information on my work and school history there's a [
 Because I love Open Source I do also love to contribute to it if I can. I helped to improve [opentalk.me](http://opentalk.me) with my CSS knowledge. 
 I also share free and re-usable code on [CodePen](http://codepen.io/kevingimbel) and [Github](http://github.com/kevingimbel).
 
-Even the source code of this website is free and re-usable. In other words: You can fork the repo, rename stuff and re-publish it again only with a few limitations:
-
-- 1 Don't address it as your work
-- 2 Articles are excluded. To re-publish them please [contact me](/imprint/)
-- 3 Linking back to my original work is not required. Anyway I'd appreciate it
+Even the source code of this website is free and re-usable. In other words: You can fork the repo, rename stuff and re-publish it again only with a few limitations I pointed out in a (license)[/license/].
 
 
 ### Projects
