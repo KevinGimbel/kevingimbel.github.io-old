@@ -130,7 +130,7 @@ Compass is now watching for changes and everytime you save your `style.scss` it 
 Let's start with Variables because I assume you know what they are and have already seen variables in other programming languages.
 
 {% highlight scss %}
-# Variables start with a $, e.g.
+// Variables start with a $, e.g.
 $main-color: #85c226;
 {% endhighlight %}
 
@@ -159,14 +159,14 @@ Basically that's it. You can store Strings, Colors, and other variables inside a
 
 Mixins are getting a little bit more interesting. They're snippets of code you can use, for example, to save the vendor prefixing. Compass comes with build-in Mixins but you can also create your own Mixins. To use the Compass Mixins you have to include Compass on top of your style.scss as followed:
 {% highlight scss %}
-# import everything that compass has
+// import everything that compass has
 @import "compass";
-# import special library (e.g. css3)
+// import special library (e.g. css3)
 @import "compass/css3";
 {% endhighlight %}
 
 {% highlight scss %}
-# creating a mixin
+// creating a mixin
 @mixin border-radius($r) {
     -webkit-border-radius:$r;
     -moz-border-radius:$r;
@@ -174,7 +174,7 @@ Mixins are getting a little bit more interesting. They're snippets of code you c
     -o-border-radius:$r;
 }
 
-# using it inside a class
+// using it inside a class
 .my-class {
     width:20em;
     height:auto;
@@ -199,8 +199,9 @@ There are more super useful build in function in Sass. Some of my favorite are `
 {% highlight scss %}
 $my-color: red;
 $my-color--dark: darken($my-color,10%);
-# this will produce a hexadecimal code (e.g. #132644) of a color that is 20% lighter than red.
-# syntax: 
+// this will produce a hexadecimal code (e.g. #132644) of a 
+// color that is 10% lighter than red.
+// syntax: 
 # lighten(color,percent)
 # darken(color,percent)
 {% endhighlight %}

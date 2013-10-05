@@ -191,6 +191,12 @@ a {
   
   p {
     padding:$emw--unit-beta $emw--unit-gamma;
+
+      code {
+        background: #d7d7d9;
+        padding:.2em .3em;
+        @include border-radius(3px);
+      }
   }
 
   h4,h5,h6 {
@@ -198,9 +204,10 @@ a {
   }
 
   h3 {
-    padding: 0 $emw--unit-gamma $emw--unit-beta $emw--unit-gamma;
-    margin-bottom: $emw--unit-beta;
-    border-bottom: 1px solid $emw--color-alpha;
+    padding: $emw--unit-beta $emw--unit-gamma $emw--unit-beta $emw--unit-gamma;
+    margin: $emw--unit-beta 0;
+    background:lighten($emw--color-epsilon,30%);
+    color:white;
   }
 
   .highlight{
