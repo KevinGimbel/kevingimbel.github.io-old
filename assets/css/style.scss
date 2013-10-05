@@ -214,12 +214,27 @@ a {
     margin: $emw--unit-gamma;
   }
 
-  ul,li  {
-    width: 100%;
-    display: block;
-    padding: 0 $emw--unit-gamma 0 $emw--unit-gamma;
+  table {
+    width:100%;
+    height: auto;
   }
-}
+  td {
+    padding: $emw--unit-beta;
+    background: $emw--color-epsilon;
+    color:#fff;
+  }
+
+} /* .single__article, .single__page */
+
+  ul  {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    li {
+      list-style-type:decimal;
+    }
+  }
+
 
 .page--cv {
   h3 {
