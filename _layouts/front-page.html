@@ -4,12 +4,9 @@
 <article class="single__article">
   <hgroup>
   <a href="{{post.url}}"><h2 class="single__article--headline">{{ post.title }}</h2></a>
-  {% if post.category %} 
-    <span class="article__category">{{ post.category }}</span>
+  {% if post.category %}
   {% endif %}</hgroup>
-  <div class="article__body">
     {{ post.excerpt }}
-  </div>
 </article>
  {% endfor %}
 {% include footer.html %}

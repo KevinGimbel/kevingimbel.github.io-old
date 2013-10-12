@@ -2,13 +2,22 @@
 <article class="single__article">
         <hgroup class="article__header">
             <h1 class="single__article--headline">{{ page.title}}</h1>
-            {% if page.category %} 
-                <span class="article__category">{{ page.category }}</span>
-            {% endif %}
         </hgroup>
 
         <section class="article__body">
             {{ content }}
         </section>
+	<footer class="single__article--footer">
+       <div class="single__article--footer-item">
+         <time>{{page.time}}</time>
+       </div>
+       <div class="single__article--footer-item">
+         <div class="category">
+             {% if page.category %} 
+                <span class="article__category">{{ page.category }}</span>
+            {% endif %}
+         </div>
+       </div>
+     </footer>
 </article>
 {% include footer.html %}

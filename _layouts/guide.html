@@ -1,7 +1,6 @@
 {% include header.html %}
-<section class="single__page">
-        <section class="article__body">
-            <h2>{{page.title}}</h2>
+<section class="single__article">
+            <h2 class="single__article--headline">{{page.title}}</h2>
             <nav class="guide__nav">
             	{% if page.prev_page %} 
             		<a href="{{ page.prev_page }}" class="guide__nav--link prev">Previous Page</a> 
@@ -21,8 +20,5 @@
             		<a href="{{ page.next_page }}" class="guide__nav--link next">Next Page</a> 
             	{% endif %}
             </nav>
-        </section>
-    </article>
-</div>
 </section>
 {% include footer.html %}
