@@ -15,6 +15,9 @@ Web-/Printdesign (2010-2011)
 
 ### Education
 
+#### Werner-Heisenberg-Schule, 2013 - today
+Technical Diploma (Electrical Engineering)
+
 #### Werner-Heisenberg-Schule, 2011 - 2013
 Nationally certified IT Assistant
 
@@ -25,10 +28,10 @@ High School Diploma
 ### Skills
 
 #### Programming
-Advanced HTML(5) and CSS(3), JavaScript, Basic PHP and MySQL
+Advanced HTML and CSS, JavaScript (jQuery, Vanilla), Basic PHP and MySQL
 
 #### Software and Operating Systems
-Sublime Text 2,Open Office and Microsoft Office, Adobe PhotoShop, Adobe InDesign Windows XP to 7, Ubuntu
+Sublime Text 2,Open Office and Microsoft Office, Adobe PhotoShop, Adobe InDesign, Windows XP to 7, Ubuntu
 
 #### Languages
 German (native), English (fluent)
