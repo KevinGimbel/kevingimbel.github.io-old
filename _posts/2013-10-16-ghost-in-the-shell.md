@@ -12,7 +12,7 @@ Ghost runs on [Node.js](http://nodejs.org) which is basically a installable vers
 First of all you have to install Node.js from [http://nodejs.org/](http://nodejs.org/). Afterwards go back to your terminal and run the following
 
 ### Installing Ghost
-Now you need to sign-up and download the Ghost source code from [https://ghost.org/](https://ghost.org/). Unpack the zip into the direction of your choice (mine is `var/www/`), open a terminal, navigate to the directory and enter the following:
+Now you need to sign-up and download the Ghost source code from [https://ghost.org/](https://ghost.org/). Unpack the zip into the directory of your choice (mine is `var/www/`), open a terminal, navigate to the directory and enter the following:
 
 {% highlight bash %}
 # prefix with sudo on Ubuntu!

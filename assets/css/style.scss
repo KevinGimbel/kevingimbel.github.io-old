@@ -12,7 +12,7 @@ $baseFont:'Ubuntu', sans-serif;
 $emw--color-alpha: #40a0be;
 $emw--color-beta: #d5d5d5;
 $emw--color-gamma: #f1f2f4;
-$emw--color-delta: #222222;
+$emw--color-delta: #333333;
 $emw--color-epsilon: 0;
 
 
@@ -130,6 +130,7 @@ nav {
   
   @extend %grid--son;
 }
+
 .single__article {
   margin-bottom:$emw--unit-epsilon;
   background:$emw--color-gamma;
@@ -137,6 +138,14 @@ nav {
   p {
     padding:$emw--unit-alpha $emw--unit-beta $emw--unit-beta $emw--unit-beta;
   }
+
+  p > code {
+    background: $emw--color-delta;
+    padding: .3em .5em;
+    color:#fff;
+    @include border-radius(3px);
+  }
+
 
   ul {
     padding:0 $emw--unit-delta;
@@ -184,6 +193,7 @@ table {
     background: #313131;
     color:#fff;
   }
+
 
 .love {
   color:#D83A31;
