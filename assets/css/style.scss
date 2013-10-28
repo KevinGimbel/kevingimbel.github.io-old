@@ -89,6 +89,10 @@ a {
   @extend %grid--son;
 }
 
+.js--sidebar-fixed {
+  background: red !important;
+}
+
 nav {
   width:100%;
   background:$emw--color-delta;

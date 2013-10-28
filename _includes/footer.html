@@ -2,5 +2,15 @@
     Build with <a href="http://sass-lang.com">Sass</a>, <a href="http://jekyllrb.com">Jekyll</a> and <span class="love">&hearts;</span>. Hosted on <a href="http://github.com/kevingimbel/kevingimbel.github.io">Github</a>. <a href="/imprint">Imprint</a>
   </footer>
 </main><!-- main-content -->
+<script type="text/javascript">
+	document.addEventListener("DomContentLoaded", function() {
+	var header = document.querySelector("#js--sidebar");
+
+	header.addEventListener("scroll", function() {
+		window.scrollY >= 100 ? header.classList.add(" .js--sidebar-fixed") 
+							  : header.classList.remove(" .js--sidebar-fixed");
+	});
+});
+</script>
 </body>
 </html>
