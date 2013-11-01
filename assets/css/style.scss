@@ -11,7 +11,7 @@ $baseFont:'Ubuntu', sans-serif;
  */
 $emw--color-alpha: #40a0be;
 $emw--color-beta: #d5d5d5;
-$emw--color-gamma: #f1f2f4;
+$emw--color-gamma: #f3f3f3;
 $emw--color-delta: #333333;
 $emw--color-epsilon: 0;
 
@@ -89,9 +89,6 @@ a {
   @extend %grid--son;
 }
 
-.js--sidebar-fixed {
-  background: red !important;
-}
 
 nav {
   width:100%;
@@ -181,6 +178,10 @@ nav {
   .single__article--footer-item {
     width:50%;
     @extend %grid--grandson;
+
+    &:nth-child(2) {
+      text-align: right;
+    }
   }
 }
 

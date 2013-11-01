@@ -1,13 +1,9 @@
-var fixedElement = function(el,cl,of) {
-	var header = document.querySelector(el);
+document.addEventListener("DOMContentLoaded", function() {
+	
+	var header = document.querySelector("#js--sidebar");
 
-	header.addEventListener("scroll", function() {
-		window.scrollY >= of ? header.classList.add(cl) 
-							  : header.classList.remove(cl);
+	document.addEventListener("scroll", function() {
+		window.scrollY >= 300 ? header.classList.add("js--sidebar-fixed") 
+							  : header.classList.remove("js--sidebar-fixed");
 	});
-
-	console.log(header);
-	console.log(el);
-	console.log(cl);
-	console.log(of);
-};
+});
