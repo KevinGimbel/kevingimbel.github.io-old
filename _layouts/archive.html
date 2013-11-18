@@ -1,9 +1,10 @@
 {% include header.html %}
+<article class="article">
 <h2>Archives</h2>
 
  {% for post in site.posts %}
- 		<article class="single__article">
-                <a href="{{post.url}}"><h2 class="single__article--headline">{{ post.title }}</h2></a>
-        </article>
-        {% endfor %}
+    <a href="{{post.url}}"><h2 class="single__article--headline">{{ post.title }}</h2></a>
+
+{% endfor %}
+</article>
 {% include footer.html %}

@@ -34,18 +34,31 @@
     </script>
 </head>
 <body>
+ <a href="" class="backtop" id="back-top"></a>
 <section class="wrapper">
-<aside class="sidebar" id="js--sidebar">
-    <img src="/assets/img/funnyhair_2013.jpg" alt="Kevin Gimbel (with funny, curly hair)" />
-    <h1>Kevin Gimbel</h1>
-    <p>Self-taught <b>Front-End Developer</b> with a passion for UI/X, Technology and Photography.</p>
+  <header class="site--header" id="site-header">
+  <aside class="sidebar">
+    <img src="/assets/img/2013_11_kevingimbel.jpg" alt="Kevin Gimbel (with funny, curly hair)" />
+    </aside> <!-- sidebar -->
+    <div class="intro">
+    <span>Hi I'm <h1 style="display:inline;">Kevin Gimbel</h1> and</span> <span id="phrase">I build things.</span>
 <nav class="site-navigation" role="navigation">
-    <a href="/" class="nav-item">Home</a>
-    <a href="/about" class="nav-item">About</a>
-    <a href="/cv" class="nav-item">CV</a>
-    <a href="/archive" class="nav-item">Archive</a>
+  <ul>
+    <li><a href="/" class="nav-item">Home</a></li>
+    <li><a href="/about" class="nav-item">About</a></li>
+    <li><a href="/cv" class="nav-item">CV</a></li>
+    <li><a href="/archive" class="nav-item">Archive</a></li>
+  </ul>
+  <select name="mobile-menu" id="mobileMenu" class="nav--mobile">
+    <option value="/">Home</option>
+    <option value="about">About</option>
+    <option value="cv">CV</option>
+    <option value="archive">Archive</option>
+  </select>
   </nav>
+</div> <!-- intro -->
 
+<!-- 
 <div class="social">
      <a href="http://codepen.io/kevingimbel" class="elsewhere" title="CodePen"><span class="entypo-code"></span></a>
      <a href="http://github.com/kevingimbel" class="elsewhere" title="Github"><span class="entypo-github"></span></a>
@@ -54,7 +67,7 @@
      <a href="http://instagram.com/_kevinatari" class="elsewhere" title="Instagram"><span class="entypo-instagrem"></span></a>
      <a href="http://atarijunge.de" class="elsewhere" title="tumblr"><span class="entypo-tumblr"></span></a>
      <a href="http://www.lastfm.de/user/kevinatari" class="elsewhere" title="Last.fm"><span class="entypo-lastfm"></span></a> 
-</div>
+</div> -->
   </aside> <!-- sidebar -->
-  
+  </header>
   <section class="content {% if page.customclass %} {{page.customclass}} {% endif %}">

@@ -1,12 +1,19 @@
 {% include header.html %}
 
 {% for post in site.posts limit:5 %}
-<article class="single__article">
-  <hgroup>
-  <a href="{{post.url}}"><h2 class="single__article--headline">{{ post.title }}</h2></a>
-  {% if post.category %}
-  {% endif %}</hgroup>
+<article class="article  {% if post.category %} has--category" data-category="{{post.category}}{% endif %}">
+
+  <a href="{{post.url}}"><h2>{{ post.title }}</h2></a>
+
     {{ post.excerpt }}
+
+    <footer class="article--footer">
+      <div class="one--half">
+      </div>
+      <div class="author one--half">
+        written by <a href="http://google.com/+KevinGimbel">Kevin Gimbel</a>
+      </div>
+    </footer>
 </article>
  {% endfor %}
 {% include footer.html %}

@@ -1,22 +1,16 @@
 {% include header.html %}
-<article class="single__article">
-        <hgroup class="article__header">
-            <h1 class="single__article--headline">{{ page.title}}</h1>
-        </hgroup>
+<article class="article  {% if post.category %} has--category" data-category="{{post.category}}{% endif %}">
+    <h2>{{ page.title}}</h1>
+    
+    {{ content }}
 
-        <section class="article__body">
-            {{ content }}
-        </section>
-	<footer class="single__article--footer">
-       <div class="single__article--footer-item">
-         <p>Written by <a href="http://google.com/+KevinGimbel">Kevin Gimbel</a></p>
-       </div>
-         <div class="single__article--footer-item">
-             {% if page.category %} 
-                <span class="article__category">{{ page.category }}</span>
-            {% endif %}
-         </div>
-       </div>
-     </footer>
+    <footer class="article--footer">
+      <time class="one--half">
+        {{page.date}}
+      </time>
+      <div class="author one--half">
+        written by <a href="http://google.com/+KevinGimbel">Kevin Gimbel</a>
+      </div>
+    </footer>
 </article>
 {% include footer.html %}

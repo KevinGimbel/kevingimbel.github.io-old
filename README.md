@@ -1,9 +1,12 @@
 # kevingimbel.com
 Jekyll powered [Portfolio and Blog](http://kevingimbel.com). 
 
-### About
-Current Version: 1.5 (Experimental Redesign)
-Source Code of the old version can be found in [/_v1](https://github.com/kevingimbel/kevingimbel.github.io/tree/v1).
+### Versions
+Current Version: 1.6
+
+Older Versions:
+- [/_v1.5](https://github.com/kevingimbel/kevingimbel.github.io/tree/v1.5)
+- [/_v1](https://github.com/kevingimbel/kevingimbel.github.io/tree/v1).
 
 ### License
 The license for all published code can be found [here](http://kevingimbel.com/license)
