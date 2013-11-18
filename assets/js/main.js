@@ -69,7 +69,7 @@ window.scrollY >= 300 ? backTop.classList.add("displayed")
               // clear the interval
         clearInterval(toTop);
       }
-    },25); // the delay between the steps to go back to top. The smaller the number, the slower it goes
+    },25); // the delay between the steps to go back to top. The smaller the number, the faster it goes
     // prevent the click to reload the page
     event.preventDefault();
   }); // end of the Back to Top function

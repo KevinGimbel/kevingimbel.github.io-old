@@ -246,10 +246,19 @@ article {
   color:darken(white,20%);
   position:relative;
   padding-top:2.5em;
+
   @include border-radius(3px); 
   
   @extend %ui--box-alpha;
   
+
+  p > code {
+    background:#333;
+    color:darken(white,20%);
+    padding:.2em .4em;
+
+    @include border-radius(3px);
+  }
   
   
   h2 {

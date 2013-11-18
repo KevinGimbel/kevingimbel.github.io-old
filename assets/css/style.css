@@ -537,6 +537,16 @@ article {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
+article p > code {
+  background: #333;
+  color: #cccccc;
+  padding: .2em .4em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
 article h2 {
   font: 2.5em/2.2 "Oswald", sans-serif;
   margin: 1em 0 0 0;
