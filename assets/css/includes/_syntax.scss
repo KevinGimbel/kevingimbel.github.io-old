@@ -20,6 +20,9 @@ code, pre {
 	font-size:0.95em;
 	margin: 1em 0 1.5em 0;
 }
+::-webkit-scrollbar {background:#333; height:.5em;}
+::-webkit-scrollbar-thumb {background:#ccc;}
+
 
 .highlight span
 {

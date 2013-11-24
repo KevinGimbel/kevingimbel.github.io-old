@@ -22,6 +22,15 @@ code, pre {
   margin: 1em 0 1.5em 0;
 }
 
+::-webkit-scrollbar {
+  background: #333;
+  height: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
 .highlight span {
   font-family: "Consolas", "Courier New", "Courier", "FreeMono", monospace;
   font-size: 1em;
@@ -548,8 +557,7 @@ article p > code {
   border-radius: 3px;
 }
 article h2 {
-  font: 2.5em/2.2 "Oswald", sans-serif;
-  margin: 1em 0 0 0;
+  font: 2.5em/2 "Oswald", sans-serif;
 }
 article h3 {
   font: 1.8em/2 "Lato", sans-serif;

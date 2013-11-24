@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     'I make bad puns.',
     'I listen to a lot of <a href="http://soundcloud.com/atarijunge" class="phrase--link">music</a>.',
     'I take <a href="http://eyeem.com/atarijunge" class="phrase--link">pictures</a>.',
+    'I create demos on <a href="http://codepen.io/kevingimbel" class="phrase--link">CodePen</a>.',
     'I play games.',
     'I make stupid faces.',
     'I love you. &hearts;'
@@ -37,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
       count = phrases.length - 1;
     }
     // change the phrase every 2,5 seconds
-    setTimeout(loopThroughPhrases,2500);
+    setTimeout(loopThroughPhrases,5000);
   };
     // and last but not least: call the phrase function...
   loopThroughPhrases();
