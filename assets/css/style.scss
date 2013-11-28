@@ -251,6 +251,9 @@ article {
   
   @extend %ui--box-alpha;
   
+  img {
+    width: 100%;
+  }
 
   p > code {
     background:#333;

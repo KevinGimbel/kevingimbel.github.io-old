@@ -546,6 +546,9 @@ article {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
+article img {
+  width: 100%;
+}
 article p > code {
   background: #333;
   color: #cccccc;

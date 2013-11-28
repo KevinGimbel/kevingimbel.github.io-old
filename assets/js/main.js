@@ -8,14 +8,13 @@ document.addEventListener("DOMContentLoaded", function() {
   phrases = [
     'I push to <a href="http://github.com/kevingimbel" class="phrase--link">master</a>.',
     'I play games.',
-    'sometimes I use the <code>--force</code>',
+    'Sometimes I use the <code>--force</code>',
     'I make bad puns.',
     'I listen to a lot of <a href="http://soundcloud.com/atarijunge" class="phrase--link">music</a>.',
     'I take <a href="http://eyeem.com/atarijunge" class="phrase--link">pictures</a>.',
     'I create demos on <a href="http://codepen.io/kevingimbel" class="phrase--link">CodePen</a>.',
     'I play games.',
-    'I make stupid faces.',
-    'I love you. &hearts;'
+    'I make stupid faces.'
   ];
 
 // anonymous function for phrases
