@@ -1,7 +1,4 @@
 @import "compass";
-@import "includes/syntax";
-@import "includes/helper.GRID"; /* Grid Helper */
-
 // FONTS
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Lato);
@@ -34,12 +31,16 @@ $break: 60em; /* grid break*/
 }
 
 /* blue */
-$kg--color-alpha:#40a0be;
+$color--main:#40a0be;
 /* used for decoration and accents */
 
 /* red */
 $kg--color-beta: #d83a31;
 /* used for decoration and accents */
+
+@import "includes/syntax";
+@import "includes/helper.GRID"; /* Grid Helper */
+@import "includes/guide";
 
 * {
   margin:0;
@@ -55,7 +56,7 @@ body {
 }
 
 a {
-  color:$kg--color-alpha;
+  color:$color--main;
   text-decoration:none;
   
     &:hover {
@@ -255,6 +256,11 @@ article {
     width: 100%;
   }
 
+  p {
+    line-height: 1.65em;
+    margin:1em 0 0 0;
+  }
+
   p > code {
     background:#333;
     color:darken(white,20%);
@@ -269,11 +275,11 @@ article {
   }
 
   h3 {
-    font:1.8em/2 $secFont;
+    font:2.2em/2 $secFont;
   }
 
   h4 {
-    font-size: 1.6em/1.8 $secFont;
+    font-size: 1.8em/1.8 $secFont;
   }
   
   
@@ -284,71 +290,37 @@ article {
   }
 }
 
-.article--first {
-  margin:2.5em 0;
-  background:rgba(#333,.7);
-  color:darken(white,20%);
-  position:relative;
-  padding-top:2.5em;
-  @include border-radius(3px); 
-  
-    &:before {
-    /* red box on the first article */
-      content:"LATEST POST";
-      color:white;
-      font-weight:400;
-      font-family:$baseFont;
-      letter-spacing:.31em;
-      word-spacing:.31em;
-      background:$kg--color-beta;
-      border:1px solid darken($kg--color-beta,20%);
-      padding:.5em;
-      position:absolute;
-      top:-1em;
-      left:-1em;
-    }
-  
-    &:after {
-    /* little triangle after the box on the first article */
-      width:0;
-      height:0;
-      border-left:1.4em solid darken($kg--color-beta,20%);
-      border-top:1em solid transparent;
-    
-      content:"";
-      position:absolute;
-      top:-1em;
-      left:8.85em;
-    }
-  
-    @include breakpoint(middle) {
-      width:95%;
-      margin:2.5em auto;
-      background:rgba(#333,.7);
-      color:darken(white,20%);
-      position:relative;
-      padding-top:2.5em;
-    
-     &:before {
-        left:1em;
-      }
-  
-      &:after {
-        left:10.85em;
-      }
-    }
+.page--archive {
+  @extend %grid--father;
+  h2,h3,h4,p {
+    letter-spacing: 0;
+  }
+  h3 {
+    border-bottom: 1px solid #ccc;
+    margin-bottom:.5em;
+  }
+
+  .archive--article {
+    @extend %grid--son;
+    width:50%;
+    list-style-type:none;
+    font-size: 1.6em;
+  }
+
+  .archive--year {
+    text-align: center;
+  }
 }
-
-
 
 
 
 .has--category {
   position:relative;  
     &:before {
-    /* red box on the first article */
       content:attr(data-category);
-      color:darken($kg--color-alpha,20%);
+      color:lighten($color--main,25%);
+
+
       text-transform:uppercase;
       width:8.75em; /* keep it equal.. :( */
      /* I hate using magic numbers */
@@ -357,8 +329,8 @@ article {
       font-family:$baseFont;
       letter-spacing:.31em;
       word-spacing:.31em;
-      background:$kg--color-alpha;
-      border:1px solid darken($kg--color-alpha,20%);
+      background:$color--main;
+      border:1px solid darken($color--main,20%);
       padding:.5em;
       position:absolute;
       top:-1em;
@@ -369,7 +341,7 @@ article {
     /* little triangle after the box on the first article */
       width:0;
       height:0;
-      border-left:1.4em solid darken($kg--color-alpha,20%);
+      border-left:1.4em solid darken($color--main,20%);
       border-top:1em solid transparent;
     
       content:"";

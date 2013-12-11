@@ -6,12 +6,12 @@
 .guide__nav--link {
 	padding: .3em .5em;
 	color:white;
-	background: $accentColor;
+	background: #40a0be;
 	@include border-radius(3px);
 	font-size: 70%;
 
 		&:hover {
-			background: $grey;
+			background: #ccc;
 			color:black;
 		}
 }

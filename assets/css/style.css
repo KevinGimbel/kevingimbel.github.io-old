@@ -1,6 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(http://weloveiconfonts.com/api/?family=entypo);
+/* grid break*/
+article {
+  padding: 1.5em;
+}
+
+/* blue */
+/* used for decoration and accents */
+/* red */
+/* used for decoration and accents */
 .highlight .hll {
   background-color: #333333;
 }
@@ -337,12 +346,12 @@ code, pre {
 
 /* Literal.Number.Integer.Long */
 /* the father is always the container of a Grid system. In the example it's the .wrapper class */
-.site--header, .article--footer {
+.site--header, .page--archive, .article--footer {
   letter-spacing: -0.31em;
 }
 
 /* every element of the Grid is a son. Notice: You need to apply the width to the specific class! */
-.one--half, .sidebar, .intro {
+.one--half, .sidebar, .intro, .page--archive .archive--article {
   letter-spacing: 0em;
   display: inline-block;
   vertical-align: top;
@@ -350,15 +359,37 @@ code, pre {
 
 /* third level nesting. It's a bit hacky but it works fine for Prototyping. */
 /* Grid Helper */
-/* grid break*/
-article {
-  padding: 1.5em;
+.guide__nav {
+  width: 100%;
+  margin: .5em 0;
+  overflow: hidden;
+  *zoom: 1;
 }
 
-/* blue */
-/* used for decoration and accents */
-/* red */
-/* used for decoration and accents */
+.guide__nav--link {
+  padding: .3em .5em;
+  color: white;
+  background: #40a0be;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 70%;
+}
+.guide__nav--link:hover {
+  background: #ccc;
+  color: black;
+}
+
+.prev {
+  float: left;
+}
+
+.next {
+  float: right;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -549,6 +580,10 @@ article {
 article img {
   width: 100%;
 }
+article p {
+  line-height: 1.65em;
+  margin: 1em 0 0 0;
+}
 article p > code {
   background: #333;
   color: #cccccc;
@@ -563,10 +598,10 @@ article h2 {
   font: 2.5em/2 "Oswald", sans-serif;
 }
 article h3 {
-  font: 1.8em/2 "Lato", sans-serif;
+  font: 2.2em/2 "Lato", sans-serif;
 }
 article h4 {
-  font-size: 1.6em/1.8 "Lato", sans-serif;
+  font-size: 1.8em/1.8 "Lato", sans-serif;
 }
 @media (max-width: 35em) {
   article h2 {
@@ -574,68 +609,28 @@ article h4 {
   }
 }
 
-.article--first {
-  margin: 2.5em 0;
-  background: rgba(51, 51, 51, 0.7);
-  color: #cccccc;
-  position: relative;
-  padding-top: 2.5em;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
+.page--archive h2, .page--archive h3, .page--archive h4, .page--archive p {
+  letter-spacing: 0;
 }
-.article--first:before {
-  /* red box on the first article */
-  content: "LATEST POST";
-  color: white;
-  font-weight: 400;
-  font-family: "Oswald", sans-serif;
-  letter-spacing: .31em;
-  word-spacing: .31em;
-  background: #d83a31;
-  border: 1px solid #89201a;
-  padding: .5em;
-  position: absolute;
-  top: -1em;
-  left: -1em;
+.page--archive h3 {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: .5em;
 }
-.article--first:after {
-  /* little triangle after the box on the first article */
-  width: 0;
-  height: 0;
-  border-left: 1.4em solid #89201a;
-  border-top: 1em solid transparent;
-  content: "";
-  position: absolute;
-  top: -1em;
-  left: 8.85em;
+.page--archive .archive--article {
+  width: 50%;
+  list-style-type: none;
+  font-size: 1.6em;
 }
-@media (max-width: 55em) {
-  .article--first {
-    width: 95%;
-    margin: 2.5em auto;
-    background: rgba(51, 51, 51, 0.7);
-    color: #cccccc;
-    position: relative;
-    padding-top: 2.5em;
-  }
-  .article--first:before {
-    left: 1em;
-  }
-  .article--first:after {
-    left: 10.85em;
-  }
+.page--archive .archive--year {
+  text-align: center;
 }
 
 .has--category {
   position: relative;
 }
 .has--category:before {
-  /* red box on the first article */
   content: attr(data-category);
-  color: #266072;
+  color: #9fcfdf;
   text-transform: uppercase;
   width: 8.75em;
   /* keep it equal.. :( */
