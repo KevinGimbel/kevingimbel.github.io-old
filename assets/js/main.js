@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     'Sometimes I use the <code>--force</code>',
     'I make bad puns.',
     'I listen to a lot of <a href="http://soundcloud.com/atarijunge" class="phrase--link">music</a>.',
-    'I take <a href="http://eyeem.com/atarijunge" class="phrase--link">pictures</a>.',
+    'I take <a href="http://eyeem.com/kevingimbel" class="phrase--link">pictures</a>.',
     'I create demos on <a href="http://codepen.io/kevingimbel" class="phrase--link">CodePen</a>.',
     'I play games.',
     'I make stupid faces.'
