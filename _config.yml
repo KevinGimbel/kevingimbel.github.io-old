@@ -8,7 +8,6 @@ keep_files:  ['.git','.svn']
 
 future:      true
 show_drafts: nil
-limit_posts: 10
 pygments:    true
 
 
