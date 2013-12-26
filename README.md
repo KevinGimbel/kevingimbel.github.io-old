@@ -2,7 +2,7 @@
 Jekyll powered [Portfolio and Blog](http://kevingimbel.com). 
 
 ### Versions
-Current Version: 1.6
+Current Version: 1.7
 
 Older Versions:
 - [/_v1.5](https://github.com/kevingimbel/kevingimbel.github.io/tree/v1.5)

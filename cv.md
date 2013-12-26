@@ -5,6 +5,12 @@ permalink: /cv/
 customclass: page--cv
 ---
 
+### Work
+
+#### [Synoa GmbH](http://synoa.de)
+
+Front-End Webdeveloper (1.1.2014 - today)
+
 ### Interships
 
 #### Couquillou, France
@@ -15,8 +21,6 @@ Web-/Printdesign (2010-2011)
 
 ### Education
 
-#### Werner-Heisenberg-Schule, 2013 - today
-Technical Diploma (Electrical Engineering)
 
 #### Werner-Heisenberg-Schule, 2011 - 2013
 Nationally certified IT Assistant
@@ -31,7 +35,7 @@ High School Diploma
 Advanced HTML and CSS, JavaScript (jQuery, Vanilla), Basic PHP and MySQL
 
 #### Software and Operating Systems
-Sublime Text 2,Open Office and Microsoft Office, Adobe PhotoShop, Adobe InDesign, Windows XP to 7, Ubuntu
+Sublime Text 2, Brackets, Chrome/Chromium, Firefox, Sass, Ubuntu
 
 #### Languages
 German (native), English (fluent)

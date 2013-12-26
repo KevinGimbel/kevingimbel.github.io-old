@@ -1,19 +1,26 @@
 {% include header.html %}
 
-{% for post in site.posts limit:5 %}
-<article class="article  {% if post.category %} has--category" data-category="{{post.category}}{% endif %}">
+    {% assign counter=0 %}
 
-  <a href="{{post.url}}"><h2>{{ post.title }}</h2></a>
+    {% for post in site.posts %}    
+    {% if counter == 0 %}
+    <article class="article  article--large-preview">
+        <h2><a href="{{ post.url }}" title="Read the article '{{ post.title }}'">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+        <a href="{{ post.url }}" title="Read more">Read more &rarr; </a>
+    </article>
+    
+    {% else %}
+    
+    <article class="article  article--short-preview"  {% if post.category %} data-category="{{post.category}}" {% endif %}>
+        <h2 {% if post.category %} data-category="{{post.category}} " {% endif %}>
+            <a href="{{post.url}}" title="Read the article '{{ post.title }}'">{{ post.title }}</a>
+        </h2>
+    </article>
 
-    {{ post.excerpt }}
-
-    <footer class="article--footer">
-      <div class="one--half">
-      </div>
-      <div class="author one--half">
-        written by <a href="http://google.com/+KevinGimbel">Kevin Gimbel</a>
-      </div>
-    </footer>
-</article>
- {% endfor %}
+    {% endif %}
+    {% assign counter=counter | plus:1 %}
+  
+  {% endfor %}
+  
 {% include footer.html %}

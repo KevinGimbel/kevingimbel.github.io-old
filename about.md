@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hey! My name's Kevin Gimbel. I craft websites because love the internet.
+Hey! My name's Kevin Gimbel. I craft websites because I love the internet.
 I managed to learn quite a lot about HTML and CSS in the last few years and at the moment I'm learning more about programming - both Server and Client side.
 
 I build and share useless but fun projects with the [bullgit](http://bullg.it) Team, talk about nerd and web stuff on [tlk.io](http://tlk.io/codepen) or realease snippets of code on [CodePen](http://codepen.io/kevingimbel).

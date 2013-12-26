@@ -1,6 +1,29 @@
-<!-- <footer class="site-footer">
-    Build with <a href="http://sass-lang.com">Sass</a>, <a href="http://jekyllrb.com">Jekyll</a> and <span class="love">&hearts;</span>. Hosted on <a href="http://github.com/kevingimbel/kevingimbel.github.io">Github</a>. <a href="/imprint">Imprint</a>
-  </footer> -->
-</main><!-- main-content -->
+ </section> <!-- content -->
+</section> <!-- wrapper -->
+<footer class="site--footer">
+    <div class="site--footer--inner  gw">
+        <div class="g three-thirds">
+        Build with <a href="http://sass-lang.com">Sass</a>, <a href="http://jekyllrb.com">Jekyll</a> and <span class="love">&hearts;</span>.
+        Hosted on <a href="http://github.com/kevingimbel/kevingimbel.github.io">Github</a>. <a href="/imprint">Imprint</a>
+    </div><!-- three-thirds -->
+        <div class="g one-third  text--right">
+            <ul>
+        {% for social in site.data.social %}
+            <li><a href="{{ social.url }}" title="{{ social.title }}" >{{ social.name }}</a></li>
+        {% endfor %}
+            </ul>
+        </div> <!-- one-third -->
+    </div> <!-- site--footer--inner -->
+</footer>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-44634206-1', 'kevingimbel.com');
+      ga('send', 'pageview');
+    </script>
 </body>
 </html>
