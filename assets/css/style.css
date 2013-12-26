@@ -1085,29 +1085,49 @@ h4 {
   display: inline;
   padding: 0 .5em 0 0;
 }
-
 @media all and (min-width: 80em) {
-  .nav--mobile {
+  .site--navigation .nav--mobile {
     display: none;
   }
 }
 @media all and (max-width: 80em) {
-  .nav--mobile {
+  .site--navigation .nav--mobile {
     display: none;
   }
 }
 @media all and (max-width: 30em) {
-  .nav--mobile {
+  .site--navigation .nav--mobile {
     display: block;
+    background: #333;
+    color: #ddd;
+    padding: .5em 1em;
+    margin: 0 auto;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* these two lines remove the drop-down arrow from firefox */
+    text-indent: 0.01px;
+    text-overflow: '';
   }
-
-  .site--navigation {
-    display: none !important;
+  .site--navigation ul > li {
+    display: none;
   }
 }
+
 /* holds all the posts and pages */
 .content {
   margin-top: 2.5em;
+}
+@media all and (max-width: 80em) {
+  .content {
+    padding: 0 1.5em;
+  }
 }
 
 .article--large-preview {
