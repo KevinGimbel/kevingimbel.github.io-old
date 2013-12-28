@@ -23,7 +23,7 @@ Another thing I really miss in Brackets and I got unbelievable used to is multi-
 Bracket comes with a Live Preview functionality that allows to display a file inside the browser that'll be updated in real time as you type. I couldn't think of a scenario where I'd need a real-time preview of my file to be honest but it's a cool feature anyway.
 
 #### Auto-Complete
-Both Sublime Text and rackets have auto-complete for CSS. While Sublime Text "only" supports basic auto-complete (e.g. typing `'hei' + tab` will get you `height: `) Brackets supports to "Quick Edit" colors (right-click on a color or use `CMD+E` when hovering it) to bring up a color dialog as show below. This is a nice feature when trying to find a color.
+Both Sublime Text and Brackets have auto-complete for CSS. While Sublime Text "only" supports basic auto-complete (e.g. typing `'hei' + tab` will get you `height: `) Brackets supports to "Quick Edit" colors (right-click on a color or use `CMD+E` when hovering it) to bring up a color dialog as show below. This is a nice feature when trying to find a color.
 
 ![Quick Edit Colors in Brackets](http://i.kevingimbel.me/sc/screenshot-53-24.png "Quick Edit Colors in Brackets")
 
