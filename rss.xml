@@ -1,0 +1,24 @@
+---
+layout: nil
+title: RSS feed
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<rss>
+<channel>
+    <title>RSS Feed</title>
+    <link>http://kevingimbel.com</link>
+    <description>Front-End Developer from Frankfurt, Germany. I write about CSS, HTML, JS and UI/X.</description>
+    <language>en-us</language>
+    <copyright>Kevin Gimbel</copyright>
+
+{% for post in site.posts %}
+    <item>
+        <title>{{ post.title }}</title>
+        <link>http://kevingimbel.com{{ post.url }}</link>
+        <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+        <description>{{ post.excerpt | xml_escape }}</description>
+    </item>
+{% endfor %}
+</channel>
+</rss>

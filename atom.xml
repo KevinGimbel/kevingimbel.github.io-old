@@ -1,0 +1,25 @@
+---
+layout: nil
+title: Atom feed
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <author>
+        <name>Kevin Gimbel</name>
+    </author>
+    <title>Atom Feed</title>
+    <description>Front-End Developer from Frankfurt, Germany. I write about CSS, HTML, JS and UI/X.</description>
+
+
+{% for post in site.posts %}
+    <entry>
+        <title>{{ post.title }}</title>
+        <link>http://kevingimbel.com{{ post.url }}</link>
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <summary>{{ post.excerpt | xml_escape }}</summary>
+        <content>{{ post.content | xml_escape }}</content>
+    </entry>
+{% endfor %}
+</feed>
