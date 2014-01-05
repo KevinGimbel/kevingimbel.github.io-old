@@ -248,6 +248,21 @@ ul {
     img {
         max-width: 100%;
     }
+
+    iframe {
+        width:120% !important; // width needs to be forced so all iframes are displayed correctly.
+        margin: 1em -10%;
+
+        @media all and (max-width: 50em) {
+            width:100% !important;
+            margin: 1em 0;            
+        }
+
+        @include breakpoint(small) {
+            width:100% !important; // "normal" width also needs to be forced for "live resizing".
+            margin: 1em 0;
+        }
+    }
 }
 
 
