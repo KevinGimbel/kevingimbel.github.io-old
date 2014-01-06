@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
        // initialize a function to loop through the phrases
        loopThroughPhrases = function () {
-      
+
           // going through the phrases, reverse
         if(count > 0) {
             // decresing the current count
@@ -36,8 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
             // if we hit 0, start over
           count = phrases.length - 1;
         }
-        // change the phrase every 2,5 seconds
+        // change the phrase every 5 seconds
         setTimeout(loopThroughPhrases,5000);
+
       };
         // and last but not least: call the phrase function...
       loopThroughPhrases();

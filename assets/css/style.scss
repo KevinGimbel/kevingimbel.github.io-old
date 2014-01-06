@@ -22,7 +22,7 @@ $color--accent-light: #cdcdcd;
 
 $colors--links: 
   #2c3e50,  // code -- dark
-  #ff9900,  // usic -- orange
+  #ff9900,  // music -- orange
   #2ecc71,  // link -- green
   #C7956D,  // travel -- brown
   #FB6D49   //
@@ -270,6 +270,17 @@ ul {
 .article--footer {
     margin: 1.5em 0 0 0;
     border-top: 1px solid $color--accent-light;
+}
+
+.feedback {
+    background: #f2f2f2;
+    padding:1em;
+    border-left: .25em solid $color--accent;
+    margin-top: 1em;
+    .feedback--headline {
+        text-transform: capitalize;
+        margin-top: 0;
+    }
 }
 
 .text--right {
