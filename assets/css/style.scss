@@ -22,12 +22,12 @@ $color--accent: #d83a31;
 
 $color--accent-light: #cdcdcd;
 
-$colors--links: 
+$color--links: 
   #2c3e50,  // code -- dark
   #ff9900,  // music -- orange
   #2ecc71,  // link -- green
   #C7956D,  // travel -- brown
-  #FB6D49   //
+  #FB6D49   // work -- orange
   ;
 
 * {
@@ -202,30 +202,35 @@ ul {
         
                 &[data-category*="coding"]:before, &[data-category*="UI/X"]:before {
                     content: "\e714";
-                    background:nth($colors--links,1);
+                    background:nth($color--links,1);
+                }
+
+                &[data-category*="work"]:before {
+                    content: "\1f465";
+                    background: nth($color--links, 5);
                 }
                   
-                &[data-category*="mixtape"]:before {
+                &[data-category*="music"]:before {
                     content: "\266a";
-                    background:nth($colors--links,2);
+                    background:nth($color--links,2);
                     padding:.2em .7em;
                 }
                   
                 &[data-category*="link"]:before {
                     content: "\27a6";
-                    background:nth($colors--links,3);
+                    background:nth($color--links,3);
                     padding:.4em .6em;
                 
                 }
         
                 &[data-category*="thoughts"]:before {
                     content: "\e720";
-                    background: nth($colors--links,4);
+                    background: nth($color--links,4);
                 }    
         
                 &[data-category*="personal"]:before {
                     content: "\1f464";
-                    background: nth($colors--links,4);
+                    background: nth($color--links,4);
                 }
          } // h2  
     
