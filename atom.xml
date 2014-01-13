@@ -10,16 +10,21 @@ title: Atom feed
         <name>Kevin Gimbel</name>
     </author>
     <title>Kevin Gimbel - Web Development</title>
-    <description>Front-End Developer from Frankfurt, Germany. I write about CSS, HTML, JS and UI/X.</description>
+    <subtitle>Web-Development, CSS, Thoughts, Hacks</subtitle>
+    <icon>http://kevingimbel.com/assets/img/favicon.ico</icon>
+    <description>Front-End Developer from Frankfurt, Germany. I write about CSS, HTML, JS, UI/X and personal stuff.</description>
 
 
 {% for post in site.posts %}
     <entry>
         <title>{{ post.title }}</title>
-        <link>http://kevingimbel.com{{ post.url }}</link>
+        <link rel="alternate" type="text/html">http://kevingimbel.com{{ post.url }}/</link>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <author>
+            <name>Kevin Gimbel</name>
+        </author>
         <summary>{{ post.excerpt | xml_escape }}</summary>
-        <content>{{ post.content | xml_escape }}</content>
+        <content type="text/html">{{ post.content | xml_escape }}</content>
     </entry>
 {% endfor %}
 </feed>
