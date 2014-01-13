@@ -21,7 +21,7 @@ title: Atom feed
     <entry>
         <id>http://kevingimbel.com{{ post.url }}</id>
         <title>{{ post.title }}</title>
-        <link href="http://kevingimbel.com/{{ post.url }}" />
+        <link href="http://kevingimbel.com{{ post.url }}" />
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         <author>
             <name>Kevin Gimbel</name>
