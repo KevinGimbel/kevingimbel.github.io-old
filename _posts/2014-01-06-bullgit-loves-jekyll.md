@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bullgit &hearts; Jekyll
+title: Bullgit loves Jekyll
 category: coding
 ---
 
