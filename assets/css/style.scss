@@ -115,14 +115,22 @@ ul {
 }
 
 .header--inner {
-    margin:0;
-    .logo {
-        margin: 0 auto;
-        width: 10em;
-        display: block;
-        @include border-radius(100%);
+    margin:0;    
+}
+
+.logo img {
+    margin: 0 auto;
+    width: 10em;
+    display: block;
+    @include border-radius(100%);
+    @include transform(rotate(0deg) scale(1));
+    @include transition(all ease-in-out .6s);
+
+    &:hover {
+        @include transform(rotate(360deg) scale(1.5));
+        @include transition(all ease-in-out .6s);
+        box-shadow: 0 0 5em rgba(black,.4);
     }
-    
 }
 
     .site--navigation {

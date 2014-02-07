@@ -7,18 +7,25 @@ permalink: /about/
 Hey! My name's Kevin Gimbel. I craft websites because I love the internet.
 I managed to learn quite a lot about HTML and CSS in the last few years and at the moment I'm learning more about programming - both Server and Client side.
 
-I build and share useless but fun projects with the [bullgit](http://bullg.it) Team, talk about nerd and web stuff on [tlk.io](http://tlk.io/codepen) or realease snippets of code on [CodePen](http://codepen.io/kevingimbel).
+I work at [Synoa](http://synoa.de) as a Front-End Developer and I really like it. 
+
+I build and share useless but fun projects with the [bullgit](http://bullg.it) Team, realease snippets of code on [CodePen](http://codepen.io/kevingimbel) or [push to master](http://github.com/kevingimbel).
 I also try to write at least once a month about web stuff on this website.
 
 For some super-interesting information on my work and school history there's a [CV Page](/cv/).
 
 
-### Projects
+## Projects
+### JekyllSnippets
+I love Jekyll and because of this I started [JekyllSnippets.com](http://jekyllsnippets.com) a blog about all things related to Jekyll - links, Snippets, tutorials - you name it. Feel free to take a look or contribute. It's open-source, non-profit and free-everything. Enjoy!
 
-#### Readrr
-Readrr has been a really long-term project I'm working on with [Tim](http://timpietrusky.com) and [Max](http://myxotod.de). It's developed in our spare time and there's the problem: We don't have much of it. Development is going slowly. Anyway you can sing-up at [readrr.li](http://readrr.li) or follow us on twitter [@readrr](http://twitter.com/readrr).
+### bullg.it
+After we at [bullg.it](http://bullg.it/) had a static page for about half and year we decided to build a new, flexible one based on Jekyll. I also used the Github API to fetch our Repos and Gravatar to fetch the Avatars for every member. [See the Repo](https://github.com/bullgit/bullgit.github.io)
 
+## Fun Projects
 
-#### clickandco.de
-clickandco.de is going to be a challenge system for CodePen. The basic idea is: You can create a Challenge with some HTML, CSS or JS Markup and people can take this challenge with one click on a button that redirects to a already pre-filled new CodePen.
-[clickandco.de](http://clickandco.de)
+### Dull.js
+On my way to learn more JavaScript I made a small Function called dull.js that prints a phrase a bunch of times on a page. [Take a look here](http://bullg.it/dull-js/)
+
+### github.js
+While I build the new bullg.it website I also wrote a Ajax wrapper for the Github API called [github.js](http://kevingimbel.com/demo/github-js/). It takes a few arguments as well as a HTML template that is used to display a list of repositories later.

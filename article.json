@@ -1,0 +1,14 @@
+---
+layout: nil
+title: article.json
+---
+[
+{% for post in site.posts %}
+    {
+    "title": "{{ post.title }}",
+    "category": "{{ post.category }}"
+    "link": "{{ post.url}}",
+    "date": "{{ post.date }}"
+    }{% if forloop.last %}{% else %},{% endif%}
+{% endfor %}
+]
