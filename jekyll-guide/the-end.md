@@ -5,13 +5,13 @@ permalink: /the-end/
 prev_page: /jekyll-guide/layouts
 ---
 
-By now you should now a bit about Jekyll and how it works. It's always a great idea to look around for Github hosted Jekyll blogs so you can see how others create their blogs.
+By now you should now a bit about Jekyll and how it works. It's always a great idea to look around for GitHub hosted Jekyll blogs so you can see how others create their blogs.
 
 There is also an [Online Editor for Jekyll](http://prose.io/) so you don't need to write your posts with a Text Editor. (via [erikschwartz.net](http://erikschwartz.net/jekyll-for-the-masses/), contributed by [Felix De Montis](https://github.com/dervondenbergen))
 
-The last thing we need to do is publishing the brand-new Jekyll page to Github. You can use their Apps for [Windows](http://windows.github.com/) or [Mac OS](http://mac.github.com/) to push your site to Github or do it via command line. (Don't be afraid, it's actually not that complicated!)
+The last thing we need to do is publishing the brand-new Jekyll page to GitHub. You can use their Apps for [Windows](http://windows.github.com/) or [Mac OS](http://mac.github.com/) to push your site to GitHub or do it via command line. (Don't be afraid, it's actually not that complicated!)
 
-If you've [Git]() installed you can skip to "Pushing to Github", if not you'll need to install it first. You can read the installation guide if you're not using Ubuntu [here](http://git-scm.com/book/en/Getting-Started-Installing-Git).
+If you've [Git]() installed you can skip to "Pushing to GitHub", if not you'll need to install it first. You can read the installation guide if you're not using Ubuntu [here](http://git-scm.com/book/en/Getting-Started-Installing-Git).
 
 {% highlight bash %}
 $ sudo apt-get install git
@@ -28,7 +28,7 @@ $ git config --global user.email "youname@example.com"
 {% endhighlight %}
 
 
-### Pushing to Github
+### Pushing to GitHub
 
 First you need to navigate to the folder that holds your site. 
 
@@ -74,4 +74,4 @@ $ git commit -m "New Blogpost!"
 $ git push origin master
 {% endhighlight %}
 
-That's it. Thanks for viewing this guide and I hope I could help you getting started with Jekyll. If you found any issue simply [open a new issue on Github](https://github.com/kevingimbel/kevingimbel.github.io/issues) or [tweet me](http://twitter.com/_kevinatari). Want to contribute a Link, Tutorial or whatever? Simply follow the [Guide on contribution](/jekyll-guide/contributor-guide/) and submit it as [Pull Request](https://github.com/kevingimbel/kevingimbel.github.io/pulls).
+That's it. Thanks for viewing this guide and I hope I could help you getting started with Jekyll. If you found any issue simply [open a new issue on GitHub](https://github.com/kevingimbel/kevingimbel.github.io/issues) or [tweet me](http://twitter.com/_kevinatari). Want to contribute a Link, Tutorial or whatever? Simply follow the [Guide on contribution](/jekyll-guide/contributor-guide/) and submit it as [Pull Request](https://github.com/kevingimbel/kevingimbel.github.io/pulls).

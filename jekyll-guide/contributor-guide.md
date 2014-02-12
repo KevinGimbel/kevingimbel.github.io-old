@@ -13,11 +13,11 @@ If you're not familiar with Markdown you should really get familiar now. It's a 
 Resources on Markdown:
 
 - [John Gruber's Original Markdown](http://daringfireball.net/projects/markdown/)
-- [Github flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
+- [GitHub flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
 
 
 #### 1.2 Front Matter
-For sure I want to display your name and URL so your contribution is worth for you. You can give any name and URL your like as long as the websites content is yours (for example your Twitter URL, Github URL, Portfolio/Blog)
+For sure I want to display your name and URL so your contribution is worth for you. You can give any name and URL your like as long as the websites content is yours (for example your Twitter URL, GitHub URL, Portfolio/Blog)
 
 Below is an example of a contributors Front Matter
 {% highlight bash %}
@@ -66,9 +66,9 @@ Below you see an example on how to link your further readings
 More reads on Jekyll Layouts:
 
 - [Jekyll Docs - Templates](http://jekyllrb.com/docs/templates/)
-- You know another good source? [Contribute one on Github](https://github.com/kevingimbel/kevingimbel.github.io/pulls)!
+- You know another good source? [Contribute one on GitHub](https://github.com/kevingimbel/kevingimbel.github.io/pulls)!
 {% endraw %}
 {% endhighlight %}
 
-Got your article/page ready? Nice! Contribute via [Pull Request](https://github.com/kevingimbel/kevingimbel.github.io/pulls) on Github.
+Got your article/page ready? Nice! Contribute via [Pull Request](https://github.com/kevingimbel/kevingimbel.github.io/pulls) on GitHub.
 

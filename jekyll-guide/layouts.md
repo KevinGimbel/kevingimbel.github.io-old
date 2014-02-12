@@ -90,4 +90,4 @@ The files you want to include most be inside the `\_includes` folder (logically,
 More reads on Jekyll Layouts:
 
 - [Jekyll Docs - Templates](http://jekyllrb.com/docs/templates/)
-- You know another good source? [Contribute one on Github](https://github.com/kevingimbel/kevingimbel.github.io/pulls)!
+- You know another good source? [Contribute one on GitHub](https://github.com/kevingimbel/kevingimbel.github.io/pulls)!
