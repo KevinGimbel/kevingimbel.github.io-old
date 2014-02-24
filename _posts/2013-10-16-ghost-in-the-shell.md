@@ -120,7 +120,7 @@ The more I worked with Ghost on the server side one thing came to my mind: It's 
 
 ### Conclusion
 Non-Tech People will not be able to install Ghost on their servers, Ghost requires Node.js which isn't a default installation on servers yet (even though some have it), Ghost is at least locally fast and easy to setup. The Theme system with Handlebars is also pretty nice and they have the most beautiful back-end I saw so far. 
-Regardless of all the good aspects, overall I'm disappointed by Ghost. I'll stick to Jekyll and Github Hosting. I'll try to deploy Ghost and work around with it just for the sake of learning something new but as engine to build my Blog it has not convinced me so far.
+Regardless of all the good aspects, overall I'm disappointed by Ghost. I'll stick to Jekyll and GitHub Hosting. I'll try to deploy Ghost and work around with it just for the sake of learning something new but as engine to build my Blog it has not convinced me so far.
 
 
 You may have noticed that the Title is a reference to [Ghost in the Shell](http://de.wikipedia.org/wiki/Ghost_in_the_Shell) which is a great Manga from 1989.

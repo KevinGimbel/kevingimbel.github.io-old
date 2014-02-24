@@ -16,7 +16,7 @@ I decided to write a general license for stuff I publish so everything is clear.
 
 The *Open License* licenses all my work under the following aspects.
 
-"Work" means CodePen Snippets, Prototypes or Demos and the things I share on Github (if no other license is given). 
+"Work" means CodePen Snippets, Prototypes or Demos and the things I share on GitHub (if no other license is given). 
 The license doesn't apply to articles. If you want to use an article you should [contact me](/imprint/).
 
 **The work can:**
