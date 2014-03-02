@@ -4,14 +4,14 @@ title: Bullgit loves Jekyll
 category: coding
 ---
 
-After having a static HTML Page for about 6 months, we at [bullgit](http://bullg.it) just switched to a brand-new Jekyll page that uses the Github API to display all our repos as well as a list of members with images and links and there are a few reasons why we made this switch:
+After having a static HTML Page for about 6 months, we at [bullgit](http://bullg.it) just switched to a brand-new Jekyll page that uses the GitHub API to display all our repos as well as a list of members with images and links and there are a few reasons why we made this switch:
 
-* Jekyll is built-in Github pages
+* Jekyll is built-in GitHub pages
 * Jekyll is easy-to-learn and easy to maintain
 * No-Database handling of Data (see [the list of members we use](https://github.com/bullgit/bullgit.github.io/blob/master/_data/members.yml))
 * Everyone can clone the repo and run it locally
 
-So basically, as soon as you have a Project on Github or an organization like [bullgit](http://twitter.com/bullgit) you can use the power of Jekyll to make your page easy to use and easy to change even for new members. We don't even use the Blog function of Jekyll (yet), we just have a front-page rendered with some Ajax to load all the Repos. 
+So basically, as soon as you have a Project on GitHub or an organization like [bullgit](http://twitter.com/bullgit) you can use the power of Jekyll to make your page easy to use and easy to change even for new members. We don't even use the Blog function of Jekyll (yet), we just have a front-page rendered with some Ajax to load all the Repos. 
 
 ### The basic Jekyll code
 
@@ -69,9 +69,9 @@ After the file is saved you can loop through its content like:
 
 That's it, the result is a `h3` for every member holding its name and 3 links holding the Twitter, Personal Website and CodePen URL, this way new members can be added easily - only one of us has to edit the `members.yml` file and the page gets updated a few seconds after.
 
-### Github API
+### GitHub API
 
-As I mentioned above we're using Github's API to get all our repos on the front-page. This was pretty easy to be honest, even for a JavaScript and API beginner like I am. 
+As I mentioned above we're using GitHub's API to get all our repos on the front-page. This was pretty easy to be honest, even for a JavaScript and API beginner like I am. 
 
 As I always do I avoided jQuery for this because I think it is a waste of Requests to load jQuery if I only use a minimal of its functionality. So I wrote the Ajax request by hand. The comments describe what goes one. 
 
@@ -80,7 +80,7 @@ As I always do I avoided jQuery for this because I think it is a waste of Reques
     // to the variable xml
     var xml = new XMLHttpRequest();
 
-    // opening the connection to Github's REPO API
+    // opening the connection to GitHub's REPO API
     // Method: GET
     // Source URL: https://api.github.com/orgs/bullgit/repos
     // Asynchronous: false 
@@ -175,4 +175,4 @@ Another piece if JavaScript is used to add the Script after the DOM is fully loa
     }
 {% endhighlight %}
 
-Those are just a few of the benefits of Jekyll and, because we're a "Github only" organization we switched so it's easier to scale the site. Building a Blog would now only take a some time because we're already running Jekyll and just have to add one more layout. That's it, the basics of our brand-new [bullgit](http://bullg.it) page.
+Those are just a few of the benefits of Jekyll and, because we're a "GitHub only" organization we switched so it's easier to scale the site. Building a Blog would now only take a some time because we're already running Jekyll and just have to add one more layout. That's it, the basics of our brand-new [bullgit](http://bullg.it) page.
