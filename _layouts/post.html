@@ -5,9 +5,15 @@
     {{ content }}
 
     <footer class="article--footer gw">
-      <time class="g one-half">
-        {{ page.date | date_to_string }}
-      </time>
+      <div  class="g one-half">
+        <time>
+          {{ page.date | date_to_string }}
+        </time>
+      
+        {% for tag in page.tags | limit: 3 %}
+          <span class="article--tag"> // <a href="/tags/#{{ tag | downcase | replace:' ','_' }}">#{{ tag }}</a></span>
+        {% endfor %}
+      </div>
       <div class="g one-half  text--right">
         written by <a href="http://google.com/+KevinGimbel">Kevin Gimbel</a>
       </div>
