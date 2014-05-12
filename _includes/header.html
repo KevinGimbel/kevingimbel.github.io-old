@@ -7,16 +7,16 @@
     <meta name="keywords" content="front-end,web,dev,development,frankfurt,germany,blog,writing,ui,ux,beginner,sass,scss,html,css,javascript">
     <meta name="viewport" content="width=device-width">
 	<meta dns-prefetch="http://fonts.google.com" />
-    
+
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@_kevinatari">
     <meta name="twitter:domain" content="http://kevingimbel.com">
     <meta name="twitter:title" content="{% if page.title %} {{ page.title }} &ndash; {% endif %} Kevin Gimbel &ndash; Web-Development, CSS, Sass, UI, UX, Thoughts, Hacks">
     <meta name="twitter:description" content="{{ page.excerpt | strip_html}} (Read more...)">
-    <!-- 
-    I use this solution by Christian Fei to remove the P tags from the excerpt. https://gist.github.com/christian-fei/41b51d9ad9fa55ccbb10 
+    <!--
+    I use this solution by Christian Fei to remove the P tags from the excerpt. https://gist.github.com/christian-fei/41b51d9ad9fa55ccbb10
     -->
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <link rel="alternate" type="application/atom+xml" title="kevingimbel.com Atom Feed" href="http://kevingimbel.com/atom.xml">
@@ -36,7 +36,7 @@
 
         {% assign pages_list = site.pages %}
         {% assign group = 'site_navigation' %}
-        
+
         {% include pages_list.html %}
 
       </ul>
