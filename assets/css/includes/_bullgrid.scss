@@ -4,13 +4,13 @@
       @content;
     }
   }
-  
+
   @if $point == "medium" {
     @media all and (max-width: 80em) {
       @content;
     }
   }
-  
+
   @if $point == "small" {
     @media all and (max-width: 30em) {
       @content;
@@ -18,13 +18,17 @@
   }
 }
 
+.g > img {
+  max-width: 100%;
+}
+
 /**
  * bullgrid
  *
- * A grid based on the ideas of inuit.css gridsystem. 
+ * A grid based on the ideas of inuit.css gridsystem.
  *
  *
- * @TODO [TimPietrusky] - center vertically / center horizontally 
+ * @TODO [TimPietrusky] - center vertically / center horizontally
  * @TODO [TimPietrusky] - Should we add support for IE <= 7?
  *
  *
@@ -62,14 +66,14 @@
 
 
 /**
- * Default spacing 
+ * Default spacing
  */
 $bullgrid-default-spacing: 1em;
 
 
 
 /**
- * Micro clearfix. 
+ * Micro clearfix.
  */
 .cf {
   &:after {
@@ -93,7 +97,7 @@ $bullgrid-default-spacing: 1em;
    * Negative margin to negate the padding on the first grid child.
    */
   margin-left: -$bullgrid-default-spacing;
-    
+
   @include breakpoint(medium) {
     margin-left: -$bullgrid-default-spacing / 2;
   }
@@ -169,12 +173,12 @@ $bullgrid-default-spacing: 1em;
  *
  */
 @mixin grid-setup($namespace: "") {
-  
+
   /*
    * Hidden
    */
-  .#{$namespace}hidden { 
-    display: none; 
+  .#{$namespace}hidden {
+    display: none;
   }
 
 
@@ -184,8 +188,8 @@ $bullgrid-default-spacing: 1em;
   /**
    * Whole
    */
-  .#{$namespace}one-whole { 
-    width: 100%; 
+  .#{$namespace}one-whole {
+    width: 100%;
   }
 
 
@@ -195,8 +199,8 @@ $bullgrid-default-spacing: 1em;
   /**
    * Halves
    */
-  .#{$namespace}one-half { 
-    width: 50%; 
+  .#{$namespace}one-half {
+    width: 50%;
   }
 
 
@@ -206,11 +210,11 @@ $bullgrid-default-spacing: 1em;
   /**
    * Thirds
    */
-  .#{$namespace}one-third { 
-    width: 33.333%; 
+  .#{$namespace}one-third {
+    width: 33.333%;
   }
-  .#{$namespace}two-thirds { 
-    width: 66.666%; 
+  .#{$namespace}two-thirds {
+    width: 66.666%;
   }
 
 
@@ -220,14 +224,14 @@ $bullgrid-default-spacing: 1em;
   /**
    * Quarters
    */
-  .#{$namespace}one-quarter { 
-    width: 25%; 
+  .#{$namespace}one-quarter {
+    width: 25%;
   }
-  .#{$namespace}two-quarters { 
-    @extend .#{$namespace}one-half; 
+  .#{$namespace}two-quarters {
+    @extend .#{$namespace}one-half;
   }
-  .#{$namespace}three-quarters { 
-    width: 75%; 
+  .#{$namespace}three-quarters {
+    width: 75%;
   }
 
 
@@ -237,17 +241,17 @@ $bullgrid-default-spacing: 1em;
   /**
    * Fifths
    */
-  .#{$namespace}one-fifth { 
-    width: 20%; 
+  .#{$namespace}one-fifth {
+    width: 20%;
   }
-  .#{$namespace}two-fifths { 
-    width: 40%; 
+  .#{$namespace}two-fifths {
+    width: 40%;
   }
-  .#{$namespace}three-fifths { 
-    width: 60%; 
+  .#{$namespace}three-fifths {
+    width: 60%;
   }
-  .#{$namespace}four-fifths { 
-    width: 80%; 
+  .#{$namespace}four-fifths {
+    width: 80%;
   }
 
 
@@ -257,20 +261,20 @@ $bullgrid-default-spacing: 1em;
   /**
    * Sixths
    */
-  .#{$namespace}one-sixth { 
-    width: 16.666%; 
+  .#{$namespace}one-sixth {
+    width: 16.666%;
   }
-  .#{$namespace}two-sixths { 
-    @extend .#{$namespace}one-third; 
+  .#{$namespace}two-sixths {
+    @extend .#{$namespace}one-third;
   }
-  .#{$namespace}three-sixths { 
-    @extend .#{$namespace}one-half; 
+  .#{$namespace}three-sixths {
+    @extend .#{$namespace}one-half;
   }
-  .#{$namespace}four-sixths { 
-    @extend .#{$namespace}two-thirds; 
+  .#{$namespace}four-sixths {
+    @extend .#{$namespace}two-thirds;
   }
-  .#{$namespace}five-sixths { 
-    width: 83.333%; 
+  .#{$namespace}five-sixths {
+    width: 83.333%;
   }
 
 
@@ -280,26 +284,26 @@ $bullgrid-default-spacing: 1em;
   /**
    * Eighths
    */
-  .#{$namespace}one-eighth { 
-    width: 12.5%; 
+  .#{$namespace}one-eighth {
+    width: 12.5%;
   }
   .#{$namespace}two-eighths {
-     @extend .#{$namespace}one-quarter; 
+     @extend .#{$namespace}one-quarter;
    }
-  .#{$namespace}three-eighths { 
-    width: 37.5%; 
+  .#{$namespace}three-eighths {
+    width: 37.5%;
   }
-  .#{$namespace}four-eighths { 
-    @extend .#{$namespace}one-half; 
+  .#{$namespace}four-eighths {
+    @extend .#{$namespace}one-half;
   }
-  .#{$namespace}five-eighths { 
-    width: 62.5%; 
+  .#{$namespace}five-eighths {
+    width: 62.5%;
   }
-  .#{$namespace}six-eighths { 
-    @extend .#{$namespace}three-quarters; 
+  .#{$namespace}six-eighths {
+    @extend .#{$namespace}three-quarters;
   }
-  .#{$namespace}seven-eighths { 
-    width: 87.5%; 
+  .#{$namespace}seven-eighths {
+    width: 87.5%;
   }
 
 
@@ -309,32 +313,32 @@ $bullgrid-default-spacing: 1em;
   /**
    * Tenths
    */
-  .#{$namespace}one-tenth { 
-    width: 10%; 
+  .#{$namespace}one-tenth {
+    width: 10%;
   }
-  .#{$namespace}two-tenths { 
-    @extend .#{$namespace}one-fifth; 
+  .#{$namespace}two-tenths {
+    @extend .#{$namespace}one-fifth;
   }
-  .#{$namespace}three-tenths { 
-    width: 30%; 
+  .#{$namespace}three-tenths {
+    width: 30%;
   }
-  .#{$namespace}four-tenths { 
-    @extend .#{$namespace}two-fifths; 
+  .#{$namespace}four-tenths {
+    @extend .#{$namespace}two-fifths;
   }
-  .#{$namespace}five-tenths { 
-    @extend .#{$namespace}one-half; 
+  .#{$namespace}five-tenths {
+    @extend .#{$namespace}one-half;
   }
-  .#{$namespace}six-tenths { 
-    @extend .#{$namespace}three-fifths; 
+  .#{$namespace}six-tenths {
+    @extend .#{$namespace}three-fifths;
   }
-  .#{$namespace}seven-tenths { 
-    width: 70%; 
+  .#{$namespace}seven-tenths {
+    width: 70%;
   }
-  .#{$namespace}eight-tenths { 
-    @extend .#{$namespace}four-fifths; 
+  .#{$namespace}eight-tenths {
+    @extend .#{$namespace}four-fifths;
   }
-  .#{$namespace}nine-tenths { 
-    width: 90%; 
+  .#{$namespace}nine-tenths {
+    width: 90%;
   }
 
 
@@ -344,38 +348,38 @@ $bullgrid-default-spacing: 1em;
   /**
    * Twelfths
    */
-  .#{$namespace}one-twelfth { 
-    width: 8.333%; 
+  .#{$namespace}one-twelfth {
+    width: 8.333%;
   }
-  .#{$namespace}two-twelfths { 
-    @extend .#{$namespace}one-sixth; 
+  .#{$namespace}two-twelfths {
+    @extend .#{$namespace}one-sixth;
   }
-  .#{$namespace}three-twelfths { 
-    @extend .#{$namespace}one-quarter; 
+  .#{$namespace}three-twelfths {
+    @extend .#{$namespace}one-quarter;
   }
-  .#{$namespace}four-twelfths { 
-    @extend .#{$namespace}one-third; 
+  .#{$namespace}four-twelfths {
+    @extend .#{$namespace}one-third;
   }
-  .#{$namespace}five-twelfths { 
+  .#{$namespace}five-twelfths {
     width: 41.666%;
   }
-  .#{$namespace}six-twelfths { 
-    @extend .#{$namespace}one-half; 
+  .#{$namespace}six-twelfths {
+    @extend .#{$namespace}one-half;
   }
-  .#{$namespace}seven-twelfths { 
-    width: 58.333%; 
+  .#{$namespace}seven-twelfths {
+    width: 58.333%;
   }
-  .#{$namespace}eight-twelfths { 
-    @extend .#{$namespace}two-thirds; 
+  .#{$namespace}eight-twelfths {
+    @extend .#{$namespace}two-thirds;
   }
-  .#{$namespace}nine-twelfths { 
-    @extend .#{$namespace}three-quarters; 
+  .#{$namespace}nine-twelfths {
+    @extend .#{$namespace}three-quarters;
   }
-  .#{$namespace}ten-twelfths { 
-    @extend .#{$namespace}five-sixths; 
+  .#{$namespace}ten-twelfths {
+    @extend .#{$namespace}five-sixths;
   }
-  .#{$namespace}eleven-twelfths { 
-    width: 91.666%; 
+  .#{$namespace}eleven-twelfths {
+    width: 91.666%;
   }
 }
 
@@ -385,7 +389,7 @@ $bullgrid-default-spacing: 1em;
 /**
  *
  * @TODO [TimPietruky] - Do we really need this?
- * 
+ *
  */
 @include grid-setup();
 
