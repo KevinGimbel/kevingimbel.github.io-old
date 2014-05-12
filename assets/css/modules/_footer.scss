@@ -1,0 +1,16 @@
+/*
+    Holds all the footers, e.g. site__footer and (if present) article__footer
+*/
+
+.site__footer {
+    width: 100%;
+    height: auto;
+    border-top: .5em solid $color--main;
+    padding: 5em;
+    background: #333;
+    color: #fff;
+
+    @include breakpoint("small") {
+        padding: 2.5em 1em;
+    }
+}

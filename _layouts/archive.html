@@ -8,7 +8,9 @@
                 <a href="{{post.url}}" title="Read the article '{{ post.title }}'">{{ post.title }}</a>
             </h2>
             <div class="g one-quarter  text--right">
-                <p class="archive-text--small">{{ post.date | date_to_string }} // {{ post.category }}</p>
+                <p>{{ post.date | date_to_string }} // 
+                    <span class="off-screen--right  {{ post.category }}">{{ post.category }}</span>
+                </p>
             </div>
         </div><!-- gw -->
     </article>

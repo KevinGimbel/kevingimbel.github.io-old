@@ -1,0 +1,30 @@
+.ಠ_ಠ {
+  display: none !important;
+}
+
+.small-screen-only {
+  display: none; 
+  @include breakpoint("tiny") {
+    display: block;
+  }
+}
+
+.large-screen-only {
+  display: block;
+  @include breakpoint("tiny") {
+    display: none;
+  }
+}
+
+
+.wrap {
+  width:100%;
+  height: auto;
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+.wrapper {
+  @extend .wrap;
+  margin: 2.5em auto;
+}

@@ -16,7 +16,7 @@
     <!-- 
     I use this solution by Christian Fei to remove the P tags from the excerpt. https://gist.github.com/christian-fei/41b51d9ad9fa55ccbb10 
     -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/style.css">
     <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <link rel="alternate" type="application/atom+xml" title="kevingimbel.com Atom Feed" href="http://kevingimbel.com/atom.xml">
@@ -24,34 +24,31 @@
 <body>
  <a href="" class="backtop" id="back-top"></a>
 
-  <header class="site--header  g one-whole" id="site-header">
-    <div class="header--inner">
-        <div class="logo">
-            <a href="/">
-                <img src="http://www.gravatar.com/avatar/6d391d8c3a528122f3f6c991821350ac?s=400" alt="Kevin Gimbel" />
-            </a>
-        </div>
-        <div class="intro g one-whole text--center">
-        <h1>Hey, I'm Kevin</h1>
-        <p><span id="phrase">I build things.</span></p>
-    <nav class="site--navigation" role="navigation">
-      <ul>
-        <li><a href="/" class="nav-item">Home</a></li>
-        <li><a href="/about" class="nav-item">About</a></li>
-        <li><a href="/cv" class="nav-item">CV</a></li>
-        <li><a href="/archive" class="nav-item">Archive</a></li>
+  <header class="site__header" id="site-header">
+
+    {% include intro.html %}
+
+
+    <nav class="site__navigation  wrap" role="navigation">
+        <li class="nav__item {% if page.url == '/' %} active {% endif %}">
+            <a href="/" class="nav-item">Home</a>
+        </li>
+
+        {% assign pages_list = site.pages %}
+        {% assign group = 'site_navigation' %}
+        
+        {% include pages_list.html %}
+
       </ul>
-      <select name="mobile-menu" id="mobileMenu" class="nav--mobile">
+      </nav>
+
+      <select name="mobile-menu" id="mobileMenu" class="nav__mobile">
         <option value="">MENU</option>
         <option value="http://kevingimbel.com/">Home</option>
         <option value="http://kevingimbel.com/about">About</option>
         <option value="http://kevingimbel.com/cv">CV</option>
         <option value="http://kevingimbel.com/archive">Archive</option>
       </select>
-      </nav>
-    </div> <!-- intro -->
-</div> <!-- header--inner -->
 </header>
 
-<section class="wrapper gw">
-  <section class="content  g one-whole {% if page.customclass %} {{page.customclass}} {% endif %}">
+<section class="wrapper {% if page.customclass %} {{page.customclass}} {% endif%}">

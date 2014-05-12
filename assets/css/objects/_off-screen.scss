@@ -1,0 +1,21 @@
+
+.off-screen {
+    top:-1px;
+    padding: 0 .25em; // a bit padding on both sides
+    color: white; 
+    width: 100%; // super-mega large so it can go all the way to the right!
+    display: inline;
+    text-align: right; // text goes all to the right
+    position: relative;
+    background: $color--main;
+    
+    &:before {
+      content: '';
+      height: 100%;
+      width: 9999px;
+      position: absolute;
+      top: 0;
+      background: inherit;
+      left: -9999px;
+    }
+}

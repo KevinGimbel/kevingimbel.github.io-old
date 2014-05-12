@@ -1,0 +1,22 @@
+
+h1, h2, h3 {
+  font-family: $font--serif;
+}
+
+h1 {  font-size: 2em; }
+h2 {  font-size: 1.6em; }
+h3 {  font-size: 1.4em; }
+
+.page--cv {
+    h3 {
+        margin-top: 2em;
+    }
+}
+
+.text--right {
+    text-align: right;
+}
+
+.text--center {
+    text-align: center;
+}

@@ -1,0 +1,35 @@
+.site__navigation {
+  margin-top: 2em;
+  @include breakpoint(small) {
+    display: none;
+  }
+  ul {
+    list-style: none;
+  }
+  .nav__item {
+    display: inline;
+    
+    .active {
+      background: $color--main;
+    }
+    
+    a {
+      color: #fff;
+      border: 1px solid $color--main;
+      padding: .5em 1em;
+      margin-right: .5em;
+      border-radius: 3px;
+      &:hover {
+        background: $color--main;
+        transition: background ease-in .2s;
+      }
+    }
+  }
+}
+
+.nav__mobile {
+  display: none;
+  @include breakpoint(small) {
+    display: block;
+  }
+}

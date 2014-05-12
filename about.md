@@ -2,6 +2,7 @@
 layout: default
 title: About
 permalink: /about/
+group: site_navigation
 ---
 
 Hey! My name's Kevin Gimbel. I craft websites because I love the internet.

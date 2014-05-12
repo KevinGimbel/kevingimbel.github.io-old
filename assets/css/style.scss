@@ -1,83 +1,53 @@
-@import "compass";
+//@import "compass";
 // FONTS
-@import url(http://fonts.googleapis.com/css?family=Lato);
+
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,700);
 @import url(http://weloveiconfonts.com/api/?family=entypo);
+
+@import "core/vars",
+        "core/mixins",
+        "core/helper",
+        "core/typography";
+
+@import "objects/off-screen";
 
 @import "includes/syntax", /* syntax highlight styles*/
         "includes/bullgrid"; /* grid system */
 
+@import "modules/navigation",
+        "modules/header",
+        "modules/footer",
+        "modules/article",
+        "modules/conditions";
 
-/* Fonts */
-$baseFont: 'Lato', sans-serif;
 
-
-/* Colors */
-/* blue */
-$color--main:#40a0be;
-/* used for decoration and accents */
-
-/* red */
-$color--accent: #d83a31;
-/* used for decoration and accents */
-
-$color--accent-light: #cdcdcd;
-
-$color--links: 
-  #2c3e50,  // code -- dark
-  #ff9900,  // music -- orange
-  #2ecc71,  // link -- green
-  #C7956D,  // travel -- brown
-  #FB6D49   // work -- orange
-  ;
-
-* {
-  margin:0;
-  padding:0;
-  @include box-sizing(border-box);
-}
-
-body {
-  font:1em/1.65 $baseFont;
-  width:100%;
-  min-height:100%; 
-}
-
-a {
-  color:$color--main;
-  text-decoration:none;
-  
-    &:hover {
-      color:$color--accent;
-    }
-}
-
-h2 {
-    line-height: 1.8;
-}
-
-h3 {
-    line-height: 1.6;
-    margin-top:1em;
-}
-
-h4 {
-    margin-top:1em;
-}
-
-ul {
-    margin: .5em 0 .5em 1em;
-}
 
 /* entypo */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
 
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  @include vendor('box-sizing', 'border-box');
+}
 
-.wrapper {
+body {
+  font:1em/1.65 $font--sans;
   width:100%;
-  max-width:50em;
-  margin:2.5em auto;
+  min-height:100%; 
+}
+
+a {
+  color:$color--accent;
+  text-decoration:none;
+  border-bottom: 1px solid $color--main;
+  
+    &:hover {
+      color:$color--main;
+    }
 }
 
 /* Back To Top*/
@@ -99,248 +69,4 @@ ul {
             left:.85em;
             font-family: 'entypo', sans-serif;
         }
-}
-
-.displayed {
-    display:block;
-}
-
-.site--header {
-    width: 100%;
-    height: auto;
-    padding:5em 0;
-    margin-top: -3em !important;
-    background: #fff;
-    background: url('/assets/img/fancy_deboss.png');
-}
-
-.header--inner {
-    margin:0;    
-}
-
-.logo img {
-    margin: 0 auto;
-    width: 10em;
-    display: block;
-    @include border-radius(100%);
-    @include transform(rotate(0deg) scale(1));
-    @include transition(all ease-in-out .6s);
-
-    &:hover {
-        @include transform(rotate(360deg) scale(1.5));
-        @include transition(all ease-in-out .6s);
-        box-shadow: 0 0 5em rgba(black,.4);
-    }
-}
-
-    .site--navigation {
-        ul > li {
-            list-style-type: none;
-            display: inline;
-            padding: 0 .5em 0 0;
-        }
-
-    @include breakpoint(large) {
-        .nav--mobile {display: none;}
-    }
-    
-    @include breakpoint(medium) {
-        .nav--mobile {display: none;}
-    }
-
-
-    @include breakpoint(small) {
-            .nav--mobile {
-                display: block;
-                background: #333;
-                color: #ddd;
-                padding: .5em 1em;
-                margin: 0 auto;
-                border: none;
-                @include border-radius(3px); 
-                @include appearance(none);
-                
-                /* these two lines remove the drop-down arrow from firefox */
-                text-indent: 0.01px; 
-                text-overflow: ''; 
-            }
-        ul > li {display: none;}
-    }
-
-}
-
-/* holds all the posts and pages */
-.content {
-    margin-top: 2.5em;
-
-    @include breakpoint(medium) {
-        padding: 0 1.5em;
-    }
-}
-
-
-.article--large-preview {
-    margin:2.5em 0;
-    
-    h2 {
-        font-size: 2.5em;
-    }
-}
-
-.date--year {
-    font-weight: bold;
-    font-size: 1em;
-    color: $color--accent;
-    line-height: 0.6;
-}
-
-.date--month-day {
-    font-weight: normal;
-    font-size: .75em;
-    display: block;
-}
-
-.article--short-preview  {
-    padding: 1em 0;
-    border-top: 1px solid $color--accent-light;
-    position: relative;
-    
-        h2 {
-            //padding-left: 2em;
-            // display: block;
-            // position: relative;
-        
-            // &:before {
-            //     font-family: 'entypo', sans-serif;
-            //     position: absolute;
-            //     top: .3em;
-            //     left: 0;
-            //     padding: .2em .5em;
-            //     color: #fff;
-            //     font-size: .65em;
-            //     border-radius:100%;
-            // }
-        
-            //     &[data-category*="coding"]:before, &[data-category*="UI/X"]:before {
-            //         content: "\e714";
-            //         background:nth($color--links,1);
-            //     }
-
-            //     &[data-category*="work"]:before {
-            //         content: "\1f465";
-            //         background: nth($color--links, 5);
-            //     }
-                  
-            //     &[data-category*="music"]:before {
-            //         content: "\266a";
-            //         background:nth($color--links,2);
-            //         padding:.2em .7em;
-            //     }
-                  
-            //     &[data-category*="link"]:before {
-            //         content: "\27a6";
-            //         background:nth($color--links,3);
-            //         padding:.4em .6em;
-                
-            //     }
-        
-            //     &[data-category*="thoughts"]:before {
-            //         content: "\e720";
-            //         background: nth($color--links,4);
-            //     }    
-        
-            //     &[data-category*="personal"]:before {
-            //         content: "\1f464";
-            //         background: nth($color--links,4);
-            //     }
-         } // h2  
-    
-    &:last-of-type {
-        border-bottom: 1px solid $color--accent-light;
-    }
-
-} // .article--short-preview
-
-
-.archive-text--small, .category {
-    color: shade($color--accent-light,20%);
-    padding-top: .75em;
-    font-size: .75em;
-}
-
-.article {
-    p > code {
-        background: #333;
-        color: $color--accent-light;
-        padding:.2em .5em;
-        @include border-radius(3px);
-    }
-    img {
-        max-width: 100%;
-    }
-
-    iframe {
-        width:120% !important; // width needs to be forced so all iframes are displayed correctly.
-        margin: 1em -10%;
-
-        @media all and (max-width: 50em) {
-            width:100% !important;
-            margin: 1em 0;            
-        }
-
-        @include breakpoint(small) {
-            width:100% !important; // "normal" width also needs to be forced for "live resizing".
-            margin: 1em 0;
-        }
-    }
-}
-
-
-
-.article--footer {
-    margin: 1.5em 0 0 0;
-    border-top: 1px solid $color--accent-light;
-}
-
-.feedback {
-    background: #f2f2f2;
-    padding:1em;
-    border-left: .25em solid $color--accent;
-    margin-top: 1em;
-    .feedback--headline {
-        text-transform: capitalize;
-        margin-top: 0;
-    }
-}
-
-.text--right {
-    text-align: right;
-}
-
-.text--center {
-    text-align: center;
-}
-
-.love {
-    color: #dd0606;
-}
-
-.site--footer {
-    width:100%;
-    height:auto;
-    background: #333;
-    background: url('/assets/img/subtle_carbon.png');
-    padding:2.5em 0;
-    color: #fff;
-
-    .site--footer--inner {
-        width:100%;
-        max-width: 50em;
-        margin:0 auto;
-        
-        ul li {
-            list-style-type: none;
-        }
-    }
-
 }

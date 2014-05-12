@@ -1,0 +1,13 @@
+.article {
+    margin: 0 auto 2.5em auto;
+    @include breakpoint("medium") {
+        padding: 1em;
+    }
+}
+
+.feedback {
+    background: #eee;
+    padding: 2em;
+    margin-top: 2em;
+    border-left: .15em solid $color--main;
+}

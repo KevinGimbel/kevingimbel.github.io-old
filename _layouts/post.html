@@ -4,7 +4,7 @@
     
     {{ content }}
 
-    <footer class="article--footer gw">
+    <footer class="article__footer gw">
       <div  class="g one-half">
         <time>
           {{ page.date | date_to_string }}
@@ -19,9 +19,11 @@
       </div>
     </footer>
 
+    {% if page.category == 'coding' %}
       <div class="feedback">
-        <h4 class="feedback--headline">Enjoyed this &raquo;{{page.category}}&laquo; post?</h4>
-          <p>I'd appreciate your feedback on <a href="http://twitter.com/_kevinatari">Twitter</a> as well as request for further posts about web-related stuff.</p>
+        <h4 class="feedback--headline">Did you enjoy this?</h4>
+          <p>I'd appreciate your feedback on <a href="http://twitter.com/_kevinatari">Twitter</a> as well as request for further posts or related questions. Or just say Hi! <a href="http://codepen.io/pen">Happy coding!</a></p>
       </div>
+    {% endif %}
 </article>
 {% include footer.html %}

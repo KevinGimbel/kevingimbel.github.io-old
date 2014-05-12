@@ -1,9 +1,12 @@
 ---
 layout: default
-title: Curriculum vitae of Kevin Gimbel
+title: Résumé
 permalink: /cv/
 customclass: page--cv
+group: site_navigation
 ---
+
+
 
 ### Work
 
@@ -11,12 +14,12 @@ customclass: page--cv
 
 Front-End Webdeveloper (1.1.2014 - today)
 
-### Interships
+### Internships
 
 #### Couquillou, France
 IT Assistant (June-July 2012)
 
-#### WERBEZWERG, Germany 
+#### WERBEZWERG, Germany
 Web-/Printdesign (2010-2011)
 
 ### Education

@@ -1,19 +1,17 @@
- </section> <!-- content -->
 </section> <!-- wrapper -->
-<footer class="site--footer">
-    <div class="site--footer--inner  gw">
-        <div class="g three-thirds">
-        Build with <a href="http://sass-lang.com">Sass</a>, <a href="http://jekyllrb.com">Jekyll</a> and <span class="love">&hearts;</span>.
-        Hosted on <a href="http://github.com/kevingimbel/kevingimbel.github.io">Github</a>. <a href="/imprint">Imprint</a>
-    </div><!-- three-thirds -->
-        <div class="g one-third  text--right">
-            <ul>
-        {% for social in site.data.social %}
-            <li><a href="{{ social.url }}" title="{{ social.title }}" >{{ social.name }}</a></li>
-        {% endfor %}
-            </ul>
-        </div> <!-- one-third -->
-    </div> <!-- site--footer--inner -->
+<footer class="site__footer">
+    <div class="wrap">
+        <div class="gw">
+            <div class="g three-quarters  small-one-whole">
+            Build with <a href="http://sass-lang.com">Sass</a>, <a href="http://jekyllrb.com">Jekyll</a> and <span class="love">&hearts;</span>. Hosted on <a href="http://github.com/kevingimbel/kevingimbel.github.io">Github</a>, some files at <a href="http://uberspace.de">Uberspace.de</a>. 
+            <a href="/imprint">Imprint</a>
+        </div>
+
+        <div class="g one-quarter small-one-whole">
+            <a href="https://twitter.com/_kevinatari" class="twitter-follow-button" data-show-count="true">Follow @_kevinatari</a>
+        </div>
+        </div>
+    </div> <!-- wrap -->
 </footer>
 </body>
 <script type="text/javascript">
@@ -32,4 +30,5 @@ window.attachEvent("onload", downloadJSAtOnload);
 window.onload = downloadJSAtOnload;
 }
 </script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </html>

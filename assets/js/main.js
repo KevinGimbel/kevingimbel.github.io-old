@@ -1,57 +1,13 @@
-    "use strict";
-      // selecting the Phrases element
-    var phraseContainer = document.querySelector('#phrase'),
-      
-      // array of phrases to add
-    phrases = [
-            'I push to <a href="http://github.com/kevingimbel" class="phrase--link">master</a>.',
-            'I play games.',
-            'Sometimes I use the <code>--force</code>',
-            'I make bad puns.',
-            'I listen to a lot of <a href="http://soundcloud.com/atarijunge" class="phrase--link">music</a>.',
-            'I take <a href="http://eyeem.com/kevingimbel" class="phrase--link">pictures</a>.',
-            'I create demos on <a href="http://codepen.io/kevingimbel" class="phrase--link">CodePen</a>.',
-            'I play games.',
-            'I make stupid faces.'
-        ];
-    
-    // anonymous function for phrases
-    (function() {
-    
-        // get the number of phrases
-       var count = phrases.length,
-    
-       // initialize a function to loop through the phrases
-       loopThroughPhrases = function () {
-
-          // going through the phrases, reverse
-        if(count > 0) {
-            // decresing the current count
-          count--;
-            // updatin the inner HTML of the phrases container
-          phraseContainer.innerHTML = phrases[count];
-        } else {
-            // if we hit 0, start over
-          count = phrases.length - 1;
-        }
-        // change the phrase every 5 seconds
-        setTimeout(loopThroughPhrases,5000);
-
-      };
-        // and last but not least: call the phrase function...
-      loopThroughPhrases();
-      // ... as well as the anonymous function
-    })();// end
-      
+    "use strict";      
     // getting the back to top button
     var backTop = document.querySelector("#back-top");
     
     // adding an event
     document.addEventListener("scroll", function() {
-      // when the window scrolls more than 300px, add class "displayed"
-    window.scrollY >= 300 ? backTop.classList.add("displayed") 
+      // when the window scrolls more than 300px, add class "is-displayed"
+    window.scrollY >= 300 ? backTop.classList.add("is-displayed") 
         // when we scroll back below 300px, remove the class
-                          : backTop.classList.remove("displayed");
+                          : backTop.classList.remove("is-displayed");
     });
     
     

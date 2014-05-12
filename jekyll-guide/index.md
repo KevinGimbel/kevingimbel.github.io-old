@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Jekyll Guide
-next_page: structure
+next_page: /jekyll-guide/structure
 ---
 
 In case you don't know Jekyll, this Blog and Portfolio is build with it. Jekyll says: 
