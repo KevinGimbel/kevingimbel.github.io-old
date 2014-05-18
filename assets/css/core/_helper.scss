@@ -3,7 +3,7 @@
 }
 
 .small-screen-only {
-  display: none; 
+  display: none;
   @include breakpoint("tiny") {
     display: block;
   }
@@ -27,4 +27,8 @@
 .wrapper {
   @extend .wrap;
   margin: 2.5em auto;
+
+  @include breakpoint("small") {
+    padding: 1em;
+  }
 }

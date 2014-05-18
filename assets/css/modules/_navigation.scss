@@ -7,12 +7,13 @@
     list-style: none;
   }
   .nav__item {
-    display: inline;
-    
+    display: inline-block;
+    margin-bottom: 2em;
+
     .active {
       background: $color--main;
     }
-    
+
     a {
       color: #fff;
       border: 1px solid $color--main;
@@ -31,5 +32,12 @@
   display: none;
   @include breakpoint(small) {
     display: block;
+    background: $color--main;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: .25em 1em;
+    color: #fff;
+    margin: 1.5em auto;
   }
 }

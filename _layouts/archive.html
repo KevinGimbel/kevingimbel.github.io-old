@@ -1,19 +1,19 @@
 {% include header.html %}
-<article class="article">
+<section class="block__page">
     <h2>Archive</h2>
 {% for post in site.posts  %}
-    <article class="article article--short-preview"  {% if post.category %} data-category="{{post.category}}" {% endif %}>
+    <article class="article__list">
         <div class="gw">
             <h2 class="g three-quarters" {% if post.category %} data-category="{{post.category}} " {% endif %}>
                 <a href="{{post.url}}" title="Read the article '{{ post.title }}'">{{ post.title }}</a>
             </h2>
             <div class="g one-quarter  text--right">
-                <p>{{ post.date | date_to_string }} // 
+                <p>{{ post.date | date_to_string }} //
                     <span class="off-screen--right  {{ post.category }}">{{ post.category }}</span>
                 </p>
             </div>
         </div><!-- gw -->
     </article>
 {% endfor %}
-</article>
+</section>
 {% include footer.html %}

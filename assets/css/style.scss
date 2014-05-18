@@ -19,6 +19,7 @@
         "modules/header",
         "modules/footer",
         "modules/article",
+        "modules/boxes",
         "modules/conditions";
 
 
@@ -37,14 +38,15 @@
 body {
   font:1em/1.65 $font--sans;
   width:100%;
-  min-height:100%; 
+  min-height:100%;
+  background: #eee;
 }
 
 a {
   color:$color--accent;
   text-decoration:none;
   border-bottom: 1px solid $color--main;
-  
+
     &:hover {
       color:$color--main;
     }
