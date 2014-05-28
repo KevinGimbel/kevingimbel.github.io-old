@@ -31,6 +31,11 @@ After we at [bullg.it](http://bullg.it/) had a static page for about half and ye
 
 ### Fun Projects
 
+#### Bulllog
+Turn your `console.log()`s into super-fancy, CSS styled log messages! You can apply as many styles as you want (though
+not all will be applied because the console is limited)! You can find the code on
+[github.com](https://github.com/bullgit/Bulllog) or a Demo at [CodePen](http://codepen.io/kevingimbel/pen/LxdGE).
+
 #### Dull.js
 On my way to learn more JavaScript I made a small Function called dull.js that prints a phrase a bunch of times on a page. [Take a look here](http://bullg.it/dull-js/)
 
