@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Brackets vs. Sublime Text
-category: coding
+category: software
 ---
 
 I first tried [Brackets](http://brackets.io) back in my Windows time. It was a very early version, kinda heavy and wonky and not what I wanted from an editor I use on a daily base at all. Just today I decided to give it a second look because beside [VIM](http://www.vim.org/) it is *the* editor I read quite a lot about latly. My first impression was: "*Wow, that's a simple, clean editor!*" - exactly the thing I liked so much about Sublime Text 2 which I've been using for the last two years or so.
