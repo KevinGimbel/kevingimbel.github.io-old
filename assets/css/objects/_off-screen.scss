@@ -19,3 +19,9 @@
       left: -9999px;
     }
 }
+
+.site__header .off-screen {
+  background: $color--accent;
+  color: $color--main;
+  padding: .125em .25em .125em 0;
+}

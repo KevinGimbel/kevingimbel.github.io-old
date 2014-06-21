@@ -7,10 +7,14 @@
     height: auto;
     border-top: .5em solid $color--main;
     padding: 5em;
-    background: #333;
-    color: #fff;
+    background: #222;
+    color: #ddd;
 
     @include breakpoint("small") {
         padding: 2.5em 1em;
+    }
+
+    a {
+        color: #fff;
     }
 }

@@ -4,7 +4,7 @@
     width: 100%;
     height: auto;
     padding: 2.5em;
-    background: #222;
+    background: $color--main;;
     color: #fff;
 
     @include breakpoint("small") {
@@ -15,6 +15,10 @@
       @include breakpoint("small") {
         font-size: 1em;
       }
+    }
+
+    a:hover {
+        color: #fff;
     }
 }
 

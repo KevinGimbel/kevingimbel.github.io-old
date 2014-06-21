@@ -7,6 +7,9 @@ h1 {  font-size: 2em; }
 h2 {  font-size: 1.6em; }
 h3 {  font-size: 1.4em; }
 
+.article--headline {
+    border-bottom: none !important;
+}
 .page--cv, .page--about {
     h3 {
         margin-top: 2em;

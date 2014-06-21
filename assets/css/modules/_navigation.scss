@@ -16,12 +16,13 @@
 
     a {
       color: #fff;
-      border: 1px solid $color--main;
+      border: 1px solid #fff;
       padding: .5em 1em;
       margin-right: .5em;
       border-radius: 3px;
       &:hover {
-        background: $color--main;
+        background: #fff;
+        color: $color--main;
         transition: background ease-in .2s;
       }
     }
