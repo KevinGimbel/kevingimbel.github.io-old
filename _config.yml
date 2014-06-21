@@ -10,11 +10,10 @@ highlighter: pygments
 
 
 permalink:     :title
-relative_permalinks: true
 paginate_path: 'page:num'
 
-markdown:      rdiscount
-markdown_ext:  markdown,mkd,mkdn,md
+markdown:      kramdown
+markdown_ext:  md
 
 excerpt_separator: "\n\n"
 
