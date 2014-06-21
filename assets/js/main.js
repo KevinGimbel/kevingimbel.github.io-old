@@ -1,7 +1,6 @@
-    "use strict";      
+    "use strict"; 
     // getting the back to top button
     var backTop = document.querySelector("#back-top");
-    
     // adding an event
     document.addEventListener("scroll", function() {
       // when the window scrolls more than 300px, add class "is-displayed"
@@ -9,7 +8,6 @@
         // when we scroll back below 300px, remove the class
                           : backTop.classList.remove("is-displayed");
     });
-    
     
     // back to top function 
       backTop.addEventListener("click",function(e) {

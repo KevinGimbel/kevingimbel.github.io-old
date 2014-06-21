@@ -1,0 +1,11 @@
+{
+  "name": "kevingimbel.com",
+  "description": "A Jekyll based Blog build with Sass and Gulp",
+  "author": "Kevin Gimbel",
+  "repository": "https://github.com/kevingimbel/kevingimbel.github.io",
+  "devDependencies": {
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^0.7.2",
+    "gulp-uglify": "^0.3.1"
+  }
+}
