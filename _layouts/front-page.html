@@ -3,7 +3,7 @@
     {% for post in site.posts %}  
 
     <article class="article">
-        <h2><a href="{{ post.url }}" title="Read the article '{{ post.title }}'">{{ post.title }}</a></h2>
+        <h2 class="article--headline"><a href="{{ post.url }}" title="Read the article '{{ post.title }}'">{{ post.title }}</a></h2>
         <span class="off-screen  {{ post.category }}">{{ post.category }}</span>
         {{ post.excerpt }}
         <a href="{{ post.url }}" title="Read more">Read more &rarr; </a>

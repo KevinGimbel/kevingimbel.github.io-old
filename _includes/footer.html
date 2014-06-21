@@ -8,7 +8,7 @@
         </div>
 
         <div class="g one-quarter small-one-whole">
-            <a href="https://twitter.com/_kevinatari" class="twitter-follow-button" data-show-count="true">Follow @_kevinatari</a>
+            <a href="https://twitter.com/_kevinatari" >@_kevinatari</a>
         </div>
         </div>
     </div> <!-- wrap -->
@@ -16,19 +16,18 @@
 </body>
 <script type="text/javascript">
 // Add a script element as a child of the body
-function downloadJSAtOnload() {
+function downloadJSOnload() {
 var element = document.createElement('script');
 element.src = '/assets/js/main.min.js';
 document.body.appendChild(element);
 }
 // Check for browser support of event handling capability
 if (window.addEventListener) {
-window.addEventListener("load", downloadJSAtOnload, false);
+window.addEventListener("load", downloadJSOnload, false);
 } else if (window.attachEvent) {
-window.attachEvent("onload", downloadJSAtOnload);
+window.attachEvent("onload", downloadJSOnload);
 } else {
-window.onload = downloadJSAtOnload;
+window.onload = downloadJSOnload;
 }
 </script>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </html>
