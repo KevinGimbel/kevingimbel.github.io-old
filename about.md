@@ -14,15 +14,17 @@ customclass: page--about
 I also try to write at least once a month about web stuff on this website.</p>
 
 For some super-interesting information on my work and school history there's a <a href="/cv/">CV Page</a>.
-
 </div>
+
   <div class="g one-third small-one-whole">
    <img src="http://www.gravatar.com/avatar/6d391d8c3a528122f3f6c991821350ac?s=400" alt="Kevin Gimbel" />
   </div>
+
 </div>
 
 
 ### Projects
+
 #### JekyllSnippets
 I love Jekyll and because of this I started [JekyllSnippets.com](http://jekyllsnippets.com) a blog about all things related to Jekyll - links, Snippets, tutorials - you name it. Feel free to take a look or contribute. It's open-source, non-profit and free-everything. Enjoy!
 
