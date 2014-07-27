@@ -1,7 +1,7 @@
 {% include header.html %}
 <main class="gw">
-	<section class="g three-quarters small-one-whole">
-    {% for post in site.posts %}  
+	<section class="g three-quarters medium-one-whole">
+    {% for post in site.posts  | limit: 10 %}  
 
     <article class="article box">
         <h2 class="article--headline"><a href="{{ post.url }}" title="Read the article '{{ post.title }}'">{{ post.title }}</a></h2>
@@ -20,7 +20,7 @@
   {% endfor %}
 	</section>
 	
-	<section class="g one-quarter small-one-whole">
+	<section class="g one-quarter medium-one-whole">
 		{% include events.html %}
 	</section>
 </main>
