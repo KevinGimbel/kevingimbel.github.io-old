@@ -3,3 +3,10 @@
   border: 1px solid #ddd;
   padding: 1em;
 }
+// this name is horrible. But I haven't found a better name to describe a, well, generic box thing.
+// ui-box? box__default? I've no idea.
+.box {
+	background: #fff;
+  border: 1px solid #ddd;
+  padding: 1em;
+}
