@@ -1,0 +1,22 @@
+.list__equal {
+	display: table;
+	width: 100%;
+	margin: 0;
+
+	.list__item {
+		display: table-cell;
+		width: auto;
+		padding: .75em;
+	}
+}
+
+.event .list__item {
+	border: 1px solid #ddd;
+	&:first-child {
+		border-left: none;
+	}
+	&:nth-child(2) {
+		border-right: none;
+		border-left: none;
+	}
+}

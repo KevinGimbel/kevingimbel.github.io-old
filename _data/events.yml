@@ -1,0 +1,17 @@
+- name: nightlybuild
+  description: nightlybuild is an after-work web-dev event that's hosted in cologne. I've no idea what to expect.
+  price: 35€
+  url: http://nightlybuild.io
+  date: 26.09.2014
+
+- name: dotJS
+  description: dotJS is one of the biggest JavaScript conferences in Europe, taking place in Paris.
+  price: 149€
+  url: http://dotjs.eu
+  date: 17.11.2014 
+
+- name: dotCSS
+  description: dotCSS is a daughter conference of dotJS in Paris, taking place for the first time ever this year. 
+  price: 119€
+  url: http://dotcss.eu
+  date: 14.11.2014
