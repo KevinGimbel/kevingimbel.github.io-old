@@ -1,10 +1,14 @@
 /* Fonts */
-$font--sans: 'Merriweather Sans', sans-serif;
-$font--serif: 'Merriweather', serif;
+$font--sans: 'Roboto', sans-serif; 
+$font--serif: 'Roboto', sans-serif;
+
+$font-weight--light: 300;
+$font-weight--medium: 500;
 
 
 /* Colors */
-/* orange */
-$color--main: #F49204;
-$color--accent: #222;
+/* blue */
+$color--main: #5677fc;
+$color--contrast: #f50057;
+$color--accent: #263238;
 /* used for decoration and accents */

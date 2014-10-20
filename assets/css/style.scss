@@ -51,15 +51,20 @@ p {
 /* Back To Top*/
 
 .backtop {
-  width: 1.5em;
-  height: 1.5em;
-  background: #333;
+  width: 2em;
+  height: 2em;
   position: fixed;
-  top: 1em;
+  bottom: 1em;
   right: 1em;
   display: none;
   z-index: 9999;
   color: $color--main;
-  font-size: 2em;
+  font-size: 1em;
   text-align: center;
+  padding: .5em .5em 0 .5em;
+  border-bottom: none;
+
+  svg {
+    fill: $color--contrast;
+  }
 }

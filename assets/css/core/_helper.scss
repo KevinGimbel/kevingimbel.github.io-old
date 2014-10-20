@@ -26,9 +26,12 @@
 
 .wrapper {
   @extend .wrap;
-  margin: 2.5em auto;
+  margin-top: -2em;
+  background: #fff;
+  padding: 2em 0;
+  box-shadow: 2px 2px 10px rgba(0,0,0, .4); 
 
   @include breakpoint("small") {
-    padding: 1em;
+    padding: 1em 0;
   }
 }

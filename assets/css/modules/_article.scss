@@ -5,17 +5,32 @@
 		}
 
 		h2 {
-			border-bottom: 1px solid #ddd;
+			border-bottom: 1px solid $color--contrast; 
 		}
+}
+
+p code {
+  background: #cfd8dc;
+  padding: .125em .5em;
+  border-radius: 3px;
+}
+
+.article ul {
+  margin-left: 2.5em;
+}
+
+.article__footer {
+  padding: 0 20px;
 }
 
 .feedback {
     background: #eee;
     padding: 2em;
     margin-top: 2em;
-    border-left: .15em solid $color--main;
+    border-left: .25em solid $color--main;
 }
 
 .article__list {
-  margin: 1em 0;
+  margin: 1em;
 }
+

@@ -1,10 +1,15 @@
 <div class="wrap">
+{% if page.id %}
+  
+  <h1 class="off-screen site__header--headline">{{ page.title }}</h1>
+
+{% else %}
 <h1 class="off-screen  site__header--headline">Hi, I am Kevin</h1>
     
-    <h3 class="small-screen-only">a Front-End Developer from Frankfurt, Germany. You can find out more <a href="/about">about me here</a></h3>
+    <h3 class="small-screen-only">a Front-End Developer from Frankfurt, Germany. You can find out more <a href="/about">about me here</a>.</h3>
     
-    <h3 class="large-screen-only">a Front-End Developer at <a href="http://synoa.de">Synoa</a>, regular attender of the
-			<a href="https://www.facebook.com/groups/558417270913303/">Coding Night Frankfurt</a> and prototype builder on <a href="http://codepen.io/kevingimbel">CodePen </a></h3>
+    <h3 class="large-screen-only">a Front-End Developer at <a href="http://synoa.de">Synoa</a>, lover of <a href="http://soundcloud.com/atarijunge/likes">good music</a> and prototype builder on <a href="http://codepen.io/kevingimbel">CodePen</a>.</h3>
     
-    <h4 class="large-screen-only">I also like <a href="http://soundcloud.com/atarijunge/likes">music</a> and sometimes take <a href="http://eyeem.com/kevingimbel">pictures</a>.</h4>
+    <h4 class="large-screen-only">I also like <a href="http://steamcommunity.com/id/kevingimbel">playing games</a>, taking <a href="http://eyeem.com/kevingimbel">pictures</a> and <a href="https://twitter.com/_kevinatari">tweeting</a>.</h4>
+{% endif %}
 </div>

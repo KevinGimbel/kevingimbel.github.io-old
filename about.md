@@ -13,7 +13,7 @@ customclass: page--about
 <p>By day I work at <a href="http://synoa.de" title="synoa.de">Synoa</a> as a Front-End Developer and by night I share useless but fun projects with the <a href="http://bullg.it">Bullgit</a> Team, release snippets of code on <a href="http://codepen.io/kevingimbel">CodePen</a> or watch good shows and movies.
 I also try to write at least once a month about web stuff on this website.</p>
 
-For some super-interesting information on my work and school history there's a <a href="/cv/">CV Page</a>.
+<p>For some super-interesting information on my work and school history there's a <a href="/cv/">CV Page</a>.</p>
 </div>
 
   <div class="g one-third small-one-whole">

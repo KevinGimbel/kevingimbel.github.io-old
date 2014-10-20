@@ -2,7 +2,7 @@
 .off-screen {
     top:-1px;
     padding: 0 .25em; // a bit padding on both sides
-    color: white; 
+    color: #fff; 
     width: 100%; // super-mega large so it can go all the way to the right!
     display: inline;
     text-align: right; // text goes all to the right
@@ -22,6 +22,16 @@
 
 .site__header .off-screen {
   background: $color--accent;
-  color: $color--main;
+  color: $color--contrast;
   padding: .125em .25em .125em 0;
+
+  @include breakpoint("small") {
+    display: block;
+    background: none;
+    color: #fff;
+
+    &:before {
+      content: '';
+    }
+  }
 }

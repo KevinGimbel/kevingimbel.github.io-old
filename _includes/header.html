@@ -6,7 +6,6 @@
     <meta name="description" content="Front-End Developer from Frankfurt, Germany. I write about CSS, HTML, JS and UI/X.">
     <meta name="keywords" content="front-end,web,dev,development,frankfurt,germany,blog,writing,ui,ux,beginner,sass,scss,html,css,javascript">
     <meta name="viewport" content="width=device-width">
-	<meta dns-prefetch="http://fonts.google.com" />
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@_kevinatari">
@@ -18,18 +17,21 @@
     -->
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     <link rel="dns-prefetch" href="http://fonts.googleapis.com">
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700|Merriweather+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'> 
     <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <link rel="alternate" type="application/atom+xml" title="kevingimbel.com Atom Feed" href="http://kevingimbel.com/atom.xml">
 </head>
 <body>
- <a href="" class="backtop" id="back-top">↑</a>
+ <a href="" class="backtop" id="back-top">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<polygon points="8,2.8 16,10.7 13.6,13.1 8.1,7.6 2.5,13.2 0,10.7 "/>
+</svg>     
+ </a>
 
   <header class="site__header" id="site-header">
 
     {% include intro.html %}
-
 
     <nav class="site__navigation  wrap" role="navigation">
         <li class="nav__item {% if page.url == '/' %} active {% endif %}">
@@ -43,15 +45,6 @@
 
       </ul>
       </nav>
-
-      <select name="mobile-menu" id="mobileMenu" class="nav__mobile">
-        <option value="">MENU</option>
-        <option value="http://kevingimbel.com/">Home</option>
-        <option value="http://kevingimbel.com/about">About</option>
-        <option value="http://kevingimbel.com/archive">Archive</option>
-        <option value="http://kevingimbel.com/cv">Résumé</option>
-        <option value="http://kevingimbel.com/tags">Tags</option>
-      </select>
 </header>
 
 <section class="wrapper {% if page.customclass %} {{page.customclass}} {% endif%}">

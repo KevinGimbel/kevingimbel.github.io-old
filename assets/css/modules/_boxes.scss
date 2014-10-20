@@ -1,12 +1,14 @@
 .block__page {
   background: #fff;
-  border: 1px solid #ddd;
-  padding: 1em;
 }
 // this name is horrible. But I haven't found a better name to describe a, well, generic box thing.
 // ui-box? box__default? I've no idea.
 .box {
 	background: #fff;
-  border: 1px solid #ddd;
-  padding: 1em;
+}
+
+.box, .block__page {
+  p, h2, h3, h4, h5, p {
+    padding: 0 20px;
+  }
 }

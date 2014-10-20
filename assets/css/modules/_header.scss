@@ -6,7 +6,7 @@
     color: #fff;
 
     @include breakpoint("small") {
-        padding: 1em;
+        padding-top: 1em;
     }
 
     h3 {
@@ -22,6 +22,7 @@
 
 .site__header--headline {
     @include breakpoint("small") {
-        font-size: 1.4em;
+        font-size: 1.2em;
+        text-align: left;
     }
 }

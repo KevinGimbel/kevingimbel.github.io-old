@@ -4,11 +4,11 @@
 .site__footer {
     width: 100%;
     height: auto;
-    border-top: .5em solid $color--main;
+    border-top: .5em solid $color--contrast;
     padding: 5em;
     background: #222;
     color: #ddd;
-
+    margin-top: 2em;
     @include breakpoint("small") {
         padding: 2.5em 1em;
     }
