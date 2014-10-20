@@ -1,24 +1,39 @@
 {% include header.html %}
-<article class="article">
-            <h2 class="single__article--headline">{{page.title}}</h2>
-            <nav class="guide__nav">
-            	{% if page.prev_page %} 
-            		<a href="{{ page.prev_page }}" class="guide__nav--link prev">Previous Page</a> 
-            		{% endif %}
-            	{% if page.next_page %} 
-            		<a href="{{ page.next_page }}" class="guide__nav--link next">Next Page</a> 
-            	{% endif %}
+<article class="article box">
+            <nav class="guide__nav gw">
+                  {% if page.prev_page %}
+                  <div class="g one-half small-one-whole"> 
+                        <a href="{{ page.prev_page }}" class="guide__nav--link prev">Previous Page</a> 
+                  </div>
+                  {% else %}
+                  <div class="g one-half small-one-whole">&nbsp;</div>
+                  {% else %}
+                  <div class="g one-half small-one-whole">&nbsp;</div>
+                  {% endif %}
+                  {% if page.next_page %} 
+                  <div class="g one-half small-one-whole">
+                        <a href="{{ page.next_page }}" class="guide__nav--link next">Next Page</a>
+                  </div> 
+                  {% endif %}
             </nav>
+
             {{ content }}
 
-            <nav class="guide__nav">
-            	{% if page.prev_page %} 
-            		<a href="{{ page.prev_page }}" class="guide__nav--link prev">Previous Page</a> 
-            		{% endif %}
-
-            	{% if page.next_page %} 
-            		<a href="{{ page.next_page }}" class="guide__nav--link next">Next Page</a> 
-            	{% endif %}
+            <nav class="guide__nav gw">
+                  {% if page.prev_page %}
+                  <div class="g one-half small-one-whole"> 
+                        <a href="{{ page.prev_page }}" class="guide__nav--link prev">Previous Page</a> 
+                  </div>
+                  {% else %}
+                  <div class="g one-half small-one-whole">&nbsp;</div>
+                  {% endif %}
+                  {% if page.next_page %} 
+                  <div class="g one-half small-one-whole">
+                        <a href="{{ page.next_page }}" class="guide__nav--link next">Next Page</a>
+                  </div> 
+                  {% else %}
+                  <div class="g one-half small-one-whole">&nbsp;</div>
+                  {% endif %}
             </nav>
 </article>
 {% include footer.html %}

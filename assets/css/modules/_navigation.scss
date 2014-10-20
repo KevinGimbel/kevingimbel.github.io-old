@@ -24,3 +24,20 @@
     }
   }
 }
+
+.guide__nav {
+  margin-bottom: 20px;
+}
+
+.guide__nav--link {
+  padding: 1em;
+  display: block;
+  color: #fff;
+  background: $color--contrast;
+  transition: background ease-in .25s;
+  border-bottom: none;
+  &:hover {
+    color: #fff;
+    background: $color--main;
+  }
+}

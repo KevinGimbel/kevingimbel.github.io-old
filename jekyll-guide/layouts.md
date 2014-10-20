@@ -1,9 +1,9 @@
 ---
 layout: guide
 title: Jekyll Guide - Layouts
-permalink: /layouts/
-next_page: /jekyll-guide/the-end
-prev_page: /jekyll-guide/first-page
+permalink: jekyll-guide/layouts/
+next_page: /jekyll-guide/the-end/
+prev_page: /jekyll-guide/first-page/
 ---
 
 So far you know the basics of Jekyll and how to set up pages. But how to style them? How to apply layouts and how to create them? 

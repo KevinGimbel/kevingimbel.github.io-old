@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Jekyll Guide - Structure
-permalink: /structure/
+permalink: jekyll-guide/structure/
 next_page: /jekyll-guide/first-page/
 prev_page: /jekyll-guide/
 ---

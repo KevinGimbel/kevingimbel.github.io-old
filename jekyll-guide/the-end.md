@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Jekyll Guide - The End
-permalink: /the-end/
+permalink: jekyll-guide/the-end/
 prev_page: /jekyll-guide/layouts
 ---
 

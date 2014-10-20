@@ -1,8 +1,8 @@
 ---
 layout: guide
 title: Jekyll Guide - Building your first page
-permalink: /first-page/
-next_page: /jekyll-guide/layouts
+permalink: jekyll-guide/first-page/
+next_page: /jekyll-guide/layouts/
 prev_page: /jekyll-guide/structure/
 ---
 

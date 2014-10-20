@@ -1,8 +1,8 @@
 ---
 layout: guide
 title: Jekyll Guide - Contributor Guide
-permalink: /contributor-guide/
-prev_page: /jekyll-guide/the-end
+permalink: jekyll-guide/contributor-guide/
+prev_page: /jekyll-guide/the-end/
 ---
 
 So you want to contribute to this Jekyll Guide? Thanks! There are a few "rules" you should consider before contributing.
