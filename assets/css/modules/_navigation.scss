@@ -1,8 +1,27 @@
 .site__navigation {
   margin-top: 2em;
+  margin-bottom: .5em;
 
   ul {
     list-style: none;
+  }
+
+  @include breakpoint("small") {
+    width: 35em;
+  }
+}
+
+.nav__wrap {
+  width: 100%;
+  @include breakpoint("small") {
+    overflow-x: scroll;
+    /* if calc is supported we can get the correct width,
+     * otherwise 150% is the fallback (in combination with
+     * overflow: hidden; on the body) */
+    width: 150%;
+    width: calc(100% + 5em);
+    overflow-x: scroll;
+    margin-left: -2.5em;
   }
 }
 
@@ -12,15 +31,14 @@
   
   a {
     color: #fff;
-    border: 1px solid #fff;
     padding: .5em 1em;
     margin-right: .5em;
-    border-radius: 3px;
-    transition: background ease-in .2s;
+    border-bottom: 3px solid transparent;
+    transition: all ease-in .2s;
 
     &.active, &:hover {
-      background: #fff;
-      color: $color--main !important;
+      color: $color--contrast !important;
+      border-bottom: 3px solid $color--contrast;
     }
   }
 }

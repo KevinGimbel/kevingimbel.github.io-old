@@ -1,12 +1,13 @@
 .article {
     margin: 0 auto 2.5em auto;
-   		img {
-			max-width: 100%;
-		}
+    
+    img {
+      max-width: 100%;
+    }
 
-		h2 {
-			border-bottom: 1px solid $color--contrast; 
-		}
+    h2 {
+      border-bottom: 1px solid $color--contrast; 
+    }
 }
 
 p code {
