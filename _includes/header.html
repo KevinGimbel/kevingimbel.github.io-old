@@ -7,7 +7,7 @@
     <meta name="keywords" content="front-end,web,dev,development,frankfurt,germany,blog,writing,ui,ux,beginner,sass,scss,html,css,javascript">
     <meta name="viewport" content="width=device-width">
     <!-- This gives Android 5.0 users some neat colors to their Chrome tabs in the multi-task window! -->
-    <meta name="theme-color" content="#5677fc">
+    <meta name="theme-color" content="#C6FF00">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@_kevinatari">
@@ -35,6 +35,7 @@
 
     {% include intro.html %}
 
+  <div class="nav__wrap">
     <nav class="site__navigation  wrap" role="navigation">
         <li class="nav__item {% if page.url == '/' %} active {% endif %}">
             <a href="/" class="nav-item">Home</a>
@@ -47,6 +48,7 @@
 
       </ul>
       </nav>
+    </div>
 </header>
 
 <section class="wrapper {% if page.customclass %} {{page.customclass}} {% endif%}">
