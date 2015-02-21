@@ -12,9 +12,8 @@
     {% for tag in site.tags %}
         {% if tag[1].size == i %}
             <div class="g one-quarter medium-one-half small-one-whole">
-              <ul class="list tag-list">
-                <h3 id="{{ tag[0] | downcase | replace:' ','_' }}"
-                class="list--headline">{{ tag[0] }}</h3>
+              <ul class="list tag-list" id="{{ tag[0] | downcase | replace: ' ','_' }}">
+                <h3 class="list--headline">{{ tag[0] }}</h3>
                     
                     {% for post in tag.last %}
                         <li>

@@ -4,8 +4,9 @@
      
   li {
     display: block;
-    border-bottom: 1px solid #ddd;
-    padding: 1em;
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 1rem;
   }
 }
 
@@ -26,17 +27,23 @@
   
 }
 
-.list--headline {
+.list--headline.list--headline {
   background: $color--accent;
   font-size: 1.5rem;
-  padding: 1em;
+  padding: .25rem .5rem;
   color: #fff;
 }
 
-.list--headline:target {
+.tag-list:target .list--headline {
   background: $color--contrast;  
 }
 
+/*
+ * [1]: Used to create some spacing above each list when using
+ * kevingimbel.com/tags/#javascript to referencing it for example.
+ */
 .tag-list {
-  border: 1px solid #ececec;
+  margin-top: 1.5rem;
+  padding-top: 50px; // [1]
+  margin-top: -25px; // [1]
 }
