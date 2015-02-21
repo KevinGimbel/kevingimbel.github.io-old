@@ -1,0 +1,42 @@
+.list {
+  list-style: none;
+  padding-left: 0;
+     
+  li {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    padding: 1em;
+  }
+}
+
+@include breakpoint("large") {
+  .tags .g:nth-child(4n+1) {
+    clear: both; 
+  }
+}
+
+@include breakpoint("medium") {
+  
+  .tags .g:nth-child(4n+1) {
+    clear: none;
+   } 
+  .tags .g:nth-child(2n+1) {
+    clear: both; 
+  }
+  
+}
+
+.list--headline {
+  background: $color--accent;
+  font-size: 1.5rem;
+  padding: 1em;
+  color: #fff;
+}
+
+.list--headline:target {
+  background: $color--contrast;  
+}
+
+.tag-list {
+  border: 1px solid #ececec;
+}

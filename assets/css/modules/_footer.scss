@@ -4,10 +4,9 @@
 .site__footer {
     width: 100%;
     height: auto;
-    border-top: .5em solid $color--contrast;
     padding: 5em;
-    background: #222;
-    color: #ddd;
+    background: linear-gradient(to top left, #222 30%, $color--contrast);
+    color: #fff;
     margin-top: 2em;
     @include breakpoint("small") {
         padding: 2.5em 1em;
