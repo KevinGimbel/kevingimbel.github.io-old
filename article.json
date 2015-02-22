@@ -1,14 +1,12 @@
 ---
 layout: nil
-title: article.json
 ---
 [
-{% for post in site.posts %}
+  {% for post in site.posts %}
     {
-    "title": "{{ post.title }}",
-    "category": "{{ post.category }}"
-    "link": "{{ post.url}}",
-    "date": "{{ post.date }}"
-    }{% if forloop.last %}{% else %},{% endif%}
-{% endfor %}
-]
+      "title"   : "{{ post.title }}",
+      "url"     : "{{ post.url }}",
+      "date"    : "{{ post.date | date: "%d.%B.%Y" }}"
+    } {% if forloop.last %}{% else %},{% endif %}
+  {% endfor %}
+] 

@@ -1,6 +1,30 @@
 {% include header.html %}
 <section class="block__page">
     <h2>Archive</h2>
+
+<div class="gw tags">
+{% assign current_date = site.posts[0].date | date: '%B' %}
+{% for post in site.posts %}
+  
+  {% if current_date != post.date | date: '%B' %}
+      {% assign current_date = post.date | date: '%B' %}
+  {% endif %}
+
+    <div class="g one-quarter medium-one-half small-one-whole">
+      <ul class="list tag-list" id="{{ current_date | downcase }}">
+        <h3 class="list--headline">{{ current_date }}</h3>
+      
+          <li>
+            {{ post.date | date: '%B' }} | {{ current_date }} <br>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+     </ul>
+    </div>
+
+{% endfor %}
+</div>
+
+
 {% for post in site.posts  %}
     <article class="article__list">
         <div class="gw">
