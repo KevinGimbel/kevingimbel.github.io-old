@@ -41,7 +41,7 @@ In `config.xml` is the default Module configuration. In my case the following XM
 </config>
 {% endhighlight %}
 
-The really important and **amazing** part happens in `system.xml`. The way of adding fiels as shown below shows how
+The really important and **amazing** part happens in `system.xml`. The way of adding fields as shown below shows how
 amazingly flexible Magento can be. When I tried it out and found that it worked right away I was really impressed.
 Magento's Module System, where the Module Name is equal to the folder it is in, e.g. `Mage_Core_Block_Html_Link` is in
 `Mage/Core/Block/Html/Link.php`, also applies to this XML configuration.
@@ -84,7 +84,7 @@ Well quite a lot of stuff happens here, let's break that down.
  </sections>
 {% endhighlight %}
 
-This part defines in what menu (in the backend on the left) the new fields will be insertet. In this case it's the
+This part defines in what menu (in the backend on the left) the new fields will be inserted. In this case it's the
 Catalog Menu and there the first Sub-Menu point (which is also named Catalog). 
 
 ### Groups

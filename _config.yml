@@ -1,16 +1,15 @@
 source:      .
 destination: _site
 layouts:     _layouts
-include:     ['.htaccess']
-exclude:     []
-keep_files:  ['.git','.svn']
+keep_files:  ['.git']
 
 future:      true
 highlighter: pygments
 
 
 permalink:     :title
-paginate_path: 'page:num'
+paginate: 6
+paginate_path: "page/:num"
 
 markdown:      kramdown
 markdown_ext:  md
