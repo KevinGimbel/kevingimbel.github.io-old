@@ -8,7 +8,8 @@ highlighter: pygments
 
 
 permalink:     :title
-paginate_path: 'page:num'
+paginate: 6
+paginate_path: "page/:num"
 
 markdown:      kramdown
 markdown_ext:  md
