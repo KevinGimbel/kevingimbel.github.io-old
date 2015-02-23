@@ -3,18 +3,24 @@
     
     {{ content }}
 
-    <footer class="article__footer gw">
-      <div  class="g one-half">
-        <time>
-          {{ page.date | date_to_string }}
-        </time>
-      
-        {% for tag in page.tags | limit: 3 %}
-          <span class="article--tag"> // <a href="/tags/#{{ tag | downcase | replace:' ','_' }}">#{{ tag }}</a></span>
-        {% endfor %}
-      </div>
-      <div class="g one-half  text--right">
-        written by <a href="http://google.com/+KevinGimbel">Kevin Gimbel</a>
+    <footer class="article__footer">
+      <div class="gw">
+        <div class="g one-whole">
+          {% include prev-next.html %}
+        </div>
+        
+        <div  class="g one-half">
+          <time>
+            {{ page.date | date_to_string }}
+          </time>
+        
+          {% for tag in page.tags | limit: 3 %}
+            <span class="article--tag"> // <a href="/tags/#{{ tag | downcase | replace:' ','_' }}">#{{ tag }}</a></span>
+          {% endfor %}
+        </div>
+        <div class="g one-half  text--right">
+          written by <a href="http://google.com/+KevinGimbel">Kevin Gimbel</a>
+        </div>
       </div>
     </footer>
 
