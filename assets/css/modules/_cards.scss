@@ -1,0 +1,39 @@
+.card {
+   background: #fff;
+    border: 1px solid #ddd;
+     margin: 1rem;
+}
+
+.card-meta {
+    color: #666;
+      font-size: .75rem;
+        text-transform: uppercase;
+}
+
+.card-header {
+    color: #fff;
+      background: #263238;
+          &:target {
+                  background: #E91E63;
+                      }
+}
+
+.card-content {
+    padding: 1rem 0;
+      + .card-content {
+            border-top: 1px solid #ddd;
+              }
+}
+
+h2 {
+    font-weight: 300;
+      font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
