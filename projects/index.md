@@ -16,7 +16,17 @@ I love Jekyll and because of this I started [JekyllSnippets.com](http://jekyllsn
 #### bullg.it
 After we at [bullg.it](http://bullg.it/) had a static page for about half and year we decided to build a new, flexible one based on Jekyll. I also used the GitHub API to fetch our Repos and Gravatar to fetch the Avatars for every member. [See the Repo](https://github.com/bullgit/bullgit.github.io)
 
-### Fun Projects
+### Other Projects
+
+#### AVH.js
+AdjustViewportHeight.js is a small script that makes the `vh` unit available in browsers that don't support it. It's not
+ready for production and will most likely not be developed any further. [Here's a live
+demo](http://dev.kevingimbel.me/adjust-viewport-height/)
+
+#### TARDIS.js
+TARDIS.js (Time and Relative Dates in Scripts; A direct Doctor Who reference) is a script to work with dates that I made
+out of the curiousity if how Date manipulation with JavaScript works. There's a [demo on my dev
+site](http://dev.kevingimbel.me/TARDIS/).
 
 #### Bulllog
 Turn your `console.log()`s into super-fancy, CSS styled log messages! You can apply as many styles as you want (though
