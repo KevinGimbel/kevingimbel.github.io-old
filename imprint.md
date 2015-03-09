@@ -10,7 +10,7 @@ Responsible for the content of this site:
 Kevin Gimbel<br>
 Wickerer Straße 33c<br>
 DE-65439 Flörsheim<br>
-[hallo@kevingimbel.com](mailto:hallo@kevingimbel.com) ([PGP Key](/public-key))
+hallo@thissite
 
 ### Technology
 
