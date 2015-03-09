@@ -1,7 +1,8 @@
 source:      .
 destination: _site
 layouts:     _layouts
-keep_files:  ['.git']
+exclude: [node_modules, README.md, CNAME, package.json, public-key,
+public-key.txt, assets/style.scss]
 
 future:      true
 highlighter: pygments

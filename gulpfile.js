@@ -4,7 +4,8 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     uglify = require('gulp-uglify'),
-    rename = require('gulp-rename')
+    rename = require('gulp-rename'),
+    prefix = require('gulp-autoprefixer')
 ;
 
 /* one line to set up a watcher. How awesome is that?! 
@@ -23,6 +24,7 @@ var WatchersOfThe = {
 /* super-easy sass task using gulp-sass and compiling with node-sass and Libsass. Lightning fast, also! */
 gulp.task('sass', function() {
     gulp.src('assets/css/style.scss')
+        .pipe(prefix())
         .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(gulp.dest('assets/css/'));
 });

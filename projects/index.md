@@ -6,9 +6,10 @@ group: site_navigation
 customclass: page--projects
 ---
 
-Below you can find some of the private projects I've been working on. For some work related Projects refere to <a
-href="http://synoa.de/referenzen">my companies project page</a> &mdash; I've been involved in almost every of these
-projects.
+Below you can find some of the private projects I've been working on. Some more
+can be found at the <a
+href="http://synoa.de/referenzen">Synoa GmbH references page</a> &mdash; at some
+point I was involved in any of these projects.
 
 #### JekyllSnippets
 I love Jekyll and because of this I started [JekyllSnippets.com](http://jekyllsnippets.com) a blog about all things related to Jekyll - links, Snippets, tutorials - you name it. Feel free to take a look or contribute. It's open-source, non-profit and free-everything. Enjoy!
@@ -20,12 +21,13 @@ After we at [bullg.it](http://bullg.it/) had a static page for about half and ye
 
 #### AVH.js
 AdjustViewportHeight.js is a small script that makes the `vh` unit available in browsers that don't support it. It's not
-ready for production and will most likely not be developed any further. [Here's a live
+ready for production and will most likely not be developed any further. However,
+this was my first dive into basic feature detection using JavaScript. [Here's a live
 demo](http://dev.kevingimbel.me/adjust-viewport-height/)
 
 #### TARDIS.js
 TARDIS.js (Time and Relative Dates in Scripts; A direct Doctor Who reference) is a script to work with dates that I made
-out of the curiousity if how Date manipulation with JavaScript works. There's a [demo on my dev
+out of the curiousity how Date manipulation with JavaScript works. There's a [demo on my dev
 site](http://dev.kevingimbel.me/TARDIS/).
 
 #### Bulllog

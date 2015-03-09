@@ -22,11 +22,15 @@
 *, *:before, *:after {
   margin: 0;
   padding: 0;
-  @include vendor('box-sizing', 'border-box');
+  box-sizing: border-box;
+}
+
+:root, html {
+  font-size: 16px;  
 }
 
 body {
-  font:1em/1.65 Arial, Helvetica, sans-serif; //$font--sans;
+  font:1rem/1.65 'Roboto Condensed', sans-serif; 
   width:100%;
   font-weight: 300;
   min-height:100%;
@@ -47,6 +51,10 @@ a {
 
 ul, ol {
   margin: .5em 1em;
+}
+
+img {
+  max-width: 100%;  
 }
 
 p {

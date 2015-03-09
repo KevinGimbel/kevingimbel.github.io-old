@@ -34,3 +34,14 @@ p code {
 .article__list {
   margin: 1em;
 }
+
+.category {
+   padding: 0 1.25rem;
+   display: inline-block;
+    
+    &.coding {
+      color: #fff;
+      background: $color--contrast;  
+    }
+
+}

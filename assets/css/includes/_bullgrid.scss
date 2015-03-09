@@ -1,79 +1,33 @@
-@mixin breakpoint($point) {
-  @if $point == "large" {
-    @media all and (min-width: 80em) {
-      @content;
-    }
-  }
-
-  @if $point == "medium" {
-    @media all and (max-width: 80em) {
-      @content;
-    }
-  }
-
-  @if $point == "small" {
-    @media all and (max-width: 30em) {
-      @content;
-    }
-  }
-}
-
-.g > img {
-  max-width: 100%;
-}
 
 /**
  * bullgrid
  *
- * A grid based on the ideas of inuit.css gridsystem.
- *
- *
- * @TODO [TimPietrusky] - center vertically / center horizontally
- * @TODO [TimPietrusky] - Should we add support for IE <= 7?
- *
- *
+ * A grid based on the ideas of inuit.css gridsystem. 
+ * https://github.com/synoa/bullgrid
+ * 
+ * v 1.0
  */
 
-
-/**
- * Fluid and nestable grid system, e.g.:
- *
-   <div class="gw">
-
-     <div class="g one-third">
-       <p>One third grid</p>
-     </div>
-
-     <div class="g two-thirds">
-       <p>Two thirds grid</p>
-     </div>
-
-     <div class="g one-half">
-       <p>One half grid</p>
-     </div>
-
-     <div class="g one-quarter">
-       <p>One quarter grid</p>
-     </div>
-
-     <div class="g one-quarter">
-       <p>One quarter grid</p>
-     </div>
-
-   </div>
-
-   */
-
-
-/**
- * Default spacing
- */
+ /**
+  * Default spacing 
+  */
 $bullgrid-default-spacing: 1em;
 
+/*
+ * To work correctly Bullgrid needs
+ * box-sizing: border-box; to be set.
+ */
+
+.gw, .g {
+  -webkit-box-sizing: border-box; /* <= iOS4, Android <= 2.3 */
+  -moz-box-sizing: border-box; /* Firefox <= 28 */ 
+  box-sizing: border-box;  /* default, modern way */
+}
+
 
 
 /**
- * Micro clearfix.
+ * Micro clearfix. 
  */
 .cf {
   &:after {
@@ -81,6 +35,9 @@ $bullgrid-default-spacing: 1em;
     display: table;
     clear: both;
   }
+
+  // IE <= 7 support
+  *zoom: 1;
 }
 
 
@@ -97,11 +54,7 @@ $bullgrid-default-spacing: 1em;
    * Negative margin to negate the padding on the first grid child.
    */
   margin-left: -$bullgrid-default-spacing;
-
-  @include breakpoint(medium) {
-    margin-left: -$bullgrid-default-spacing / 2;
-  }
-
+    
   /**
    * The following declarations allow us to use the `.gw` class on lists.
    */
@@ -116,13 +69,13 @@ $bullgrid-default-spacing: 1em;
 /**
  * Reverse grid order
  *
-   <div class="gw  gw--rev">
+   <div class="gw gw--rev">
 
-     <div class="g  one-third">
+     <div class="g one-third">
        <p>Appears on the right</p>
      </div>
 
-     <div class="g  two-thirds">
+     <div class="g two-thirds">
        <p>Appears on the left</p>
      </div>
 
@@ -149,19 +102,35 @@ $bullgrid-default-spacing: 1em;
 
 
 /**
+ * Remove the spacing of the grid-wrapper. 
+ */
+.gw--no-spacing {
+  margin-left: 0;
+}
+
+
+
+
+
+/**
  * Grid
  *
  */
 .g {
   float: left;
   padding-left: $bullgrid-default-spacing;
-
-  @include breakpoint(medium) {
-    padding-left: $bullgrid-default-spacing / 2;
-  }
 }
 
 
+
+
+
+/**
+ * Remove the spacing of the grid. 
+ */
+.g--no-spacing {
+  padding-left: 0;
+}
 
 
 
@@ -175,10 +144,29 @@ $bullgrid-default-spacing: 1em;
 @mixin grid-setup($namespace: "") {
 
   /*
+   * Float
+   */
+  .#{$namespace}float-left { 
+    float: left; 
+  }
+
+  .#{$namespace}float-right { 
+    float: right; 
+  }
+
+  .#{$namespace}clear { 
+    clear: both; 
+  }
+
+
+
+
+  
+  /*
    * Hidden
    */
-  .#{$namespace}hidden {
-    display: none;
+  .#{$namespace}hidden { 
+    display: none; 
   }
 
 
@@ -188,8 +176,8 @@ $bullgrid-default-spacing: 1em;
   /**
    * Whole
    */
-  .#{$namespace}one-whole {
-    width: 100%;
+  .#{$namespace}one-whole { 
+    width: 100%; 
   }
 
 
@@ -199,8 +187,8 @@ $bullgrid-default-spacing: 1em;
   /**
    * Halves
    */
-  .#{$namespace}one-half {
-    width: 50%;
+  .#{$namespace}one-half { 
+    width: 50%; 
   }
 
 
@@ -210,11 +198,11 @@ $bullgrid-default-spacing: 1em;
   /**
    * Thirds
    */
-  .#{$namespace}one-third {
-    width: 33.333%;
+  .#{$namespace}one-third { 
+    width: 33.333%; 
   }
-  .#{$namespace}two-thirds {
-    width: 66.666%;
+  .#{$namespace}two-thirds { 
+    width: 66.666%; 
   }
 
 
@@ -224,14 +212,14 @@ $bullgrid-default-spacing: 1em;
   /**
    * Quarters
    */
-  .#{$namespace}one-quarter {
-    width: 25%;
+  .#{$namespace}one-quarter { 
+    width: 25%; 
   }
-  .#{$namespace}two-quarters {
-    @extend .#{$namespace}one-half;
+  .#{$namespace}two-quarters { 
+    @extend .#{$namespace}one-half; 
   }
-  .#{$namespace}three-quarters {
-    width: 75%;
+  .#{$namespace}three-quarters { 
+    width: 75%; 
   }
 
 
@@ -241,17 +229,17 @@ $bullgrid-default-spacing: 1em;
   /**
    * Fifths
    */
-  .#{$namespace}one-fifth {
-    width: 20%;
+  .#{$namespace}one-fifth { 
+    width: 20%; 
   }
-  .#{$namespace}two-fifths {
-    width: 40%;
+  .#{$namespace}two-fifths { 
+    width: 40%; 
   }
-  .#{$namespace}three-fifths {
-    width: 60%;
+  .#{$namespace}three-fifths { 
+    width: 60%; 
   }
-  .#{$namespace}four-fifths {
-    width: 80%;
+  .#{$namespace}four-fifths { 
+    width: 80%; 
   }
 
 
@@ -261,20 +249,20 @@ $bullgrid-default-spacing: 1em;
   /**
    * Sixths
    */
-  .#{$namespace}one-sixth {
-    width: 16.666%;
+  .#{$namespace}one-sixth { 
+    width: 16.666%; 
   }
-  .#{$namespace}two-sixths {
-    @extend .#{$namespace}one-third;
+  .#{$namespace}two-sixths { 
+    @extend .#{$namespace}one-third; 
   }
-  .#{$namespace}three-sixths {
-    @extend .#{$namespace}one-half;
+  .#{$namespace}three-sixths { 
+    @extend .#{$namespace}one-half; 
   }
-  .#{$namespace}four-sixths {
-    @extend .#{$namespace}two-thirds;
+  .#{$namespace}four-sixths { 
+    @extend .#{$namespace}two-thirds; 
   }
-  .#{$namespace}five-sixths {
-    width: 83.333%;
+  .#{$namespace}five-sixths { 
+    width: 83.333%; 
   }
 
 
@@ -284,26 +272,26 @@ $bullgrid-default-spacing: 1em;
   /**
    * Eighths
    */
-  .#{$namespace}one-eighth {
-    width: 12.5%;
+  .#{$namespace}one-eighth { 
+    width: 12.5%; 
   }
   .#{$namespace}two-eighths {
-     @extend .#{$namespace}one-quarter;
+     @extend .#{$namespace}one-quarter; 
    }
-  .#{$namespace}three-eighths {
-    width: 37.5%;
+  .#{$namespace}three-eighths { 
+    width: 37.5%; 
   }
-  .#{$namespace}four-eighths {
-    @extend .#{$namespace}one-half;
+  .#{$namespace}four-eighths { 
+    @extend .#{$namespace}one-half; 
   }
-  .#{$namespace}five-eighths {
-    width: 62.5%;
+  .#{$namespace}five-eighths { 
+    width: 62.5%; 
   }
-  .#{$namespace}six-eighths {
-    @extend .#{$namespace}three-quarters;
+  .#{$namespace}six-eighths { 
+    @extend .#{$namespace}three-quarters; 
   }
-  .#{$namespace}seven-eighths {
-    width: 87.5%;
+  .#{$namespace}seven-eighths { 
+    width: 87.5%; 
   }
 
 
@@ -313,32 +301,32 @@ $bullgrid-default-spacing: 1em;
   /**
    * Tenths
    */
-  .#{$namespace}one-tenth {
-    width: 10%;
+  .#{$namespace}one-tenth { 
+    width: 10%; 
   }
-  .#{$namespace}two-tenths {
-    @extend .#{$namespace}one-fifth;
+  .#{$namespace}two-tenths { 
+    @extend .#{$namespace}one-fifth; 
   }
-  .#{$namespace}three-tenths {
-    width: 30%;
+  .#{$namespace}three-tenths { 
+    width: 30%; 
   }
-  .#{$namespace}four-tenths {
-    @extend .#{$namespace}two-fifths;
+  .#{$namespace}four-tenths { 
+    @extend .#{$namespace}two-fifths; 
   }
-  .#{$namespace}five-tenths {
-    @extend .#{$namespace}one-half;
+  .#{$namespace}five-tenths { 
+    @extend .#{$namespace}one-half; 
   }
-  .#{$namespace}six-tenths {
-    @extend .#{$namespace}three-fifths;
+  .#{$namespace}six-tenths { 
+    @extend .#{$namespace}three-fifths; 
   }
-  .#{$namespace}seven-tenths {
-    width: 70%;
+  .#{$namespace}seven-tenths { 
+    width: 70%; 
   }
-  .#{$namespace}eight-tenths {
-    @extend .#{$namespace}four-fifths;
+  .#{$namespace}eight-tenths { 
+    @extend .#{$namespace}four-fifths; 
   }
-  .#{$namespace}nine-tenths {
-    width: 90%;
+  .#{$namespace}nine-tenths { 
+    width: 90%; 
   }
 
 
@@ -348,48 +336,47 @@ $bullgrid-default-spacing: 1em;
   /**
    * Twelfths
    */
-  .#{$namespace}one-twelfth {
-    width: 8.333%;
+  .#{$namespace}one-twelfth { 
+    width: 8.333%; 
   }
-  .#{$namespace}two-twelfths {
-    @extend .#{$namespace}one-sixth;
+  .#{$namespace}two-twelfths { 
+    @extend .#{$namespace}one-sixth; 
   }
-  .#{$namespace}three-twelfths {
-    @extend .#{$namespace}one-quarter;
+  .#{$namespace}three-twelfths { 
+    @extend .#{$namespace}one-quarter; 
   }
-  .#{$namespace}four-twelfths {
-    @extend .#{$namespace}one-third;
+  .#{$namespace}four-twelfths { 
+    @extend .#{$namespace}one-third; 
   }
-  .#{$namespace}five-twelfths {
+  .#{$namespace}five-twelfths { 
     width: 41.666%;
   }
-  .#{$namespace}six-twelfths {
-    @extend .#{$namespace}one-half;
+  .#{$namespace}six-twelfths { 
+    @extend .#{$namespace}one-half; 
   }
-  .#{$namespace}seven-twelfths {
-    width: 58.333%;
+  .#{$namespace}seven-twelfths { 
+    width: 58.333%; 
   }
-  .#{$namespace}eight-twelfths {
-    @extend .#{$namespace}two-thirds;
+  .#{$namespace}eight-twelfths { 
+    @extend .#{$namespace}two-thirds; 
   }
-  .#{$namespace}nine-twelfths {
-    @extend .#{$namespace}three-quarters;
+  .#{$namespace}nine-twelfths { 
+    @extend .#{$namespace}three-quarters; 
   }
-  .#{$namespace}ten-twelfths {
-    @extend .#{$namespace}five-sixths;
+  .#{$namespace}ten-twelfths { 
+    @extend .#{$namespace}five-sixths; 
   }
-  .#{$namespace}eleven-twelfths {
-    width: 91.666%;
+  .#{$namespace}eleven-twelfths { 
+    width: 91.666%; 
   }
 }
 
 
 
 
+
 /**
- *
- * @TODO [TimPietruky] - Do we really need this?
- *
+ * Create the grids for the default view. 
  */
 @include grid-setup();
 
@@ -398,16 +385,38 @@ $bullgrid-default-spacing: 1em;
 
 
 /**
- * Create the grids for different devices.
+ * Create the grids for different viewport sizes. 
+ *
+ * Use this with the breakpoint mixin provided or you your own
  */
-@include breakpoint(large){
-  @include grid-setup("large-");
-}
 
-@include breakpoint(medium){
-  @include grid-setup("medium-");
-}
+//
+// Auto generate the code based on the list of breakpoints
 
-@include breakpoint(small){
-  @include grid-setup("small-");
-}
+ @for $i from 1 through length($all-breakpoints) {
+   $current-breakpoint: nth($all-breakpoints, $i);
+   $current-breakpoint-name: nth($current-breakpoint, 1);
+
+   @include breakpoint($current-breakpoint-name, 'and down') {
+     @include grid-setup('#{$current-breakpoint-name}-');
+   }
+ }
+
+//
+// Declared manually
+//
+// @include breakpoint(large) {
+//   @include grid-setup("large-");
+// }
+//
+// @include breakpoint(medium) {
+//   @include grid-setup("medium-");
+// }
+//
+// It is also possible to create print-specific styles using
+// the `@media print` query and a `print-` prefixed namespace.
+// 
+// @media print {
+//   @include grid-setup("print-");
+// }
+//

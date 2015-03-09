@@ -37,7 +37,7 @@
     transition: all ease-in .2s;
 
     &.active, &:hover {
-      color: $color--contrast !important;
+      background: $color--contrast;
       border-bottom: 3px solid $color--contrast;
     }
   }
