@@ -1,3 +1,7 @@
+---
+layout: compress
+---
+
 {% include header.html %}
 <article class="article box">
     
@@ -14,7 +18,7 @@
             {{ page.date | date_to_string }}
           </time>
         
-          {% for tag in page.tags | limit: 3 %}
+          {% for tag in page.tags %}
             <span class="article--tag"> // <a href="/tags/#{{ tag | downcase | replace:' ','_' }}">#{{ tag }}</a></span>
           {% endfor %}
         </div>

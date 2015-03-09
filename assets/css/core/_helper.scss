@@ -35,4 +35,8 @@
   @include breakpoint("small") {
     padding: 1em 0;
   }
+
+  @include breakpoint("large", "and up") {
+    min-height: 800px;  
+  }
 }

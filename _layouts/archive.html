@@ -1,3 +1,7 @@
+---
+layout: compress
+---
+
 {% include header.html %}
 <section class="block__page">
     <h2>Archive</h2>
@@ -5,12 +9,12 @@
 {% for post in site.posts  %}
     <article class="article__list">
         <div class="gw">
-            <h2 class="g three-quarters" {% if post.category %} data-category="{{post.category}} " {% endif %}>
+            <h2 class="g three-quarters small-one-whole" {% if post.category %} data-category="{{post.category}} " {% endif %}>
                 <a href="{{post.url}}" title="Read the article '{{ post.title }}'">{{ post.title }}</a>
             </h2>
-            <div class="g one-quarter  text--right">
+            <div class="g one-quarter small-one-whole text--right">
                 <p>{{ post.date | date_to_string }} //
-                    <span class="off-screen--right  {{ post.category }}">{{ post.category }}</span>
+                    <span class="category  {{ post.category }}">{{ post.category }}</span>
                 </p>
             </div>
         </div><!-- gw -->

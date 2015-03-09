@@ -1,3 +1,7 @@
+---
+layout: compress
+---
+
 {% include header.html %}
 <main class="gw">
 	<section class="g three-quarters medium-one-whole">
@@ -5,7 +9,7 @@
 
     <article class="article box">
       <h2 class="article--headline" data-article-id="{{ post.id }}"><a href="{{ post.url }}" title="Read the article '{{ post.title }}'">{{ post.title }}</a></h2>
-        <span class="off-screen  {{ post.category }}">{{ post.category }}</span>
+        <span class="category {{ post.category }}">{{ post.category }}</span>
         {{ post.excerpt }}
         <p><a href="{{ post.url }}" title="Read more">Read more &rarr; </a></p>
         {% if post.tags %}

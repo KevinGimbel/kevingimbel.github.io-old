@@ -1,0 +1,42 @@
+/*
+  breakpoint mixin
+
+  Usage: 
+
+  .my-class {
+    padding: 2em;
+
+    @include breakpoint("tiny") {
+      padding: 1em;
+    }
+  }
+*/
+
+
+@mixin breakpoint($point) {
+  @if $point == huge {
+    @media all and (min-width: 100em) {
+      @content;
+    }
+  }
+  @if $point == large {
+    @media all and (max-width: 100em) {
+      @content;
+    }
+  }
+  @if $point == medium {
+    @media all and (max-width: 80em) {
+      @content;
+    }
+  }
+  @if $point == small {
+    @media all and (max-width: 50em) {
+      @content;
+    }
+  }
+  @if $point == tiny {
+    @media all and (max-width: 30em) {
+      @content;
+    }
+  }
+}

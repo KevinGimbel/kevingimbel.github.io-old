@@ -4,6 +4,7 @@
   "author": "Kevin Gimbel",
   "repository": "https://github.com/kevingimbel/kevingimbel.github.io",
   "devDependencies": {
+    "gulp-autoprefixer": "^2.1.0",
     "gulp-rename": "^1.2.0",
     "gulp-sass": "^0.7.2",
     "gulp-uglify": "^0.3.1"
