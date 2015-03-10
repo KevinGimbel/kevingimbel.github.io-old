@@ -4,3 +4,4 @@ _drafts
 config.rb
 node_modules
 npm-debug.log
+.jekyll-metadata
