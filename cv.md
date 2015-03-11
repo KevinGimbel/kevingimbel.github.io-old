@@ -13,8 +13,8 @@ group: site_navigation
   </div>
   <div class="card-content">
     <h4><a href="http://synoa.de">Synoa GmbH</a></h4>
-    <p class="card-meta">Front-End Webdeveloper (01.01.2014 - today)</p>
-    <p>As part of my day to day life as Front-End Developer it's my job to assure that our clients websites fit on all screens. To ensure this, I test them with real devices and various browsers. One of the most used is the amazing and simple <a href="http://lab.maltewassermann.com/viewport-resizer/">Viewport Resizer</a> ny Malte Wassermann.</p>
+    <p class="card-meta">Front-End Developer (01.01.2014 - today)</p>
+    <p>As part of my day to day life as Front-End Developer it's my job to assure that our clients websites fit on all screens. To ensure this, I test them with real devices and various browsers. One of the most used is the amazing and simple <a href="http://lab.maltewassermann.com/viewport-resizer/">Viewport Resizer</a> by Malte Wassermann.</p>
   </div>
 </div>
 

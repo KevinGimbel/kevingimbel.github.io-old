@@ -4,7 +4,6 @@ title: 'Dynamically add functions to Prototype'
 category: coding
 tags:
  - javascript
- - prototype
 ---
 
 When creating a Module or Function using it's `Prototype` attribute it can be
