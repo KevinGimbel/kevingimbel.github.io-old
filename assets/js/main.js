@@ -1,6 +1,6 @@
 "use strict"; 
 // getting the back to top button
-var BackTop = (function() { 
+var backTop = (function(window, document) { 
   var backTop = document.querySelector("#back-top");
 // adding an event
 document.addEventListener("scroll", function() {
@@ -10,21 +10,38 @@ window.scrollY >= 300 ? backTop.classList.add("is-displayed")
                       : backTop.classList.remove("is-displayed");
 });
 
+console.log('init');
 // back to top function 
   backTop.addEventListener("click",function(e) {
     e.preventDefault();
-    // setting an interval 
-    var toTop = setInterval(function() {
-      // if we're not on top of the page
+    // using requestAnimationFrame if possible
+    if(window.requestAnimationFrame) {
+    var step = null;
+    
+    function scrollBack(timestamp) {
+      if (!step) step = timestamp;
+      var progress = step - timestamp;
+      window.scrollBy(0, -50);
       if(window.scrollY !== 0) {
-          // we scroll back to the top [scrollBy(x,y)]
-        window.scrollBy(0,-50);
-            // in case we're at the top (window.scrollY = 0)
-      } else {
-              // clear the interval
-        clearInterval(toTop);
-      }
-    },25); // the delay between the steps to go back to top. The smaller the number, the faster it goes
+        window.requestAnimationFrame(scrollBack);
+      } 
+    }
+
+    window.requestAnimationFrame(scrollBack);
+    } else {
+      // using an interval else
+       var toTop = setInterval(function() {
+        // if we're not on top of the page
+        if(window.scrollY !== 0) {
+            // we scroll back to the top [scrollBy(x,y)]
+          window.scrollBy(0,-50);
+              // in case we're at the top (window.scrollY = 0)
+        } else {
+                // clear the interval
+          clearInterval(toTop);
+        }
+      }, 16); // the delay between the steps to go back to top. The smaller the number, the faster it goes
+    }
     // prevent the click to reload the page
   }); // end of the Back to Top function
-}());
+}(window, document));

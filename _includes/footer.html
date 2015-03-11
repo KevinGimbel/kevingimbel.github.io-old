@@ -15,13 +15,12 @@
 </footer>
 </body>
 <script type="text/javascript">
-// Add a script element as a child of the body
 function downloadJSOnload() {
 var element = document.createElement('script');
 element.src = '/assets/js/main.min.js';
 document.body.appendChild(element);
 }
-// Check for browser support of event handling capability
+
 if (window.addEventListener) {
 window.addEventListener("load", downloadJSOnload, false);
 } else if (window.attachEvent) {
