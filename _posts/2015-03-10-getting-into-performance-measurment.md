@@ -66,7 +66,7 @@ there was already a big improvement by removing unused or barely used code - one
 should always check for unused plugins, libs and CSS - this is the most basic
 "improvement" and optimization. 
 
-> Regularly refactor your code base to see which where unused code exists or
+> Regularly refactor your code base to see where unused code exists or
 > code can be optimized. By ueing a Pre-Processor it's easy to remove the code 
 > from production but keep it for later by using an [import system](http://sass-guidelin.es/#main-file).
 
