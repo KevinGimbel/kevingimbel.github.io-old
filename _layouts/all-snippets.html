@@ -1,0 +1,21 @@
+---
+layout: compress
+---
+
+{% include header.html %}
+  <section class="block__page">
+    <h3>Snippets</h3>
+    <p>Below is an ongoing collection of small snippets that I've found through my day-to-day working
+    life. You can add to the collection by sending a pull request or by opening 
+    [an issue on GitHub](https://github.com/kevingimbel/kevingimbel.github.io/issues)</p>
+    
+    <p>All snippets are free to republish. Mentions are always appreciated but not required.</p>
+
+    {% for item in site.snippets %}
+      <article class="snippet--list">
+        <a href="{{ item.url }}">{{ item.title }}</a>
+        <p>{{ item.excerpt }}</p>
+      </article>
+    {% endfor %}
+  </section>
+{% include footer.html%}

@@ -7,6 +7,10 @@ public-key.txt, assets/style.scss]
 future:      true
 highlighter: pygments
 
+collections:
+  snippets:
+    output: true
+
 
 permalink:     :title
 paginate: 6
