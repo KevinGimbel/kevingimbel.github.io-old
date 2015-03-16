@@ -7,7 +7,7 @@ layout: compress
 	<section class="g three-quarters medium-one-whole">
     {% for post in site.posts  | limit: 10 %}  
 
-    <article class="article box">
+    <article class="[ article article--home ] box">
       <h2 class="article--headline" data-article-id="{{ post.id }}"><a href="{{ post.url }}" title="Read the article '{{ post.title }}'">{{ post.title }}</a></h2>
         <span class="category {{ post.category }}">{{ post.category }}</span>
         {{ post.excerpt }}
