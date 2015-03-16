@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting into Performance Measurment"
+title: "Getting into Performance Measurement"
 category: coding
 tags: 
   - javascript
