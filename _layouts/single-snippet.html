@@ -7,8 +7,14 @@ layout: compress
   <h3>{{ page.title}}</h3>
   {{content}}
 
-<p><small>All <a href="/snippets">Snippets</a> are free to republish. Backlinks are always
-nice!</small></p>
+<p>
+  <small>
+    {% if page.via %}
+        Via <a href="{{page.via.url}}">{{page.via.name}}</a>.  
+    {% endif %}
+    All <a href="/snippets">Snippets</a> are free to republish. Backlinks are always nice!
+  </small>
+</p>
 </section>
 
 {% include footer.html %}
