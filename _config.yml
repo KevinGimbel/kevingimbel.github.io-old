@@ -2,7 +2,7 @@ source:      .
 destination: _site
 layouts:     _layouts
 exclude: [node_modules, README.md, CNAME, package.json, public-key,
-public-key.txt, assets/style.scss]
+public-key.txt, src]
 
 future:      true
 highlighter: pygments
@@ -10,7 +10,7 @@ highlighter: pygments
 collections:
   snippets:
     output: true
-
+ 
 
 permalink:     :title
 paginate: 6
