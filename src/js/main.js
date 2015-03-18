@@ -1,16 +1,59 @@
 "use strict"; 
-// getting the back to top button
-var backTop = (function(window, document) { 
+
+/*
+ * isScrolledBelow
+ *
+ * A function to check if the page has been scrolld
+ * below a specified offset. Optional with callbacks for true
+ * and false. 
+ *
+ * isScrolledBelow(150, handleBelow150, handleAbove150);
+ * @param {Int} - offset (requied)
+ * @param {Fn} - Callback for true
+ * @param {Fn} - Callback for false
+ *
+ */
+var isScrolledBelow =  function(offset, callbackTrue, callbackFalse) {
+    var currentOffset = window.scrollY;
+    var isMore = currentOffset > offset ? true : false;
+    
+    if(arguments.length === 1) {
+      return isMore;
+    }
+
+    if(arguments.length === 3) {
+        if(isMore) {
+          callbackTrue()  
+        } else {
+          callbackFalse();  
+        }
+    }
+
+    if(arguments.length === 0) {
+      var argLen = arguments.length;
+      throw new Error('Missing arguments. '+ argLen +' arguments given but at least 1 required.')  
+    }
+ };
+
+/*
+ * backToTop
+ *
+ * A IIFE to get the back to top button and assign the handling to it.
+ * When there's window.requestAnimationFrame this will be used to handle the
+ * animation, otherwise an interval is used.
+ */
+  
+  var backToTop = (function(window, document, undefined) { 
   var backTop = document.querySelector("#back-top");
 // adding an event
 document.addEventListener("scroll", function() {
   // when the window scrolls more than 300px, add class "is-displayed"
-window.scrollY >= 300 ? backTop.classList.add("is-displayed") 
-    // when we scroll back below 300px, remove the class
-                      : backTop.classList.remove("is-displayed");
+  isScrolledBelow(300, function() {
+      backTop.classList.add('is-visible');
+    }, function() {
+      backTop.classList.remove('is-visible');
+    }); 
 });
-
-console.log('init');
 // back to top function 
   backTop.addEventListener("click",function(e) {
     e.preventDefault();

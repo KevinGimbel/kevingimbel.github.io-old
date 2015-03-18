@@ -61,7 +61,14 @@ group: site_navigation
   <div class="card-content">
     <h4>Programming</h4>
     <p class="card-meta">Talking about my skills is none of my skills</p>
-    <p>I've been doing <u>HTML and CSS since around 2009</u> which marks a good part of my life. I enjoy digging into Code and reading other peoples Source Code. Unfortnuately I avoided <u>JavaScript</u> for a long time and started really getting into it around <u>February 2014</u> - since then I fell in love with it.</p>
+    <p>I've been doing <u>HTML and CSS since around 2009</u> which marks a good part of my life. I
+    enjoy digging into Code and reading other peoples Source Code. Unfortunately I avoided <u>JavaScript</u> for a long time and started really getting into it around <u>February 2014</u> - since then I fell in love with it.</p>
+  <p>I'm also working with PHP daily (Magento; WordPress) but more on the Front-End side by creating
+  and updating templates and themes.</p>
+  <p>For an upcoming Project I started getting into ReactJS and NodeJS more to create a server-side
+  rendered, full-stack JavaScript App. I enjoy JavaScript a lot and ReactJS is my V in MVC of
+  choice.</p>
+  
   </div>
   
   <div class="card-content">

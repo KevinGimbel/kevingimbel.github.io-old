@@ -6,18 +6,17 @@
     list-style: none;
   }
 
-  @include breakpoint("small") {
+  @include breakpoint("medium", "and down") {
     width: 45em;
   }
 }
 
 .nav__wrap {
   width: 100%;
-  @include breakpoint("small") {
+  @include breakpoint("medium", "and down") {
     overflow-x: scroll;
     /* if calc is supported we can get the correct width,
-     * otherwise 150% is the fallback (in combination with
-     * overflow: hidden; on the body) */
+     * otherwise 150% is the fallback  */
     width: 150%;
     width: calc(100% + 5em);
     overflow-x: scroll;
@@ -57,5 +56,22 @@
   &:hover {
     color: #fff;
     background: $color--main;
+  }
+}
+
+
+/*
+ * Responsive, fixed Navigation
+ */
+@include breakpoint("small", "and down") {
+  .site__navigation.fixed {
+    position: fixed;
+    top: 0em;
+    left: 0;
+    display: block;
+    z-index: 99999;
+    background: $color--accent;
+    margin-top: 0;
+    height: 1.75em;
   }
 }
