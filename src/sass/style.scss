@@ -1,7 +1,12 @@
+/*
+ * Theme for kevingimbel.com
+ * v2.0
+ */
 @import "core/vars",
         "core/mixins",
         "core/helper",
-        "core/typography";
+        "core/typography",
+        "core/ui";
 
 @import "objects/lists";
 
@@ -60,23 +65,3 @@ p {
   margin: 1em 0;
 }
 
-/* Back To Top*/
-
-.backtop {
-  width: 2em;
-  height: 2em;
-  position: fixed;
-  bottom: 1em;
-  right: 1em;
-  display: none;
-  z-index: 9999;
-  color: $color--main;
-  font-size: 1em;
-  text-align: center;
-  padding: .5em .5em 0 .5em;
-  border-bottom: none;
-
-  svg {
-    fill: $color--contrast;
-  }
-}

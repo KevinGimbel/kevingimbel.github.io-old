@@ -1,10 +1,10 @@
 <section class="box  events">
-	<h3 class="event__headline">Events</h3>
+	<h3>Events</h3>
 	
   {% if site.data.events %}
-  <p class="event__description">A list of events I'll attend to. Come and say hi!</p>
+  <p>A list of events I'll attend to. Come and say hi!</p>
   {% else %}
-  <p class="event__description">Currently there are no new events I'll attend. Know a good event? <a
+  <p>Currently there are no new events I'll attend. Know a good event? <a
     href="http://twitter.com/_kevinatari">Invite me!</a></p>
   {% endif %}
 
@@ -12,8 +12,8 @@
 	{% for event in site.data.events %}
 
 	<article class="event">
-			<h4 class="event__headline"><a href="{{event.url}}">{{event.name}}</a></h4>
-			<p class="event__description">{{event.description}}</p>
+			<h4><a href="{{event.url}}">{{event.name}}</a></h4>
+			<p>{{event.description}}</p>
 			<footer>
 				<ul class="list__equal">
 					<li class="list__item">{{event.price}}</li>

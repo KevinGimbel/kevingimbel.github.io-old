@@ -1,0 +1,12 @@
+<section class="box snippets">
+<h3>Snippets</h3>
+
+<p>I started collection usefull snippets, the latest 3 can be found here and a <a
+href="/snippets">full list here</a>.</p>
+
+{% for item in site.snippets limit: 3 %}
+  <article class="ui-plr">
+    <a href="{{ item.url }}">{{ item.title }}</a>
+  </article>
+{% endfor %}
+</section>
