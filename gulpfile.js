@@ -10,7 +10,7 @@ var prefix = require('gulp-autoprefixer');
 var path = {
   src: {
     sass: './src/sass',
-    js: '.src/js'
+    js: './src/js'
   },
   dest: {
     css: './dest/css',
