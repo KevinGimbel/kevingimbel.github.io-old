@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ES6: Fitst Look"
+title: "ES6: First Look"
 category: coding
 tags:
   - javascript
