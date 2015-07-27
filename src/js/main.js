@@ -1,11 +1,11 @@
-"use strict"; 
+"use strict";
 
 /*
  * isScrolledBelow
  *
  * A function to check if the page has been scrolld
  * below a specified offset. Optional with callbacks for true
- * and false. 
+ * and false.
  *
  * isScrolledBelow(150, handleBelow150, handleAbove150);
  * @param {Int} - offset (requied)
@@ -16,24 +16,35 @@
 var isScrolledBelow =  function(offset, callbackTrue, callbackFalse) {
     var currentOffset = window.scrollY;
     var isMore = currentOffset > offset ? true : false;
-    
+
     if(arguments.length === 1) {
       return isMore;
     }
 
     if(arguments.length === 3) {
         if(isMore) {
-          callbackTrue()  
+          callbackTrue()
         } else {
-          callbackFalse();  
+          callbackFalse();
         }
     }
 
     if(arguments.length === 0) {
       var argLen = arguments.length;
-      throw new Error('Missing arguments. '+ argLen +' arguments given but at least 1 required.')  
+      throw new Error('Missing arguments. '+ argLen +' arguments given but at least 1 required.')
     }
  };
+
+ var fixedElement = function(element,classToAdd,offsetY){
+   var fixedEl = document.querySelector(element);
+   document.addEventListener('scroll', function() {
+   window.scrollY >= offsetY ? fixedEl.classList.add(classToAdd) :
+                              fixedEl.classList.remove(classToAdd);
+ });
+ }
+
+  fixedElement('.main__navigation', 'fixed', 300)
+
 
 /*
  * backToTop
@@ -42,8 +53,8 @@ var isScrolledBelow =  function(offset, callbackTrue, callbackFalse) {
  * When there's window.requestAnimationFrame this will be used to handle the
  * animation, otherwise an interval is used.
  */
-  
-  var backToTop = (function(window, document, undefined) { 
+
+  var backToTop = (function(window, document, undefined) {
   var backTop = document.querySelector("#back-top");
 // adding an event
 document.addEventListener("scroll", function() {
@@ -52,22 +63,22 @@ document.addEventListener("scroll", function() {
       backTop.classList.add('is-visible');
     }, function() {
       backTop.classList.remove('is-visible');
-    }); 
+    });
 });
-// back to top function 
+// back to top function
   backTop.addEventListener("click",function(e) {
     e.preventDefault();
     // using requestAnimationFrame if possible
     if(window.requestAnimationFrame) {
     var step = null;
-    
+
     function scrollBack(timestamp) {
       if (!step) step = timestamp;
       var progress = step - timestamp;
       window.scrollBy(0, -50);
       if(window.scrollY !== 0) {
         window.requestAnimationFrame(scrollBack);
-      } 
+      }
     }
 
     window.requestAnimationFrame(scrollBack);

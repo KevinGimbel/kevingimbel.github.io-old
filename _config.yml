@@ -1,16 +1,9 @@
 source:      .
 destination: _site
 layouts:     _layouts
-exclude: [node_modules, README.md, CNAME, package.json, public-key,
-public-key.txt, src]
+exclude: [node_modules, README.md, CNAME, package.json, src]
 
 future:      true
-highlighter: pygments
-
-collections:
-  snippets:
-    output: true
- 
 
 permalink:     :title
 paginate: 6
@@ -18,6 +11,9 @@ paginate_path: "page/:num"
 
 markdown:      kramdown
 markdown_ext:  md
+
+defaults:
+  is_page: false
 
 excerpt_separator: "\n\n"
 

@@ -1,12 +1,12 @@
-<div class="gw">
+<div class="flex post-nav">
 {% if page.previous %}
-  <div class="g one-half small-one-whole">
+  <div class="flex-child  post-prev">
     Previous Post: <a href="{{ page.previous.url }}" title="{{ page.previous.title}}">{{ page.previous.title }}</a>
   </div>
 {% endif %}
 
 {% if page.next %}
-  <div class="g one-half small-one-whole  text--right">
+  <div class="flex-child  post-next">
     Next Post: <a href="{{ page.next.url }}" title="{{ page.next.title}}">{{ page.next.title }}</a>
   </div>
 {% endif %}

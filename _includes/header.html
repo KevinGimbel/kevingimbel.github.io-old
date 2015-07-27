@@ -8,7 +8,7 @@
     Germany. I write about CSS, Sass, HTML and JavaScript. Sometimes I like to
     take photos.">
     <meta name="keywords" content="Front-End, Developer, Sass, JavaScript,
-    Germany, Frankfurt, 
+    Germany, Frankfurt,
     {% if page.tags %}
     {% for tag in page.tags %}
       {{tag}}{% if forloop.last %}{% else %}, {% endif %}
@@ -34,23 +34,20 @@
 
     <link rel="stylesheet" type="text/css" href="/dest/css/style.css">
     <link rel="dns-prefetch" href="http://fonts.googleapis.com">
-    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/dest/img/favicon.png">
     <link rel="alternate" type="application/atom+xml" title="kevingimbel.com Atom Feed" href="http://kevingimbel.com/atom.xml">
 </head>
 <body>
  <a href="" class="backtop" id="back-top">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
 <polygon points="8,2.8 16,10.7 13.6,13.1 8.1,7.6 2.5,13.2 0,10.7 "/>
-</svg>     
+</svg>
  </a>
 
-  <header class="site__header" id="site-header">
+  <header class="stage header" id="site-header">
 
-    {% include intro.html %}
-
-  <div class="nav__wrap">
-    <nav class="site__navigation  wrap" role="navigation">
+    <nav class="main__navigation" role="navigation">
+      <ul>
         <li class="nav__item {% if page.url == '/' %} active {% endif %}">
             <a href="/" class="nav-item">Home</a>
         </li>
@@ -61,8 +58,8 @@
         {% include pages_list.html %}
 
       </ul>
-      </nav>
-    </div>
-</header>
+    </nav>
 
-<section class="wrapper {% if page.customclass %} {{page.customclass}} {% endif%}">
+
+          {% include intro.html %}
+</header>

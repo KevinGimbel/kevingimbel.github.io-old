@@ -1,13 +1,18 @@
-#- name: CodePen Meetup
-#  description: The first ever CodePen Meetup in Germany! Hosted by <a href="http://www.etecture.de/">Etecture</a> and sponsored by <a href="http://synoa.de">Synoa</a>.
-#  price: Free
-#  url: https://nvite.com/CodePenFFM/c78
-#  date: 20.02.2015
- 
-#
+# name: Nightlybuild
+# description: Nightlybuild is an annual after work Event in cologne taking place for the second time this year.
+# price: 49€
+# url: http://nightlybuild.io
+# date: 25.08.2015
+
+# name: CodePen Meetup
+# description: The first ever CodePen Meetup in Germany! Hosted by <a href="http://www.etecture.de/">Etecture</a> and sponsored by <a href="http://synoa.de">Synoa</a>.
+# price: Free
+# url: https://nvite.com/CodePenFFM/c78
+# date: 20.02.2015
+
+
 # - name: dotJS
 #   description: dotJS is one of the biggest JavaScript conferences in Europe, taking place in Paris.
 #   price: 149€
 #   url: http://dotjs.eu
 #   date: 17.11.2014
-# 

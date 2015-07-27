@@ -1,7 +1,11 @@
+ul {
+  padding-left: 2rem;
+}
+
 .list {
   list-style: none;
   padding-left: 0;
-     
+
   li {
     display: block;
     border: 1px solid #ddd;
@@ -12,19 +16,19 @@
 
 @include breakpoint("large") {
   .tags .g:nth-child(4n+1) {
-    clear: both; 
+    clear: both;
   }
 }
 
 @include breakpoint("medium") {
-  
+
   .tags .g:nth-child(4n+1) {
     clear: none;
-   } 
+   }
   .tags .g:nth-child(2n+1) {
-    clear: both; 
+    clear: both;
   }
-  
+
 }
 
 .list--headline.list--headline {
@@ -35,7 +39,7 @@
 }
 
 .tag-list:target .list--headline {
-  background: $color--contrast;  
+  background: $color--contrast;
 }
 
 /*

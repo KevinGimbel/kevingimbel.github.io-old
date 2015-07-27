@@ -3,29 +3,49 @@ layout: compress
 ---
 
 {% include header.html %}
-<main class="gw">
-	<section class="g three-quarters medium-one-whole">
-    {% for post in site.posts  | limit: 10 %}  
 
-    <article class="[ article article--home ] box">
-      <h2 class="article--headline" data-article-id="{{ post.id }}"><a href="{{ post.url }}" title="Read the article '{{ post.title }}'">{{ post.title }}</a></h2>
-        <span class="category {{ post.category }}">{{ post.category }}</span>
-        {{ post.excerpt }}
-        <p><a href="{{ post.url }}" title="Read more">Read more &rarr; </a></p>
-        {% if post.tags %}
-            <div class="article__tags article__footer">
-            {% for tag in post.tags %}
-                <span class="article--tag"><a href="/tags/#{{ tag | downcase | replace:' ','_' }}">#{{ tag }}</a></span>
-            {% endfor %}
-            </div>
-        {% endif %}
-    </article>
-  
-  {% endfor %}
-	</section>
-	
-	<section class="g one-quarter medium-one-whole">
-	  {% include sidebar.html %}
-  </section>
-</main>
+<section class="stage blog">
+
+	{% for post in site.posts  | limit: 1 %}
+		<article class="latest inner">
+		  <h4 class="pre-heading">Recently I wrote:</h4>
+			<h2 class="article--headline" data-article-id="{{ post.id }}"><a href="{{ post.url }}" title="Read the article '{{ post.title }}'">{{ post.title }}</a></h2>
+				{{ post.excerpt }}
+			<p><a href="{{ post.url }}" title="Read more">Read more &rarr; </a></p>
+				{% if post.tags %}
+					<div class="article__tags article__footer">
+						{% for tag in post.tags %}
+							<span class="article--tag"><a href="/tags/#{{ tag | downcase | replace:' ','_' }}">#{{ tag }}</a></span>
+						{% endfor %}
+					</div>
+				{% endif %}
+		</article>
+	{% endfor %}
+</section>
+
+
+{% for event in site.data.events  | limit: 1 %}
+<section class="stage events">
+		<article class="latest inner">
+		  <h4 class="pre-heading">Let's hang out at:</h4>
+			<h2 class="article--headline">{{ event.name }}</h2>
+			<p>{{ event.description }}</p>
+					<div class="article__tags article__footer">
+							<span><a href="{{event.url}}">{{event.name}}</a> | </span>
+							<span class="article--tag">Date: {{ event.date}}</span>
+					</div>
+		</article>
+</section>
+{% endfor %}
+
+<section class="stage projects contrast">
+
+		<article class="inner">
+			<h4>Lately I build:</h4>
+			<h2><a href="https://github.com/kevingimbel/viewSwitcher" title="viewSwitcher.js on GitHub">viewSwitcher.js</a></h2>
+			<p>viewSwitcher is a dependency free, isolated module to handle different "views" and very basic "routing" through URL hashes.</p>
+			<p><a href="https://github.com/kevingimbel/viewSwitcher" title="viewSwitcher.js on GitHub">See viewSwitcher.js on GitHub</a></p>
+		</article>
+
+</section>
 {% include footer.html %}
