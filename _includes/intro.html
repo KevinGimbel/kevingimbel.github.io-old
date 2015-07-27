@@ -1,5 +1,5 @@
 <div class="inner">
-{% if page.id %}
+{% if page.id or page.is_page == true%}
 
  <h1 class="site__header--headline">{{ page.title }}</h1>
  <time>
