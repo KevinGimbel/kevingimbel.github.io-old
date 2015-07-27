@@ -9,11 +9,11 @@ tags:
 Closure is a very interesting concept in JavaScript. It basically determinse where and how variables or
 functions are accessable and where not. Since this is an essential part of JavaScript and one can run into quite some
 problems I want to try and give short introduction to closure and what it can be good for. It's good to have at least
-basic understanding of JavaScript. 
+basic understanding of JavaScript.
 
 So before I start I'd like to say that I consider myself a JavaScript beginner and this is how I understand closure
 and scopes at the moment. If you happen to find mistakes please [tweet me](https://twitter.com/_kevinatari) or [open an
-issue](https://github.com/kevingimbel/kevingimbel.github.io/issues?page=1&state=open). 
+issue](https://github.com/kevingimbel/kevingimbel.github.io/issues?page=1&state=open).
 
 Consider the following example
 
@@ -21,7 +21,7 @@ Consider the following example
 var x = 5;
 
 (function(){
-  var x = 10;	
+  var x = 10;
 }());
 
 console.log(x);
@@ -54,13 +54,13 @@ functions body? Will `x` become 15 or stay 10?
 {% highlight javascript %}
 // x is 10 at this point
 (function(x){
-	x = 15;	
+	x = 15;
 }(x));
 {% endhighlight %}
 
 As the result shows, x is still 10. But wait, wasn't it supposed to be overridden if we don't declare `var x = 15`? Well
 that is true, but since we pass x as a parameter, x is "re-defined" as a local variable and, inside the functions body, it is
-indeed 15 - outside it is not. 
+indeed 15 - outside it is not.
 
 <p data-height="268" data-theme-id="647" data-slug-hash="nwmCD" data-default-tab="result" class='codepen'>See the Pen <a
 href='http://codepen.io/kevingimbel/pen/nwmCD/'>nwmCD</a> by Kevin Gimbel (<a
@@ -69,36 +69,30 @@ href='http://codepen.io/kevingimbel'>@kevingimbel</a>) on <a href='http://codepe
 
 ### What can closures do for me?
 
-What can it do? Good stuff. Closures can help to organize code and keep the global namespace clear. In general one
-shouldn't write variables into the global namespace because they're almost asking to be overriden or changed. Let's say
-you one writes a function like this. 
+What can it do? Good stuff. Closures can help to organize code and keep the global namespace clear. In general one shouldn't write variables into the global namespace because they're almost asking to be overriden or changed. Let's say one writes a function like this.
 
 {% highlight javascript %}
 var assert = function(con, msg) {
   if(!con) {
-    console.error(msg);	
+    console.error(msg);
   } else {
     console.log(msg);
   }
 }
 {% endhighlight %}
 
-That's a super simple assert function to see if a statment (`con`dition) is true or false. If it's false we'll log a
-console.error(), if not we'll log a normal console.log() statement. This is great and perfectly fine unless someone else
-tries to use a function with the same name. Then there'll be a "conflict" and the last declared function overrides the
-other. (In this example I'll use a function called myFunction)
+That's a super simple assert function to see if a statment (`con`dition) is true or false. If it's false we'll log a console.error(), if not we'll log a normal console.log() statement. This is great and perfectly fine unless someone else
+tries to use a function with the same name. Then there'll be a "conflict" and the last declared function overrides the other. (In this example I'll use a function called myFunction)
 
 <p data-height="268" data-theme-id="647" data-slug-hash="wuAdv" data-default-tab="result" class='codepen'>See the Pen <a
 href='http://codepen.io/kevingimbel/pen/wuAdv/'>wuAdv</a> by Kevin Gimbel (<a
 href='http://codepen.io/kevingimbel'>@kevingimbel</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 
-So still, what can closure do for me? It can save my declared functions - inside a closure. So far all closure examples
-were immediate executing function, but Objects also create closures, assigning all there properties to a specific
-"namespace".
+So still, what can closure do for me? It can save my declared functions - inside a closure. So far all closure examples were immediate executing function, but Objects also create closures, assigning all there properties to a specific "namespace".
 
 {% highlight javascript %}
 var myFunction() = function() {
-  return true;	
+  return true;
 }
 
 var myNamespace = {

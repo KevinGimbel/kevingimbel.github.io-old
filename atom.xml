@@ -10,10 +10,12 @@ title: Atom feed
     <author>
         <name>Kevin Gimbel</name>
     </author>
-    <title>Kevin Gimbel - Web Development</title>
-    <subtitle>Web-Development, CSS, Thoughts, Hacks</subtitle>
-    <icon>http://kevingimbel.com/assets/img/favicon.ico</icon>
-    <description>Front-End Developer from Frankfurt, Germany. I write about CSS, HTML, JS, UI/X and personal stuff.</description>
+    <title>Kevin Gimbel - Front-End Development</title>
+    <subtitle>Explorin the web, piece by piece.</subtitle>
+    <icon>http://kevingimbel.com/dest/img/favicon.png</icon>
+    <description>Front-End Developer from Frankfurt,
+    Germany. I write about CSS, Sass, HTML and JavaScript. Sometimes I like to
+    take photos.</description>
 
 
 {% for post in site.posts %}

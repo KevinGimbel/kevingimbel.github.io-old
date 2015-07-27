@@ -10,25 +10,21 @@ layout: compress
             {% assign tags_max = tag[1].size %}
         {% endif %}
     {% endfor %}
-<section class="block__page">
-<div class="gw tags">
+<section class="stage">
 {% for i in (1..tags_max) reversed %}
     {% for tag in site.tags %}
         {% if tag[1].size == i %}
-            <div class="g one-quarter medium-one-half small-one-whole">
-              <ul class="list tag-list" id="{{ tag[0] | downcase | replace: ' ','_' }}">
+              <ul class="anti-list tag-list" id="{{ tag[0] | downcase | replace: ' ','_' }}">
                 <h3 class="list--headline">{{ tag[0] }}</h3>
-                    
+
                     {% for post in tag.last %}
                         <li>
-                        <a href="{{ post.url }}">{{ post.title }}</a>
+                          <a href="{{ post.url }}">{{ post.title }}</a>
                         </li>
                     {% endfor %}
               </ul>
-            </div>
         {% endif %}
     {% endfor %}
 {% endfor %}
-</div>
 </section>
 {% include footer.html %}

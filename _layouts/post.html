@@ -3,36 +3,28 @@ layout: compress
 ---
 
 {% include header.html %}
-<article class="article box">
-    
+<article class="stage single-article">
+    <div class="inner">
     {{ content }}
 
     <footer class="article__footer">
-      <div class="gw">
-        <div class="g one-whole">
-          {% include prev-next.html %}
-        </div>
-        
-        <div  class="g one-half">
-          <time>
-            {{ page.date | date_to_string }}
-          </time>
-        
+        <p>
           {% for tag in page.tags %}
-            <span class="article--tag"> // <a href="/tags/#{{ tag | downcase | replace:' ','_' }}">#{{ tag }}</a></span>
+            <span class="article--tag"><a href="/tags/#{{ tag | downcase | replace:' ','_' }}">#{{ tag }}</a> &bull; </span>
           {% endfor %}
+        </p>
+        <p>Written by <a href="http://google.com/+KevinGimbel">Kevin Gimbel</a></p>
+              {% if page.category == 'coding' %}
+        <div class="feedback">
+          <h4 class="feedback--headline">Did you enjoy this?</h4>
+            <p>I'd appreciate your feedback on <a href="http://twitter.com/_kevinatari">Twitter</a> as well as request for further posts or related questions. Or just say Hi! <a href="http://codepen.io/pen">Happy coding!</a></p>
         </div>
-        <div class="g one-half  text--right">
-          written by <a href="http://google.com/+KevinGimbel">Kevin Gimbel</a>
-        </div>
-      </div>
+      {% endif %}
     </footer>
-
-    {% if page.category == 'coding' %}
-      <div class="feedback">
-        <h4 class="feedback--headline">Did you enjoy this?</h4>
-          <p>I'd appreciate your feedback on <a href="http://twitter.com/_kevinatari">Twitter</a> as well as request for further posts or related questions. Or just say Hi! <a href="http://codepen.io/pen">Happy coding!</a></p>
-      </div>
-    {% endif %}
+  </div>
+</div>
 </article>
+
+{% include prev-next.html %}
+
 {% include footer.html %}

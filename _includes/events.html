@@ -2,6 +2,16 @@
 	<h3>Events</h3>
 	
   {% if site.data.events %}
+    {% if site.data.events[0].date  %}
+    {% assign latest = site.data.events[0].date %}
+    {% assign today = site.time | date: '%d.%m.%Y' %}
+      {% if latest >= today %} 
+        {% assign class = 'events--older' %}  
+      {% else %}
+        {% assign class = 'event--new' %}
+        Nope
+      {% endif %}
+    {% endif %}
   <p>A list of events I'll attend to. Come and say hi!</p>
   {% else %}
   <p>Currently there are no new events I'll attend. Know a good event? <a
@@ -11,7 +21,7 @@
 
 	{% for event in site.data.events %}
 
-	<article class="event">
+	<article class="event {{ class }}">
 			<h4><a href="{{event.url}}">{{event.name}}</a></h4>
 			<p>{{event.description}}</p>
 			<footer>
