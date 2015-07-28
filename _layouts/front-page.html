@@ -4,10 +4,10 @@ layout: compress
 
 {% include header.html %}
 
-<section class="stage blog">
+<section class="stage blog" id="blog">
 
 	{% for post in site.posts  | limit: 1 %}
-		<article class="latest inner" id="blog">
+		<article class="latest inner">
 		  <h4 class="pre-heading">Recently I wrote:</h4>
 			<h2 class="article--headline" data-article-id="{{ post.id }}"><a href="{{ post.url }}" title="Read the article '{{ post.title }}'">{{ post.title }}</a></h2>
 				{{ post.excerpt }}
