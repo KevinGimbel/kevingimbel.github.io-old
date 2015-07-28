@@ -7,7 +7,7 @@ layout: compress
 <section class="stage blog">
 
 	{% for post in site.posts  | limit: 1 %}
-		<article class="latest inner">
+		<article class="latest inner" id="blog">
 		  <h4 class="pre-heading">Recently I wrote:</h4>
 			<h2 class="article--headline" data-article-id="{{ post.id }}"><a href="{{ post.url }}" title="Read the article '{{ post.title }}'">{{ post.title }}</a></h2>
 				{{ post.excerpt }}
@@ -25,7 +25,7 @@ layout: compress
 
 
 {% for event in site.data.events  | limit: 1 %}
-<section class="stage events">
+<section class="stage events" id="event">
 		<article class="latest inner">
 		  <h4 class="pre-heading">Let's hang out at:</h4>
 			<h2 class="article--headline">{{ event.name }}</h2>
@@ -38,7 +38,7 @@ layout: compress
 </section>
 {% endfor %}
 
-<section class="stage projects contrast">
+<section class="stage projects contrast" id="project">
 
 		<article class="inner">
 			<h4>Lately I build:</h4>
