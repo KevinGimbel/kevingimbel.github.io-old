@@ -15,20 +15,20 @@ This one is actually pretty simple because all you need to do is creating a fold
 Below you see your folder structure with a new folder named "about" that contains an index.html
 
 {% highlight bash %}
-'- \_posts
+- _posts
 	'- 2013-08-09-welcome-to-jekyll.markdown 
-'- \_includes
-	'-
-'- \_layouts
-	'- default.html
-	'- post.html
-'- css
-	'- main.css
-	'- syntax.css
-'- index.html
-'- about
-	'- index.html
-'- \_config.yml 
+- _includes
+	-
+- _layouts
+	- default.html
+	- post.html
+- css
+	- main.css
+	- syntax.css
+- index.html
+- about
+	- index.html
+- _config.yml 
 {% endhighlight %}
 
 When you navigate your browser to yourdomain.com/about the index.html should show up. You can continue doing this for all your sub-pages or use the second way.
