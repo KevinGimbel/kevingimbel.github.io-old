@@ -22,7 +22,7 @@ Below you see your folder structure with a new folder named "about" that contain
 - _layouts
 	- default.html
 	- post.html
-- _css
+- css
 	- main.css
 	- syntax.css
 - index.html
