@@ -1,7 +1,7 @@
 source:      .
 destination: _site
 layouts:     _layouts
-exclude: [node_modules, README.md, CNAME, package.json, src]
+exclude: [node_modules, README.md, CNAME, package.json, src, .git, dest]
 
 future:      true
 

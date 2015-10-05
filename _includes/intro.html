@@ -1,13 +1,16 @@
+{% if page.title == 'Home' %}
 <div class="inner">
-{% if page.id or page.is_page == true%}
-
- <h1 class="site__header--headline">{{ page.title }}</h1>
- <time>
-   {{ page.date | date_to_string }}
- </time>
+<p class="intro">Hi there, I'm <a href="https://twitter.com/_kevinatari">Kevin Gimbel</a> <br>Front-End Developer at <a href="http://synoa.de" title="Magento Agentur für B2B-Online-Shops - Synoa GmbH">Synoa GmbH</a><p>
+<p>You can find more information <a href="/about">about me if you wish</a>.</p>
 
 {% else %}
-    <p class="intro">Hi there, I'm <a href="https://twitter.com/_kevinatari">Kevin Gimbel</a> <br>Front-End Developer at <a href="http://synoa.de">Synoa GmbH</a><p>
-    <p>You can find more information <a href="/about">about me if you wish</a>.</p>
+<div class="inner--small">
+<h1 class="site__header--headline">{{ page.title }}</h1>
+  {% if page.date %}
+  <time class="time">
+    {{ page.date | date_to_string }}
+  </time>
+  {% endif %}
+
 {% endif %}
 </div>

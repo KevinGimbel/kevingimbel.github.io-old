@@ -4,10 +4,10 @@
   "author": "Kevin Gimbel",
   "repository": "https://github.com/kevingimbel/kevingimbel.github.io",
   "devDependencies": {
-    "criticalcss": "^0.5.1",
-    "gulp-autoprefixer": "^2.1.0",
-    "gulp-rename": "^1.2.0",
-    "gulp-sass": "^0.7.2",
-    "gulp-uglify": "^0.3.1"
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.4.1"
   }
 }

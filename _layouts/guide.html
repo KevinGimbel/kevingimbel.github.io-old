@@ -3,41 +3,39 @@ layout: compress
 ---
 
 {% include header.html %}
-<article class="article box">
-            <nav class="guide__nav gw">
-                  {% if page.prev_page %}
-                  <div class="g one-half small-one-whole"> 
-                        <a href="{{ page.prev_page }}" class="guide__nav--link prev">Previous Page</a> 
-                  </div>
-                  {% else %}
-                  <div class="g one-half small-one-whole">&nbsp;</div>
-                  {% else %}
-                  <div class="g one-half small-one-whole">&nbsp;</div>
-                  {% endif %}
-                  {% if page.next_page %} 
-                  <div class="g one-half small-one-whole">
-                        <a href="{{ page.next_page }}" class="guide__nav--link next">Next Page</a>
-                  </div> 
-                  {% endif %}
-            </nav>
 
-            {{ content }}
+<section class="stage">
+  <div class="inner inner--tb">
+    
+    <nav class="flex post-nav">
+    {% if page.prev_page %}
+      <div class="flex-child  post-prev">
+        <a href="{{ page.prev_page }}" class="guide__nav--link prev">Previous Page</a>
+      </div>
+    {% endif %}
 
-            <nav class="guide__nav gw">
-                  {% if page.prev_page %}
-                  <div class="g one-half small-one-whole"> 
-                        <a href="{{ page.prev_page }}" class="guide__nav--link prev">Previous Page</a> 
-                  </div>
-                  {% else %}
-                  <div class="g one-half small-one-whole">&nbsp;</div>
-                  {% endif %}
-                  {% if page.next_page %} 
-                  <div class="g one-half small-one-whole">
-                        <a href="{{ page.next_page }}" class="guide__nav--link next">Next Page</a>
-                  </div> 
-                  {% else %}
-                  <div class="g one-half small-one-whole">&nbsp;</div>
-                  {% endif %}
-            </nav>
-</article>
+    {% if page.next_page %}
+      <div class="flex-child  post-next">
+        <a href="{{ page.next_page }}" class="guide__nav--link next">Next Page</a>
+      </div>
+    {% endif %}
+    </nav>
+
+    {{ content }}
+
+    <nav class="flex post-nav">
+    {% if page.prev_page %}
+      <div class="flex-child  post-prev">
+        <a href="{{ page.prev_page }}" class="guide__nav--link prev">Previous Page</a>
+      </div>
+    {% endif %}
+
+    {% if page.next_page %}
+      <div class="flex-child  post-next">
+        <a href="{{ page.next_page }}" class="guide__nav--link next">Next Page</a>
+      </div>
+    {% endif %}
+    </nav>
+  </div>
+</section>
 {% include footer.html %}

@@ -25,6 +25,15 @@ img {
   height: auto;
 }
 
+::selection {
+  background: #01579B;
+  color: #fff;
+}
+
+a::selection {
+  text-shadow: none;
+}
+
 a {
   text-decoration: none;
   color: #01579B;
@@ -53,6 +62,11 @@ a {
   }
 }
 
+.time {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
 
 
 h3 {
@@ -66,6 +80,10 @@ h3:not(.article--headline) {
 
 h4 {
   margin-top: 3rem;
+}
+
+p {
+  margin: .75rem 0;
 }
 
 .contrast {
@@ -114,6 +132,10 @@ nav {
   margin: 1rem 0 0 0;
 }
 
+.site__header--headline {
+  text-align: center;
+}
+
 .avatar {
   float: left;
   clear: both;
@@ -157,6 +179,10 @@ nav {
 
   .inner {
     padding: 5rem;
+  }
+
+  .inner--small {
+    padding: 1.5rem 2rem;
   }
 
   .nav ul {
@@ -250,7 +276,8 @@ pre {
 
   .post-prev, .post-next {
     width: 50%;
-    padding: 2rem;
+    padding: 2rem 0;
+    text-align: left;
   }
 
   .post-next {
@@ -261,4 +288,8 @@ pre {
 
 .flex {
   display: flex;
+}
+
+.disqus {
+  margin-top: 2rem;
 }
