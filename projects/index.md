@@ -7,7 +7,7 @@ customclass: page--projects
 ---
 
 Below you can find some of the private projects I've been working on. Some more
-can be found at the (Synoa GmbH references page](http://synoa.de/referenzen "See the Synoa GmbH references page (in German)") &mdash; at some
+can be found at the (Synoa GmbH references page](http://synoa.de/referenzen "See the Synoa GmbH references page") &mdash; at some
 point I was involved in any of these projects with Front-End Development.
 
 ### Websites
