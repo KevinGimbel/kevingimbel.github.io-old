@@ -15,7 +15,7 @@ Sass was build by [Hampton Catlin](http://www.hamptoncatlin.com/) and [Nathan We
 
 Sass enables you to use Variables, Functions and Mixins inside your CSS. This comes very handy because a stylesheet gets amazingly maintainable with variables and mixins.
 
-Before we start I want you to notice something important about Sass: Sass runs on ruby so you have to install Ruby if it's not (Yeah Windows, I'm looking in your direction!) - on Mac and Linux Ruby should be installed. All code blocks starting with `$` need to be inputed into a Terminal (without the *$*!). On Max OS X and Linux you may need to put a `sudo` command before every command prompt.
+Before we start I want you to notice something important about Sass: Sass runs on ruby so you have to install Ruby if it's not (Yeah Windows, I'm looking in your direction!) - on Mac and Linux Ruby should be installed. All code blocks starting with `$` need to be inputed into a Terminal (without the *$*!). On OS X and Linux you may need to put a `sudo` command before every command prompt.
 
 Simply check your ruby version by typing the following
 {% highlight bash %}
