@@ -1,13 +1,11 @@
 source:      .
 destination: _site
-layouts:     _layouts
-exclude: [node_modules, README.md, CNAME, package.json, src]
+layouts_dir:     _layouts
+exclude: [node_modules, README.md, CNAME, package.json, src, Guardfile]
 
 future:      true
 
 permalink:     :title
-paginate: 6
-paginate_path: "page/:num"
 
 markdown:      kramdown
 markdown_ext:  md
