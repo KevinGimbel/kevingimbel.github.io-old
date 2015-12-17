@@ -19,7 +19,14 @@ This site is hosted on [GitHub](https://github.com/kevingimbel/kevingimbel.githu
 
 ### Tracking
 
-This site is using self-hosted [Piwik analytics](http://piwik.org/) to track views. The data is not shared with anyone expect me. I use it to see where traffic comes from and which pages generate the most traffic. Tracking can suck, I know that, and this is why I want to be as transparent as possible. So below is a sample of what Piwik records. Piwik by default respects the "Do Not Track" settings and I kept this feature on. If you decided to opt-out of general tracking, Piwik will not record anything! See more about Do Not Track [on donottrack.us](http://donotrack.us)
+This site is using self-hosted [Piwik analytics](http://piwik.org/) to track
+views. The data is not shared with anyone expect me. I use it to see where
+traffic comes from and which pages generate the most traffic. Tracking can suck,
+I know that, and this is why I want to be as transparent as possible. So below
+is a sample of what Piwik records. Piwik by default respects the "Do Not Track"
+settings and I kept this feature on. If you decided to opt-out of general
+tracking, Piwik will not record anything! See more about Do Not Track [on
+donottrack.us](http://donottrack.us)
 
 Lets say you visit this site (as you do, just now). Piwik will then tell me the following things about you: Your Location (Country), Your Operating System (Windows, iOS, Android, Linux, etc.) Your Browser and Browser Version, Your Resolution (e.g. 1920x1080), average page load speed, first and last visit date, time spent on my website, links visited, from where you entered the site, e.g. "Direct Entry" or Twitter, Facebook, Google+ and so on.
 
