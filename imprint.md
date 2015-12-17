@@ -32,6 +32,7 @@ Lets say you visit this site (as you do, just now). Piwik will then tell me the 
 
 
 This data is then used to see where my readers (that's you!) come from and what technology they use. For example, this website hast almost 0 Traffic from Internet Explorer below 9 - that means I don't need to spent a lot of my free time debugging and fixing things for IE < 9. As said earlier, I am not publishing this data and it is hosted on one of my servers with a German Hosting Provider. All data is anonymous, means I do not see any private data, e.g. if you're logged in to your Facebook, Google or Twitter or what so ever nor do I see your name or anything related to that. The data collected is merely "meta data" - which of course is also kinda sensitive depending on the Context - but I do my best to keep it save and private to me. Nobody else has access to the Piwik Dashboard and I am the only person looking at the data.
+
 I might publish some bundled data, like Browser Versions or something like that.
 
 ### Software
@@ -41,5 +42,7 @@ Software and Services that help realizing this site with ease:
 - [Ubuntu](http://www.ubuntu.com/) as my main Operating System
 - [GitHub](http://github.com) to host the main page
 - [Uberspace](http://uberspace.de) to host some files
+- [Jekyll](http://jekyllrb.com) as static site generator
+- [Piwik](https://piwik.org/) for tracking
 
 In case you find a bug, some strange behaviour or a spelling mistake, feel free to [open an issue on GitHub](https://github.com/kevingimbel/kevingimbel.github.io/issues)
