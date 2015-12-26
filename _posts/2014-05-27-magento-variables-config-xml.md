@@ -3,8 +3,8 @@ layout: post
 title: "Magento: get and set variables in config.xml"
 category: coding
 tags:
-- Magento
-- MVC
+- magento
+- mvc
 ---
 
 The other day I had a kind of easy problem in Magento that still took me quite some time to solve. In the shop I'm
@@ -20,11 +20,11 @@ I managed to set the different emails in the config.xml (located in `/mymodule/e
 		<email>
 			<contact>contact@standard.com</contact>
 			<support>support@standard.com</support>
-			<yetanotheremail>mailme@contact.com</yetanotheremail>	
+			<yetanotheremail>mailme@contact.com</yetanotheremail>
 	</email>
 	</default>
 # ....
-# Example of a Router config, 
+# Example of a Router config,
 # these are important for the switch below
 <routers>
 	<company_contactform_contact>
@@ -47,11 +47,11 @@ the Controller.php) with this code
 
 Those store configs are only accessable from within this Model and its View, so in `compare.phtml` this would throw an error.
 Next thing I needed was a `switch()` to determine in what view I am. Again, I'm pretty sure there is a better way of
-handling this. 
+handling this.
 
 {% highlight javascript %}
  /* This returns the name set for the Router in the config.xml.
-	* (Between <routers> and </routers> 
+	* (Between <routers> and </routers>
  */
 	$currentRoute = Mage::app()->getFrontController()->getRequest()->getRouterName();
 
@@ -75,7 +75,6 @@ handling this.
 {% endhighlight %}
 
 The fallback is used for the case of no match - it should not happen but it still can happen, so it's always save to
-have a fallback. In this case it just goes to the generic info eMail of the client. 
+have a fallback. In this case it just goes to the generic info eMail of the client.
 
 I'm not sure if there's a better or easier way but I found that this solution fits my needs pretty good.
-
