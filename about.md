@@ -18,4 +18,4 @@ sometimes strategy games such as Banished or Anno (1602-1701).
 I'm a proud member of the [bullgit](https://bullg.it "See the bullgit website") team, an international team of developers from all
 over the world, ranging from India to America - we're here to serve the finest of uselessness.
 
-For some super-interesting information on my work and school history there's a [CV](/cv/ "See my CV") Page as well as my super-business [Xing Porfil](https://www.xing.com/profile/Kevin_Gimbel "See my Xing Profil") and my [Twitter @_kevinatari](https://twitter.com/_kevinatari "Follow me on Twitter!").
+For some super-interesting information on my work and school history there's a [CV](/cv/ "See my CV") Page as well as my super-business [Xing Profile](https://www.xing.com/profile/Kevin_Gimbel "See my Xing Profile") and my [Twitter @_kevinatari](https://twitter.com/_kevinatari "Follow me on Twitter!").
