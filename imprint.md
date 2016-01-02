@@ -20,7 +20,7 @@ This site is hosted on [GitHub](https://github.com/kevingimbel/kevingimbel.githu
 ### Tracking
 
 This site is using self-hosted [Piwik analytics](http://piwik.org/) to track
-views. The data is not shared with anyone expect me. I use it to see where
+views. The data is not shared with anyone except me. I use it to see where
 traffic comes from and which pages generate the most traffic. Tracking can suck,
 I know that, and this is why I want to be as transparent as possible. So below
 is a sample of what Piwik records. Piwik by default respects the "Do Not Track"
