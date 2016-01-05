@@ -26,7 +26,7 @@ group: site_navigation
 <div class="card-content">
   <h4>Couquillou, France</h4>
   <p class="card-meta">IT Assistant (June-July 2012)</p>
-  <p>As IT Assistant I spent most of my time working with Servers and learning how they work, how to safe data responsively (e.g. by using RAID-Systems and combinations of different RAIDs) and most importantley I learned to work in a english speaking enviorment - which was pretty awesome at the time.</p>
+  <p>As IT Assistant I spent most of my time working with Servers and learning how they work, how to safe data responsively (e.g. by using RAID-Systems and combinations of different RAIDs) and most importantley I learned to work in an English speaking enviorment - which was pretty awesome at the time.</p>
 </div>
 
 <div class="card-content">
@@ -74,6 +74,6 @@ group: site_navigation
   <div class="card-content">
     <h4>Languages</h4>
     <p class="card-meta">German (native), English (fluent)</p>
-    <p>Because I was born and raised in Germany I speak German, even though I enjoy speaking and writing english more. I also prefere to watch TV shows (such as Game of Thrones or Breaking Bad) in English. Due to the fact most of the (Web) Development World is english I also write and tweet in english to increase my reach.</p>
+    <p>Because I was born and raised in Germany I speak German, even though I enjoy speaking and writing english more. I also prefere to watch TV shows (such as Game of Thrones or Breaking Bad) in English. Due to the fact most of the (web) development world is English I also write and tweet in English to increase my reach.</p>
   </div>
 </div>
