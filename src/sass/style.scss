@@ -218,6 +218,30 @@ nav {
   }
 }
 
+.events {
+  background: #64FFDA;
+  color: #464646;
+
+    a {
+      text-shadow: .05em 0 0 #64FFDA, -.05em -0 0 #64FFDA,
+                   .15em 0 0 #64FFDA,-0.15em -0 0 #64FFDA,
+                   .2em 0 0 #64FFDA,-.2em -0 0 #64FFDA;
+
+    }
+}
+
+.photos {
+  background: #D81B60;
+  color: #fff;
+  a {
+    color: #333;
+    text-shadow: .05em 0 0 #D81B60, -.05em -0 0 #D81B60,
+                 .15em 0 0 #D81B60,-0.15em -0 0 #D81B60,
+                 .2em 0 0 #D81B60,-.2em -0 0 #D81B60;
+
+  }
+}
+
 .single-article {
   padding: 0;
 }
