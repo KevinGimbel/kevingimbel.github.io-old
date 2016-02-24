@@ -1,8 +1,8 @@
-- name: StuttgartJS
-  description: A local JavaScript meetup in the City of Stuttgart. I'll hold a talk about <a href="https://bullg.it">bullgit</a> together with <a href="https://twitter.com/TimPietrusky">Tim Pietrusky</a>.
-  price: free
-  url: http://www.meetup.com/de-DE/stuttgartjs/events/222094005/
-  date: 23. February 2016
+#- name: StuttgartJS
+#  description: A local JavaScript meetup in the City of Stuttgart. I'll hold a talk about <a href="https://bullg.it">bullgit</a> together with <a href="https://twitter.com/TimPietrusky">Tim Pietrusky</a>.
+#  price: free
+#  url: http://www.meetup.com/de-DE/stuttgartjs/events/222094005/
+#  date: 23. February 2016
 
 - name: Front Trends
   description: Front-Trends is one of Europe’s most established annual conferences for professional front-end developers to meet, learn and get inspired.
