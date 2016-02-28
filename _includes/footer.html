@@ -1,18 +1,21 @@
-
-<footer class="stage footer contrast">
+<footer class="c-stage c-footer flex">
+  <div class="flex-child">
   <p class="copy">
     Build with <a href="http://sass-lang.com">Sass</a>, <a href="http://jekyllrb.com">Jekyll</a> and <span class="love">&hearts;</span>.
     Hosted on <a href="http://github.com/kevingimbel/kevingimbel.github.io">Github</a>, some files at <a href="http://uberspace.de">Uberspace</a>.
     <a href="/imprint" rel="nofollow">Imprint</a>
     </p>
-    <nav>
-      <ul>var social = {
-        <li>github: <a href="https://github.com/kevingimbel">'/kevingimbel'</a>,<br></li>
-        <li>twitter: <a href="https://twitter.com/_kevinatari">'@_kevinatari'</a>,<br></li>
-        <li>google_plus: <a href="https://google.com/+KevinGimbel">'+KevinGimbel'</a><br></li>
-      };
-    </ul>
     <p class="copy">This website uses Piwik Analytics, you can see more about it <a href="/imprint/#tracking" rel="nofollow">in the Imprint</a>.</p>
+  </div>
+  <div class="flex-child">
+    <nav id="nav_footer" class="c-nav__footer">
+      <ul>
+        <li><a href="https://github.com/kevingimbel">githubc.com/kevingimbel</a></li>
+        <li><a href="https://twitter.com/_kevinatari">@_kevinatari</a></li>
+        <li><a href="https://google.com/+KevinGimbel">google.com/+KevinGimbel</a></li>
+      </ul>
+    </nav>
+  </div>
 </footer>
 </body>
 <script type="text/javascript">
@@ -34,7 +37,7 @@ window.onload = downloadJSOnload;
 
 <script type="text/javascript">
 WebFontConfig = {
-  google: { families: [ 'Roboto+Condensed:300,400:latin' ] }
+  google: { families: [ 'Droid+Serif::latin' ] }
 };
 (function() {
  var wf = document.createElement('script');

@@ -1,8 +1,13 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
-
 /* @import "includes/syntax"; */
 @import "core/mixins";
+@import "core/typography";
+
+@import "components/avatar";
+@import "components/stage";
+@import "components/header";
+@import "components/footer";
+
+@import "modules/article";
 
 * {
   margin: 0;
@@ -12,7 +17,7 @@
 
 
 body {
-  font: 18px/1.65 'Droid Sans', sans;
+  font: 18px/1.65 'Droid Serif', sans;
   font-weight: 300;
 }
 
@@ -35,32 +40,41 @@ a::selection {
 }
 
 a {
+  @include link_effects(#01579B, #fff);
+
   text-decoration: none;
-  color: #01579B;
   z-index: 2;
-  text-shadow: .05em 0 0 #fff, -.05em -0 0 #fff,
-               .15em 0 0 #fff,-0.15em -0 0 #fff,
-               .2em 0 0 #fff,-.2em -0 0 #fff;
   position: relative;
-  &:after {
-    content: '';
-    height: 2px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform: scaleX(0);
-    transition: linear .15s;
-    background: currentColor;
-    z-index: -1;
-  }
-  &:hover {
     &:after {
-      transform: scaleX(1);
+      content: '';
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: scaleX(0);
+      transition: linear .15s;
+      background: currentColor;
+      z-index: -1;
     }
-  }
+
+    &:hover {
+      &:after {
+        transform: scaleX(1);
+      }
+    }
 }
+
+.copy {
+  font-size: .75rem;
+}
+
+.love {
+  animation: heart .5s linear;
+  color: #D81B60;
+}
+
 
 .time {
   display: block;
@@ -69,23 +83,6 @@ a {
 }
 
 
-h3 {
-  margin-top: 2rem;
-}
-
-h3:not(.article--headline) {
-  margin-bottom: 1rem;
-  border-bottom: .125em solid currentColor;
-}
-
-h4 {
-  margin-top: 3rem;
-}
-
-p {
-  margin: 1.5rem 0;
-}
-
 .contrast {
   color: #f1f1f1;
   a {
@@ -93,16 +90,6 @@ p {
   }
 }
 
-.stage {
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.stage .inner {
-  max-width: 80rem;
-  margin: 0 auto;
-}
 
 nav {
   ul {
@@ -147,122 +134,8 @@ nav {
   font-size: 1.25em;
 }
 
-.inner {
-  padding: 1rem;
-}
-
-
-.inner--tb {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.footer {
-  background: #01579B;
-  a {
-    text-shadow: .05em 0 0 #01579B, -.05em -0 0 #01579B,
-                 .15em 0 0 #01579B,-0.15em -0 0 #01579B,
-                 .2em 0 0 #01579B,-.2em -0 0 #01579B;
-  }
-}
-
 .copy {
   text-align: center;
-}
-
-
-@media all and (min-width: 50rem) {
-
-  .stage {
-    font-size: 1.5rem;
-  }
-
-  .inner {
-    padding: 5rem;
-  }
-
-  .inner--small {
-    padding: 1.5rem 2rem;
-  }
-
-  .nav ul {
-    text-align: right;
-  }
-
-  .footer {
-    font-size: 1rem;
-  }
-}
-
-.pre-heading {
-  font-size: .85em;
-}
-
-.blog {
-  background: #f3f3f3;
-
-  a {
-    text-shadow: .05em 0 0 #f3f3f3, -.05em -0 0 #f3f3f3,
-                 .15em 0 0 #f3f3f3,-0.15em -0 0 #f3f3f3,
-                 .2em 0 0 #f3f3f3,-.2em -0 0 #f3f3f3;
-  }
-}
-
-.projects {
-  background: #3d3d3d;
-  color: #f1f1f1;
-  a {
-    text-shadow: .05em 0 0 #3d3d3d, -.05em -0 0 #3d3d3d,
-                 .15em 0 0 #3d3d3d,-0.15em -0 0 #3d3d3d,
-                 .2em 0 0 #3d3d3d,-.2em -0 0 #3d3d3d;
-  }
-}
-
-.events {
-  background: #64FFDA;
-  color: #464646;
-
-    a {
-      text-shadow: .05em 0 0 #64FFDA, -.05em -0 0 #64FFDA,
-                   .15em 0 0 #64FFDA,-0.15em -0 0 #64FFDA,
-                   .2em 0 0 #64FFDA,-.2em -0 0 #64FFDA;
-
-    }
-}
-
-.photos {
-  background: #D81B60;
-  color: #fff;
-  a {
-    color: #333;
-    text-shadow: .05em 0 0 #D81B60, -.05em -0 0 #D81B60,
-                 .15em 0 0 #D81B60,-0.15em -0 0 #D81B60,
-                 .2em 0 0 #D81B60,-.2em -0 0 #D81B60;
-
-  }
-}
-
-.single-article {
-  padding: 0;
-}
-
-p > code {
-  color: #673AB7;
-  background-color: #f1f1f1;
-  padding: .125rem .75rem;
-  border-radius: 3px;
-}
-
-.highlight {
-  background: #dedede;
-  color: #454545;
-  margin: 1rem;
-}
-
-pre {
-  display: block;
-  padding: 1rem;
-  overflow: scroll;
 }
 
 .anti-list {
@@ -276,44 +149,7 @@ pre {
 .tag-list:target {
   background: #80D8FF;
   a {
-    text-shadow: .05em 0 0 #80D8FF, -.05em -0 0 #80D8FF,
-                 .15em 0 0 #80D8FF,-0.15em -0 0 #80D8FF,
-                 .2em 0 0 #80D8FF,-.2em -0 0 #80D8FF;
+    @include link_effects(null, #80D8FF);
   }
 
-}
-
-.post-nav {
-  flex-direction: column;
-}
-
-.post-prev, .post-next {
-  width: 100%;
-  padding: .5rem 0;
-  text-align: center;
-}
-
-@include breakpoint("medium", "and up") {
-  .post-nav {
-    flex-direction: row;
-  }
-
-  .post-prev, .post-next {
-    width: 50%;
-    padding: 2rem 0;
-    text-align: left;
-  }
-
-  .post-next {
-    text-align: right;
-  }
-}
-
-
-.flex {
-  display: flex;
-}
-
-.disqus {
-  margin-top: 2rem;
 }

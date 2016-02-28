@@ -1,0 +1,49 @@
+.c-header__intro,
+.c-header__headline {
+  text-align: center;
+}
+
+.main__navigation {
+  transition: all .25s linear;
+}
+
+.nav--fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+  font-size: .95rem;
+}
+
+.theme__one {
+  @include create_header_theme(#64FFDA, #4A148C);
+}
+
+.theme__two {
+  @include create_header_theme(#827717 ,#FFEB3B);
+}
+
+.theme__three {
+  @include create_header_theme(#795548, #80D8FF);
+}
+
+.theme__four {
+  @include create_header_theme(#EFEBE9,#E91E63);
+}
+
+.theme__five {
+  @include create_header_theme(#F8BBD0,#01579B);
+}
+
+@include breakpoint("medium", "and down") {
+  .main__navigation {
+    width: 100%;
+    overflow: hidden;
+  }
+  .main__navigation ul {
+    width: 200%;
+    overflow: scroll;
+    padding: 1rem 0;
+    text-align: left;
+  }
+}

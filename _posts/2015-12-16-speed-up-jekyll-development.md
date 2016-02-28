@@ -12,10 +12,10 @@ Lately I had a hard time working with my own website. Whenever I wanted to make 
 I was researching how to speed up a Jekyll site and if there was any news or whatsover from the Community when I found [an old issue](https://github.com/jekyll/jekyll/issues/706) on GitHub with a [comment by Parkr](https://github.com/jekyll/jekyll/issues/706#issuecomment-25411224) that pointed me in the right direction: The `guard-jekyll-plus` Gem. As a person who has no idea of Ruby other that it has a rather beautiful looking syntax and `Gems` are somewhat related to it, I went on and set up the "environment" and programs needed. These were, basically, `bundle`, a `Gemfile` and a `Guardfile`.
 
 
-{% highlight javascript %}
+```
 # on Ubuntu
 $ (sudo) apt-get install bundler
-{% endhighlight %}
+```
 
 {% highlight ruby %}
 # The Gemfile
