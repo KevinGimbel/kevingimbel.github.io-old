@@ -1,0 +1,11 @@
+.c-footer {
+  padding: 2rem 0;
+  background: #fefefe;
+  color: #333;
+  text-align: left;
+  border-top: .75rem solid #ddd;
+
+    a {
+      @include link_effects(#D81B60, #fefefe);
+    }
+}

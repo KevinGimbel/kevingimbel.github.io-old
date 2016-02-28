@@ -1,13 +1,19 @@
 <div class="flex post-nav">
 {% if page.previous %}
   <div class="flex-child  post-prev">
-    Previous Post: <a href="{{ page.previous.url }}" title="{{ page.previous.title}}">{{ page.previous.title }}</a>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+      <polygon points="8,2.8 16,10.7 13.6,13.1 8.1,7.6 2.5,13.2 0,10.7 "></polygon>
+    </svg>
+    <a href="{{ page.previous.url }}" title="{{ page.previous.title}}">{{ page.previous.title }}</a>
   </div>
 {% endif %}
 
 {% if page.next %}
   <div class="flex-child  post-next">
-    Next Post: <a href="{{ page.next.url }}" title="{{ page.next.title}}">{{ page.next.title }}</a>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+      <polygon points="8,2.8 16,10.7 13.6,13.1 8.1,7.6 2.5,13.2 0,10.7 "></polygon>
+    </svg>
+    <a href="{{ page.next.url }}" title="{{ page.next.title}}">{{ page.next.title }}</a>
   </div>
 {% endif %}
 </div>

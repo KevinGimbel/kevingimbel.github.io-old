@@ -4,16 +4,16 @@ layout: compress
 
 {% include header.html %}
 
-<section class="stage blog" id="blog">
+<section class="c-stage c-stage--blog" id="blog">
 
 	{% for post in site.posts  | limit: 1 %}
 		<article class="latest inner">
-		  <h4 class="pre-heading">Recently I wrote:</h4>
+		  <span class="pre-heading">Recently I wrote:</span>
 			<h2 class="article--headline" data-article-id="{{ post.id }}"><a href="{{ post.url }}" title="Read the article '{{ post.title }}'">{{ post.title }}</a></h2>
 				{{ post.excerpt }}
 			<p><a href="{{ post.url }}" title="Read more">Read more &rarr; </a></p>
 				{% if post.tags %}
-					<div class="article__tags article__footer">
+					<div class="c-article__footer">
 						{% for tag in post.tags %}
 							<span class="article--tag"><a href="/tags/#{{ tag | downcase | replace:' ','_' }}">#{{ tag }}</a></span>
 						{% endfor %}
@@ -25,12 +25,12 @@ layout: compress
 
 
 {% for event in site.data.events  | limit: 1 %}
-<section class="stage events" id="event">
+<section class="c-stage c-stage--events" id="event">
 		<article class="latest inner">
-		  <h4 class="pre-heading">Let's hang out at:</h4>
+		  <span class="pre-heading">Let's hang out at:</span>
 			<h2 class="article--headline">{{ event.name }}</h2>
 			<p>{{ event.description }}</p>
-					<div class="article__tags article__footer">
+					<div class="c-article__footer">
 							<span><a href="{{event.url}}">{{event.name}}</a> | </span>
 							<span class="article--tag">Date: {{ event.date}}</span>
 					</div>
@@ -38,10 +38,10 @@ layout: compress
 </section>
 {% endfor %}
 
-<section class="stage projects contrast" id="project">
+<section class="c-stage c-stage--projects contrast" id="project">
 
 		<article class="inner">
-			<h4>Lately I build:</h4>
+			<span class="pre-heading">Lately I build:</span>
 			<h2><a href="https://github.com/kevingimbel/vhost" title="vhost on GitHub">vhost</a></h2>
 			<p><code>vhost</code> is a command line utillity to create new Apache Virtual Hosts, add them to the <code>/etc/hosts/</code> file and
 				create a dummy Document Root under <code>/var/www/html/</code>. It's written in bash and comes with a template.</p>
@@ -56,9 +56,9 @@ layout: compress
 
 </section>
 
-<section class="stage photos" id="photography">
+<section class="c-stage c-stage--photos" id="photography">
 	<article class="inner">
-		<h4>I used to take photos.</h4>
+		<span class="pre-heading">I used to take photos.</span>
 		<h2>Photography</h2>
 		<p>When I was 15 or so I started getting interested in Photography and shortly even worked as one for smaller events and concerts/bands. These days I am mostly
 		sharing photos on <a href="https://eyeem.com/u/kevingimbel">EyeEm</a> or  <a href="https://instagram.com/_kevinatari">Instagram</a>. Some of my EyeEm photographs are for sale on <a href="http://www.gettyimages.de/search/photographer?excludenudity=true&mediatype=photography&page=1&photographer=kevin%20gimbel%20%2F%20eyeem&sort=best">Getty Images</a>.</p>

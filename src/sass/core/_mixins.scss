@@ -1,3 +1,28 @@
+
+@mixin link_effects($color, $background) {
+  @if($color) {
+    color: $color;
+  }
+  text-shadow: .05em 0 0 $background, -.05em -0 0 $background,
+               .15em 0 0 $background,-0.15em -0 0 $background,
+               .2em 0 0 $background,-.2em -0 0 $background;
+}
+
+@mixin create_header_theme($color, $background) {
+  background: $background;
+    a, p, h1, time, #main_nav {
+      @include link_effects($color, $background);
+  }
+
+  #main_nav {
+    background: $background;
+    a {
+      @include link_effects($color, $background);
+    }
+  }
+}
+
+// BREAKPOINT MIXIN
 //
 //  Documentation @ codepen.io/wesruv/pen/eIpuv
 //
@@ -322,7 +347,7 @@ $res-units: dpi;
     #{$horizontal-position}: 0;
     padding: .7em 1em;
     background: rgba(0, 0, 0, 0.8);
-    color: #fff;
+    color: $background;
     line-height: 1em;
     font-weight: 600;
 

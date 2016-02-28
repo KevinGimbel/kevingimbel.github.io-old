@@ -43,9 +43,9 @@
 </svg>
  </a>
 
-  <header class="stage header" id="site-header">
+  <header class="c-stage c-header" id="site_header">
 
-    <nav class="main__navigation" role="navigation">
+    <nav class="main__navigation" role="navigation" id="main_nav">
       <ul>
         <li class="nav__item {% if page.url == '/' %} active {% endif %}">
             <a href="/" class="nav-item">Home</a>
@@ -61,4 +61,58 @@
 
 
           {% include intro.html %}
+<script type="text/javascript">
+if(!Array.prototype.random) {
+Array.prototype.random = function() {
+  var max;
+  var min;
+  var a;
+  var b;
+  var random;
+  var size = this.length;
+  var args = arguments;
+  var variableSwitch = {
+    0: function() {
+      max = size;
+      min = 0;
+    },
+    1: function() {
+      max = args[0];
+      min = 0;
+    },
+    2: function() {
+      a = args[0];
+      b = args[1];
+      if(a > b) {
+        max = a;
+        min = b;
+      } else {
+        max = b;
+        min = a;
+      }
+    }
+  };
+
+  var assignVariables = variableSwitch[args.length];
+  assignVariables();
+
+  random = Math.floor( (Math.random() * (max - min)) + min );
+  return this[random];
+  }
+}
+  (function(window, document) {
+    /* Theme Class names */
+    var themes = [
+      'theme__one',
+      'theme__two',
+      'theme__three',
+      'theme__four',
+      'theme__five'
+    ];
+    /* Getting a random theme class */
+    var theme_class = themes.random();
+    /* And setting the class */
+    document.getElementById('site_header').classList.add(theme_class);
+  }(window, document));
+</script>
 </header>

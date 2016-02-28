@@ -1,0 +1,20 @@
+.c-avatar {
+  width: 10rem;
+  height: 10rem;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background: #ddd;
+  border: .25rem solid #fff;
+}
+
+.c-avatar,
+.c-avatar__image {
+  border-radius: 50%;
+}
+
+.c-avatar__image {
+  display: inline;
+  font-size: 1rem;
+  line-height: 1;
+}

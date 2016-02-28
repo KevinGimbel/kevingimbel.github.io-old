@@ -3,21 +3,26 @@ layout: compress
 ---
 
 {% include header.html %}
-<article class="stage single-article">
+<article class="c-stage c-article__single">
     <div class="inner">
     {{ content }}
 
-    <footer class="article__footer">
+    <footer class="c-article__footer">
         <p>
           {% for tag in page.tags %}
-            <span class="article--tag"><a href="/tags/#{{ tag | downcase | replace:' ','_' }}">#{{ tag }}</a> &bull; </span>
+            <span class="article--tag"><a href="/tags/#{{ tag | downcase | replace:' ','_' }}">#{{ tag }}</a>
+              {% if forloop.last %}
+              {% else %}
+              &bull;
+              {% endif %}
+            </span>
           {% endfor %}
         </p>
         <p>Written by <a href="http://google.com/+KevinGimbel">Kevin Gimbel</a></p>
               {% if page.category == 'coding' %}
         <div class="feedback">
           <h4 class="feedback--headline">Did you enjoy this?</h4>
-            <p>I'd appreciate your feedback on <a href="http://twitter.com/_kevinatari">Twitter</a> as well as request for further posts or related questions. Or just say Hi! <a href="http://codepen.io/pen">Happy coding!</a></p>
+            <p>I would appreciate your feedback on <a href="http://twitter.com/_kevinatari">Twitter</a> or just say Hi! <a href="http://codepen.io/pen">Happy coding!</a></p>
         </div>
       {% endif %}
 

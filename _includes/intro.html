@@ -1,16 +1,21 @@
-{% if page.title == 'Home' %}
 <div class="inner">
-<p class="intro">Hi there, I'm <a href="https://twitter.com/_kevinatari">Kevin Gimbel</a> <br>Front-End Developer at <a href="http://synoa.de" title="Magento Agentur für B2B-Online-Shops - Synoa GmbH">Synoa GmbH</a><p>
-<p>You can find more information <a href="/about">about me if you wish</a>.</p>
+{% if page.title == 'Home' %}
+  <div class="c-avatar">
+    <img src="https://www.gravatar.com/avatar/6d391d8c3a528122f3f6c991821350ac?s=150" alt="Kevin Gimbel and Freddie Mercury, at Madame Tussauds , Amsterdam" class="c-avatar__image" />
+  </div>
+
+  <p class="c-header__intro">
+    Hi there, I'm <a href="https://twitter.com/_kevinatari">Kevin Gimbel</a>
+    <br>Developer at <a href="http://synoa.de" title="Magento Agentur für B2B-Online-Shops - Synoa GmbH">Synoa GmbH</a>
+  </p>
 
 {% else %}
 <div class="inner--small">
-<h1 class="site__header--headline">{{ page.title }}</h1>
-  {% if page.date %}
-  <time class="time">
-    {{ page.date | date_to_string }}
-  </time>
-  {% endif %}
-
+  <h1 class="c-header__headline">{{ page.title }}</h1>
+    {% if page.date %}
+      <time class="time">
+        {{ page.date | date_to_string }}
+      </time>
+    {% endif %}
 {% endif %}
 </div>

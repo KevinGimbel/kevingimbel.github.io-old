@@ -1,0 +1,52 @@
+.c-stage .inner {
+  max-width: 50rem;
+  margin: 0 auto;
+
+    @include breakpoint("medium", "and down") {
+      max-width: 100%;
+    }
+}
+
+.c-stage--blog {
+  background: #f3f3f3;
+
+  a {
+    @include link_effects(null, #f3f3f3);
+  }
+}
+
+.c-stage--projects {
+  background: #3d3d3d;
+  color: #f1f1f1;
+  a {
+    @include link_effects(bull, #3d3d3d);
+  }
+}
+
+.c-stage--events {
+  background: #64FFDA;
+  color: #464646;
+
+    a {
+      @include link_effects(null, #64FFDA);
+    }
+}
+
+.c-stage--photos {
+  background: #D81B60;
+  color: #fff;
+  a {
+    @include link_effects(#333, #D81B60);
+
+  }
+}
+
+@include breakpoint("medium", "and up") {
+  .inner {
+    padding: 5rem 0;
+  }
+
+  .inner--small {
+    padding: 1.5rem 0;
+  }
+}

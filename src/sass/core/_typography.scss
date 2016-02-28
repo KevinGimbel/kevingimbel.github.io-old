@@ -1,25 +1,29 @@
-h1, h2, h3, h4 {
-  font-family: $font--serif;
-  font-weight: $font-weight--light;
+h3 {
+  margin-top: 2rem;
 }
 
-h1 {  font-size: 2em; }
-h2 {  font-size: 1.6em; }
-h3 {  font-size: 1.4em; }
-
-.article--headline {
-    border-bottom: none !important;
-}
-.page--about {
-    h3 {
-        margin-top: 2em;
-    }
+h3:not(.article--headline) {
+  margin-bottom: 1rem;
+  border-bottom: .125em solid currentColor;
 }
 
-.text--right {
-    text-align: right;
+.pre-heading {
+  padding-top: 3rem;
 }
 
-.text--center {
-    text-align: center;
+p + p {
+  margin-top: 1.5rem;
+}
+
+.pre-heading {
+  display: block;
+  padding-top: 1.75rem;
+}
+
+h1,h2,h3,h4,h5,h6, p,
+.pre-heading, .c-article__footer {
+  @include breakpoint("medium", "and down") {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
 }
