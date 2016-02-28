@@ -56,21 +56,26 @@ var isScrolledBelow =  function(offset, callbackTrue, callbackFalse) {
 
   var backToTop = (function(window, document, undefined) {
   var backTop = document.querySelector("#back-top");
-// adding an event
-document.addEventListener("scroll", function() {
-  // Get the Nav
-  var nav = document.querySelector('#main_nav');
   // Toggle the fixed / unfixed state, the trashhold is
   // 1px. This way the header is fixed on scroll and "released"
   // whenever the page is scrolled back up.
-  isScrolledBelow(1,
-    function() {
-      nav.classList.add('nav--fixed');
-    },
-    function() {
-      nav.classList.remove('nav--fixed');
-    }
-  );
+  
+  var nav = document.querySelector('#main_nav');
+  var checkFixedNav = function() {
+    isScrolledBelow(1,
+      function() {
+        nav.classList.add('nav--fixed');
+      },
+      function() {
+        nav.classList.remove('nav--fixed');
+      }
+    );
+  }
+checkFixedNav();
+// adding an event
+document.addEventListener("scroll", function() {
+  // check the fixed nav on scroll
+  checkFixedNav()
 
   // when the window scrolls more than 300px, add class "is-displayed"
   isScrolledBelow(300, function() {

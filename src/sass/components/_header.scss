@@ -5,6 +5,8 @@
 
 .main__navigation {
   transition: all .25s linear;
+  transform: translateZ(0);
+  will-change: position, top;
 }
 
 .nav--fixed {
@@ -13,6 +15,7 @@
   width: 100%;
   z-index: 99999;
   font-size: .95rem;
+  transition: all .25s linear;
 }
 
 .theme__one {
@@ -38,7 +41,7 @@
 @include breakpoint("medium", "and down") {
   .main__navigation {
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
   }
   .main__navigation ul {
     width: 200%;
