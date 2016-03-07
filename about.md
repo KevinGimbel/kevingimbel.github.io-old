@@ -12,12 +12,19 @@ Below you see a random image of me.
 
 <img src="https://lh3.googleusercontent.com/zKr_1iJFiWqxM8YqYojdBoJiVL79u0z7aWYAd4EUC8gG46uoehPFGsfSzU-9X9VJd8vmQbTpW7GYkoprk0iON26ZREwhD3w8OxdccpDlx7fRn_NdZSacHf-mPUILBFcckA-HpbcL5OuKYx_f-13bMpnQ2mwUwNVSbLJJQZuXEUhrRWD0we1FJdJwf_P3gZOiYlE3DPjDGL_O4mMwf-rD4RsewxlGkbuAZkmlDsl0MZTZK6T-ASzivg8aF6JGcyA-OYdxkJueVVrw8nukVpFflj_oMxdxfhyF6IYXh_jMFNp86hk9iPNzt-GSV5tXaS_nHA1YscWffeERK2TidrnXS4vLLmuwTImC2oY9t_aT5dz75bRrHB3YumqPyVaCe8lBU-sLzvNIiy1F2BrjGkvNrF-ucnFxQIwTfCPCwkasL1vbEpCcuXjtNferWOtOXUJ9SipfUSerzCcc_JblsLHUsfLXg6znaLQa4PIDQUBPzyf4KhGvMqgXp_8cO1W45OoN80Cww49mhz83vw2u6hRkk9lvukQQLf4wEErAbH0o88qp9q-JqFPyQhhzn6-THbo=w1728-h972-no" id="itseme" />
 
-I used to take a lot of photographs when I was younger and even worked a bit as photographer. It was during this time I got interested in building websites. During the years of photographing I build portfolios for myself and got deeper into Development - especially Front-End Development. The photography faded away (sadly), but the Development stuck with me and since 2014 I am employed at [Synoa GmbH](http://synoa.de "Magento Agentur für B2B-Online-Shops"), building Front-Ends, Magento Modules, and custom JavaScript solutions for our clients. As the only Front-End Developer I am responsible for all things Front-End related: Responsive Design/Development, Cross-browser compatibility, choosing technologies and framework - you name it.
+### Let the story begin
 
-In my free time I enjoy some good games, mostly playing on consoles.  I'm a proud member of the [bullgit](https://bullg.it "See the bullgit website") team, an international team of developers from all
-over the world, ranging from India to America - we're here to serve the finest of uselessness.
+I used to take a lot of photographs when I was younger and even worked a bit as photographer. During this time I got interested in building websites. While taking photographs I build portfolios for myself and got deeper into Development - especially Front-End Development. The photography faded away (sadly), but the Development stuck with me and since 2014 I am employed at [Synoa GmbH](http://synoa.de "Magento Agentur für B2B-Online-Shops"), building Front-Ends, Magento Modules, and custom JavaScript solutions for our clients. As the only Front-End Developer I am responsible for all things Front-End related: Responsive Design/Development, Cross-browser compatibility, choosing technologies and frameworks, implementing custom features, and so on - you name it.
 
+### Viva la bullgit!
+I'm a proud member of team [bullgit](https://bullg.it "See the bullgit website"), a international group of developers from all over the world, ranging from India to America - we're here to serve the finest of uselessness. [Tim](https://twitter.com/TimPietrusky) and me even did two talks about bullgit on two meetups here in Germany.
+
+### Biz
 For some super-interesting, super-business information you can take a look at my [Xing Profile](https://www.xing.com/profile/Kevin_Gimbel "See my Xing Profile"), for more private stuff feel free to follow me on [Twitter @_kevinatari](https://twitter.com/_kevinatari "Follow me on Twitter!").
+
+### Non-dev things
+In my free time I enjoy some good games, mostly playing on consoles. I'm also a big fan of concerts and music which is why I enjoy being at concerts every now and then. I build an "App" called [LinedUp](https://github.com/kevingimbel/LinedUp) to collect all concerts I have been to, you can see a working example with concerts I've been to on [concerts.kevingimbel.me](https://concerts.kevingimbel.me) (the list is by all means not complete yet!).
+
 
 <script type="text/javascript">
 (function(window, document, undefined) {
