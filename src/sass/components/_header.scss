@@ -6,7 +6,11 @@
 .main__navigation {
   transition: all .25s linear;
   transform: translateZ(0);
-  will-change: position, top;
+  will-change: font-size;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  width: 100vw;
 }
 
 .nav--fixed {
