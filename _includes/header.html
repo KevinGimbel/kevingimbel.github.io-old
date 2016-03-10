@@ -117,4 +117,7 @@ Array.prototype.random = function() {
 </script>
 </header>
 
-{% include campaign.html %}
+{% if page.id %}
+{% else %}
+  {% include campaign.html %}
+{% endif %}

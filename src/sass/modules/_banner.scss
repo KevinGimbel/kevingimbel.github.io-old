@@ -1,3 +1,11 @@
+.m-banner {
+  font-family: 'Droid Sans', sans-serif;
+  background: linear-gradient(to bottom, #fff, #fafaea);
+  overflow: hidden;
+  max-height: 30rem;
+  position: relative;
+}
+
 .m-banner--small {
   font-size: .95rem;
 
@@ -6,19 +14,43 @@
     }
 }
 
-.t-kickstarter {
-  background: linear-gradient(to bottom, #333, #131313);
-  color: #fefefe;
-}
-
-.t-kickstarter .heading {
-  color: #fff;
-  background: #2BDE73;
-  font-weight: bold;
+.m-banner a {
+  text-shadow: none;
+  background: #023A45;
   padding: .25rem .5rem;
-  display: inline-block;
+  border-radius: 3px;
+  color: #2bde73;
 }
 
-.t-kickstarter a {
-  @include  link_effects(#2BDE73, #333);
+.m-banner svg {
+  width: 100%;
+  max-height: 30rem;
+  margin-top: -3rem;
+}
+
+.m-banner__sub-headline {
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.bug {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@include breakpoint("medium", "and down") {
+  .m-banner .inner {
+    background: rgba(255,255,255,.75);
+    z-index: 2;
+    position: relative;
+  }
+  .bug {
+    position: absolute;
+    right: 0;
+    bottom: -7rem;
+    opacity: .75;
+    z-index: 1;
+  }
 }

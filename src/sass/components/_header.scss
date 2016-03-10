@@ -2,15 +2,18 @@
 .c-header__headline {
   text-align: center;
 }
-
+.c-header {
+  padding-top: 3rem;
+}
 .main__navigation {
   transition: all .25s linear;
-  transform: translateZ(0);
   will-change: font-size;
   position: fixed;
   top: 0;
   width: 100%;
   width: 100vw;
+  // Force GPU acceleration
+  transform: translateZ(0) translate3d(0, 0, 0);
 }
 
 .nav--fixed {
