@@ -59,7 +59,7 @@ var isScrolledBelow =  function(offset, callbackTrue, callbackFalse) {
   // Toggle the fixed / unfixed state, the trashhold is
   // 1px. This way the header is fixed on scroll and "released"
   // whenever the page is scrolled back up.
-  
+
   var nav = document.querySelector('#main_nav');
   var checkFixedNav = function() {
     isScrolledBelow(1,

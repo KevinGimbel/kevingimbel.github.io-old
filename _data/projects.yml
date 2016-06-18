@@ -1,0 +1,59 @@
+- name: vhost
+  description: "A script to create Apache Virtual Hosts files from a Template. vhost-ssl is used to created self-signed keys."
+  link: https://github.com/kevingimbel/vhost
+  category: Bash
+
+- name: portcheck
+  description: "Script to performe a TCP check on a specific port of server (remote or local)."
+  link: https://github.com/kevingimbel/portcheck
+  category: Bash
+
+- name: arr-js
+  description: "Arr-js extends the Native Array Object to provide additional functions like `.first()` and `.last()`."
+  link: https://github.com/kevingimbel/arr-js
+  category: JavaScript
+
+- name: Minute-to-Hour
+  description: "A piece of JavaScript to convert minutes to hours. Implemented in VanillaJS, KnockoutJS and ReactJS. Available as Chrome Extension."
+  link: https://github.com/kevingimbel/minute-to-hour.chrome
+  category: JavaScript
+
+- name: viewSwitcher
+  description: "Handles views and URL fragment identtifiers. That's it."
+  link: https://github.com/kevingimbel/viewSwitcher
+  category: JavaScript
+
+- name: lazyLoad
+  description: "Loads content such as images of iframe only when they are scrolled into view."
+  link: https://github.com/kevingimbel/portcheck
+  category: JavaScript
+
+- name: CSS Link from The Ledgend of Zelda
+  description: "Made with CSS box-shadows (a lot of them!). I wanted to know how fat I can go with box-shadow."
+  link: http://codepen.io/kevingimbel/full/iqDIv
+  category: CodePen
+
+- name: Minute-to-Hour
+  description: "An ongoing collection of Minute-to-Hour being implemented in different frameworks."
+  link: http://codepen.io/collection/XgkkEg/
+  category: CodePen
+
+- name: Todo-List
+  description: "VanillaJS implemention of a Todo List. First attempt at Object-oriented JavaScript."
+  link: http://codepen.io/kevingimbel/full/lsCiA
+  category: CodePen
+
+- name: Color generator
+  description: "Click the body, get a color. Script to generate random hex colors."
+  link: http://codepen.io/kevingimbel/full/BoJfA
+  category: CodePen
+
+- name: CSS R2D2
+  description: "Title says it all. This one was fun to make. Biep, Bop!"
+  link: http://codepen.io/kevingimbel/full/BpcGr
+  category: CodePen
+
+- name: CSS Gameboy
+  description: "CSS Art is really fun. Made this classic Gameboy to get deeper into CSS."
+  link: http://codepen.io/kevingimbel/full/vtJzn
+  category: CodePen

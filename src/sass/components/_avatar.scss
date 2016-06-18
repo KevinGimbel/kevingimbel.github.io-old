@@ -6,6 +6,20 @@
   text-align: center;
   background: #ddd;
   border: .25rem solid #fff;
+
+  // Remove the image on error
+  &.c-avatar__error {
+    background: transparent;
+    border: none;
+    width: 20rem;
+    max-width: 100%;
+    height: 4rem;
+    img {
+      padding: .25rem;
+      background: #fff;
+      border-radius: 0;
+    }
+  }
 }
 
 .c-avatar,

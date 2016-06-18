@@ -18,10 +18,17 @@
   </div>
 </footer>
 </body>
+{% if page.scripts %}
+
+  {% for script in page.scripts %}
+    <script src="{{ script }}"></script>
+  {% endfor %}
+
+{% endif %}
 <script type="text/javascript">
 function downloadJSOnload() {
 var element = document.createElement('script');
-element.src = '/dest/js/main.min.js';
+element.src = '/assets/js/main.min.js';
 document.body.appendChild(element);
 }
 

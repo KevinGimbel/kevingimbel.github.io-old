@@ -1,50 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>{% if page.title %} {{ page.title }} &ndash; {% endif %} Kevin Gimbel
-    &ndash; Front-End Developer</title>
-    <meta name="description" content="Front-End Developer from Frankfurt,
-    Germany. I write about CSS, Sass, HTML and JavaScript. Sometimes I like to
-    take photos.">
-    <meta name="keywords" content="Front-End, Developer, CSS, JavaScript,
-    Germany, Frankfurt,
-    {% if page.tags %}
-    {% for tag in page.tags %}
-      {{tag}}{% if forloop.last %}{% else %}, {% endif %}
-    {% endfor %}
-    {% endif %}
-    ">
-    <meta name="viewport" content="width=device-width">
-    <!-- This gives Android 5.0 users some neat colors to their Chrome tabs in
-    the multi-task window! See
-    http://kevingimbel.com/snippet-theme-color-android-5-0/ -->
-    <meta name="theme-color" content="#E91E63">
+  <meta charset="UTF-8">
+  <title>{% if page.title %} {{ page.title }} &ndash; {% endif %} Kevin Gimbel
+  &ndash; Front-End Developer</title>
+  <meta name="description" content="Front-End Developer from Frankfurt,
+  Germany. I write about CSS, Sass, HTML and JavaScript. Sometimes I like to
+  take photos.">
+  <meta name="keywords" content="Front-End, Developer, CSS, JavaScript,
+  Germany, Frankfurt,
+  {% if page.tags %}
+  {% for tag in page.tags %}
+    {{tag}}{% if forloop.last %}{% else %}, {% endif %}
+  {% endfor %}
+  {% endif %}
+  ">
+  <meta name="viewport" content="width=device-width">
+  <!-- This gives Android 5.0 users some neat colors to their Chrome tabs in
+  the multi-task window! See
+  http://kevingimbel.com/snippet-theme-color-android-5-0/ -->
+  <meta name="theme-color" content="#E91E63">
 
-    <!-- Twitter Card integration (preview inside supported Apps -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@_kevinatari">
-    <meta name="twitter:domain" content="http://kevingimbel.com">
-    <meta name="twitter:title" content="{% if page.title %} {{ page.title }} &ndash; {% endif %} kevingimbel.com">
-    <!--
-    I use this solution by Christian Fei to remove the P tags from the excerpt. https://gist.github.com/christian-fei/41b51d9ad9fa55ccbb10
-    -->
-    <meta name="twitter:description" content="{{ page.excerpt | strip_html}} (Read more...)">
+  <!-- Twitter Card integration (preview inside supported Apps -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@_kevinatari">
+  <meta name="twitter:domain" content="http://kevingimbel.com">
+  <meta name="twitter:title" content="{% if page.title %} {{ page.title }} &ndash; {% endif %} kevingimbel.com">
+  <!--
+  I use this solution by Christian Fei to remove the P tags from the excerpt. https://gist.github.com/christian-fei/41b51d9ad9fa55ccbb10
+  -->
+  <meta name="twitter:description" content="{{ page.excerpt | strip_html}} (Read more...)">
 
-    <link rel="stylesheet" type="text/css" href="/dest/css/style.css">
-    <link rel="dns-prefetch" href="http://fonts.googleapis.com">
-    <link rel="icon" href="/dest/img/favicon.png">
-    <link rel="alternate" type="application/atom+xml" title="kevingimbel.com Atom Feed" href="http://kevingimbel.com/atom.xml">
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  <link rel="dns-prefetch" href="http://fonts.googleapis.com">
+  <link rel="icon" href="/assets/img/favicon.png">
+  <link rel="alternate" type="application/atom+xml" title="kevingimbel.com Atom Feed" href="http://kevingimbel.com/atom.xml">
 </head>
 <body>
- <a href="" class="backtop" id="back-top">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-<polygon points="8,2.8 16,10.7 13.6,13.1 8.1,7.6 2.5,13.2 0,10.7 "/>
-</svg>
- </a>
+  <a href="" class="backtop" id="back-top">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16">
+    <polygon points="8,2.8 16,10.7 13.6,13.1 8.1,7.6 2.5,13.2 0,10.7 "/>
+    </svg>
+  </a>
 
   <header class="c-stage c-header" id="site_header">
-
     <nav class="main__navigation" role="navigation" id="main_nav">
       <ul>
         <li class="nav__item {% if page.url == '/' %} active {% endif %}">
@@ -59,60 +58,60 @@
       </ul>
     </nav>
 
+    {% include intro.html %}
 
-          {% include intro.html %}
-<script type="text/javascript">
-if(!Array.prototype.random) {
-Array.prototype.random = function() {
-  var max;
-  var min;
-  var a;
-  var b;
-  var random;
-  var size = this.length;
-  var args = arguments;
-  var variableSwitch = {
-    0: function() {
-      max = size;
-      min = 0;
-    },
-    1: function() {
-      max = args[0];
-      min = 0;
-    },
-    2: function() {
-      a = args[0];
-      b = args[1];
-      if(a > b) {
-        max = a;
-        min = b;
-      } else {
-        max = b;
-        min = a;
+  </header>
+  <script type="text/javascript">
+  if(!Array.prototype.random) {
+  Array.prototype.random = function() {
+    var max;
+    var min;
+    var a;
+    var b;
+    var random;
+    var size = this.length;
+    var args = arguments;
+    var variableSwitch = {
+      0: function() {
+        max = size;
+        min = 0;
+      },
+      1: function() {
+        max = args[0];
+        min = 0;
+      },
+      2: function() {
+        a = args[0];
+        b = args[1];
+        if(a > b) {
+          max = a;
+          min = b;
+        } else {
+          max = b;
+          min = a;
+        }
       }
+    };
+
+    var assignVariables = variableSwitch[args.length];
+    assignVariables();
+
+    random = Math.floor( (Math.random() * (max - min)) + min );
+    return this[random];
     }
-  };
-
-  var assignVariables = variableSwitch[args.length];
-  assignVariables();
-
-  random = Math.floor( (Math.random() * (max - min)) + min );
-  return this[random];
   }
-}
-  (function(window, document) {
-    /* Theme Class names */
-    var themes = [
-      'theme__one',
-      'theme__two',
-      'theme__three',
-      'theme__four',
-      'theme__five'
-    ];
-    /* Getting a random theme class */
-    var theme_class = themes.random();
-    /* And setting the class */
-    document.getElementById('site_header').classList.add(theme_class);
-  }(window, document));
-</script>
-</header>
+    (function(window, document) {
+      /* Theme Class names */
+      var themes = [
+        'theme__one',
+        'theme__two',
+        'theme__three',
+        'theme__four',
+        'theme__five'
+      ];
+      /* Getting a random theme class */
+      var theme_class = themes.random();
+      /* And setting the class */
+      document.getElementById('site_header').classList.add(theme_class);
+    }(window, document));
+  </script>
