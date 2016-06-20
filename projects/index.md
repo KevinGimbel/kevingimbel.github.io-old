@@ -8,9 +8,11 @@ scripts:
   - /assets/js/viewswitcher.min.js
 ---
 
-When I can, I try to invest a lot of time in open-source projects. Here are a few of them I initiated myself:
+Whenever I can I try to build things to get better in languages like JavaScript and Bash. I prefer to learn "pure" languages of frameworks.
 
-<nav id="nav"></nav>
+A few of the tings I build are listed below, you can find more on [CodePen](http://codepen.io/kevingimbel/) as well as [GitHub](https://github.com/kevingimbel/)
+
+<nav id="nav" class="controls controls--tab"></nav>
 
 {% assign groups = site.data.projects|group_by:"category" %}
 {% assign groups = groups|sort:"name" %}
@@ -33,9 +35,9 @@ When I can, I try to invest a lot of time in open-source projects. Here are a fe
 
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function() {
-  View.setOptions({ changeTitle: false });
+  View.setOptions({ changeTitle: false, canDisplayAll: true });
   View.initActive('{{ groups[0].name }}');
   var nav = document.getElementById('nav');
-  nav.innerHTML = View.getHtmlMenu();
+  nav.innerHTML = View.getHtmlMenu('control-item');
 });
 </script>

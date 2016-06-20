@@ -1,0 +1,48 @@
+.main__navigation {
+  transition: all .25s linear;
+  will-change: font-size;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  width: 100vw;
+  // Force GPU acceleration
+  transform: translateZ(0) translate3d(0, 0, 0);
+}
+
+.nav--fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+  font-size: .95rem;
+  transition: all .25s linear;
+}
+
+.controls ul {
+  padding: 1rem 0;
+}
+
+.controls {
+  display: flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+
+    a {
+      text-decoration: none;
+    }
+}
+
+.control-item,
+.controls li {
+  margin: auto;
+}
+
+/*
+ * [1] Resets the default element margin (`auto`)
+ * [2] Applies specific margin
+*/
+.controls--tab .control-item {
+  margin: 0; /* [1] */
+  margin-right: 1.5rem; /* [2] */
+}

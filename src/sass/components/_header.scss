@@ -5,25 +5,6 @@
 .c-header {
   padding-top: 3rem;
 }
-.main__navigation {
-  transition: all .25s linear;
-  will-change: font-size;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  width: 100vw;
-  // Force GPU acceleration
-  transform: translateZ(0) translate3d(0, 0, 0);
-}
-
-.nav--fixed {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 99999;
-  font-size: .95rem;
-  transition: all .25s linear;
-}
 
 .theme__one {
   @include create_header_theme(#64FFDA, #4A148C);

@@ -15,7 +15,8 @@ var View = (function (window, document) {
 
   var options = {
     changeTitle: true,
-    setupEvents: true
+    setupEvents: true,
+    canDisplayAll: false
   }
 
   // select all the views
@@ -33,7 +34,7 @@ var View = (function (window, document) {
     options = {
       changeTitle: opts.changeTitle,
       setupEvents: opts.setupEvents,
-      initShowAll: opts.initShowAll
+      canDisplayAll: opts.canDisplayAll
     }
   }
 
@@ -64,7 +65,7 @@ var View = (function (window, document) {
             var targetView = link.href.match(/#[a-zA-Z0-9]+/)[0].toString().replace('#', '')
             View.setActive(targetView)
           } catch (e) {
-            console.log(e)
+            console.error(e)
           }
         }
       }
@@ -77,12 +78,22 @@ var View = (function (window, document) {
         event.preventDefault()
         // Get the VIEW identifier
         var url = event.target.href.match(/#[a-zA-Z0-9]+/)[0].toString().replace('#', '')
-        View.setActive(url)
+        if (url === 'all') {
+          View.activateAll()
+        } else {
+          View.setActive(url)
+        }
       })
     }
   }
   if (options.setupEvents) {
     _initEvents()
+  }
+
+  function activateAll () {
+    Array.prototype.forEach.call(views, function (view) {
+      view.style.display = 'block'
+    })
   }
   //
   // Set a new URL or VIEW to be active, this
@@ -91,6 +102,10 @@ var View = (function (window, document) {
   // @param {String} - URL/Hash to display
   //
   function _setActive (url) {
+    if (url === 'all') {
+      View.activateAll()
+      return
+    }
     var viewSelector = '[' + VIEW_ATTRIBUTE + '="' + url + '"]'
     var view = document.querySelector(viewSelector)
 
@@ -160,6 +175,9 @@ var View = (function (window, document) {
   function _createMenuHtml (className) {
     var output = '<ul>'
 
+    if (options.canDisplayAll) {
+      output += '<li class="' + className + '"><a href="#all" id="vs_display_all">All</a></li>'
+    }
     Array.prototype.forEach.call(views, function (view) {
       if (view.dataset.view === '404' || view.dataset.view === 'error' || view.dataset.viewExclude) {
         // return nothing and skip the Error Page.
@@ -211,6 +229,7 @@ var View = (function (window, document) {
     setActive: _setActive,
     setTitle: _setTitle,
     setMenu: _assignMenu,
-    initActive: _initActive
+    initActive: _initActive,
+    activateAll: activateAll
   }
 }(window, document))

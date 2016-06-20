@@ -19,7 +19,7 @@
   category: JavaScript
 
 - name: viewSwitcher
-  description: "Handles views and URL fragment identtifiers. That's it."
+  description: "Handles views and URL fragment identtifiers. That's it. This list is using a dev version of viewSwitcher."
   link: https://github.com/kevingimbel/viewSwitcher
   category: JavaScript
 
@@ -57,3 +57,8 @@
   description: "CSS Art is really fun. Made this classic Gameboy to get deeper into CSS."
   link: http://codepen.io/kevingimbel/full/vtJzn
   category: CodePen
+
+- name: LinedUp
+  description: "NodeJS App/API to display and collect concerts I've been to. There is a working version on <a href='https://concerts.kevingimbel.me/'>concerts.kevingimbel.me</a>. This project is currently in active development and re-written from scratch!"
+  link: https://github.com/kevingimbel/LinedUp
+  category: JavaScript
