@@ -10,8 +10,9 @@ scripts:
 
 Whenever I can I try to build things to get better in languages like JavaScript and Bash. I prefer to learn "pure" languages of frameworks.
 
-A few of the tings I build are listed below, you can find more on [CodePen](http://codepen.io/kevingimbel/) as well as [GitHub](https://github.com/kevingimbel/)
+A few of the tings I build are listed below, you can find more on [CodePen](http://codepen.io/kevingimbel/) as well as [GitHub](https://github.com/kevingimbel/).
 
+Use the navigation below to display a subset of projects.
 <nav id="nav" class="controls controls--tab"></nav>
 
 {% assign groups = site.data.projects|group_by:"category" %}
@@ -23,10 +24,10 @@ A few of the tings I build are listed below, you can find more on [CodePen](http
   {% assign projects = category.items|sort:"name" %}
   {% for project in projects %}
     <li class="list__item">
-      <p class="list__primary-content">
-        <a href="{{ project.link }}" target="_blank">{{ project.name }}</a>
+      <p class="list-heading">
+        <a href="{{ project.link }}">{{ project.name }}</a>
       </p>
-      <span class="list__secondary-content">{{ project.description }}</span>
+      <span class="list-content">{{ project.description }}</span>
     </li>
   {% endfor %}
   </ul>
