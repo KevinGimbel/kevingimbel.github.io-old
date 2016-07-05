@@ -6,14 +6,11 @@
 
 p > code {
   color: #E91E63;
-  background-color: #f1f1f1;
-  padding: .125rem .75rem;
-  border-radius: 3px;
 }
 
 .highlight {
-  background: #454545;
-  color: #f1f1f1;
+  background: #333;
+  color: #fff;
   margin: 1rem 0;
 }
 
@@ -39,39 +36,44 @@ pre {
 }
 
 .post-prev, .post-next {
-  padding: 2rem 3rem;
-  background: #f1f1f1;
   position: relative;
   overflow: hidden;
-
+  font-size: 1rem;
   a {
     text-shadow: none;
   }
 }
 
-.post-next, .post-prev {
-  svg {
-    position: absolute;
-    top: .75em;
-    fill: #E91E63;
-  }
+.prev-next__small-intro.prev-next__small-intro.prev-next__small-intro {
+  font-size: .85rem;
+  margin: 0;
 }
 
-.post-next {
-  text-align: right;
+
+.c-article__header {
+  margin-bottom: 2rem;
 }
 
-.post-next svg {
-  transform: rotate(90deg) scale(4);
-  right: 0.75em;
+
+.c-article__meta {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
-.post-prev svg {
-  transform: rotate(-90deg) scale(4);
-  left: 0.75em;
+.meta__seperator {
+  padding: 0 1rem;
+  color: #ddd;
 }
 
 .c-article__footer {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  border-top: .25rem solid #333;
+}
+
+.feedback {
+  padding: 1rem;
+  border: .25rem solid #333;
+  margin-bottom: 2rem;
 }

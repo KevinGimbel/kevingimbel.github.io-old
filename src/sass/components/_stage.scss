@@ -20,7 +20,7 @@
   background: #3d3d3d;
   color: #f1f1f1;
   a {
-    @include link_effects(bull, #3d3d3d);
+    @include link_effects(null, #3d3d3d);
   }
 }
 

@@ -3,51 +3,57 @@ layout: compress
 ---
 
 {% include header.html %}
-<article class="c-stage c-article__single">
-    <div class="inner">
-    {{ content }}
+
+{% assign wordCount = page.content | number_of_words %}
+
+<article class="c-stage c-article__single" id="content" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+  <div class="inner">
+    <header class="c-article__header">
+    <h1 class="c-header__headline">{{ page.title }}</h1>
+    <div class="c-article__meta">
+        {% if page.date %}
+          <time itemprop="datePublished" datetime="{{ post.date | date: "%F" }}" class="meta__item">
+            {{ page.date |  date: "%D" }}
+          </time> <span class="meta__seperator">&mdash;</span>
+        {% endif %}
+        {% if page.category %}
+          <span>{{ page.category }}</span>
+          <span class="meta__seperator">&mdash;</span>
+          {% endif %}
+          <span class="meta__item"><span itemprop="wordCount">{{wordCount}}</span> words</span>
+        </div>
+    </header>
+    <div class="c-article__body" itemprop="articleBody">
+      {{ content }}
+    </div>
 
     <footer class="c-article__footer">
-        <p>
-          {% for tag in page.tags %}
-            <span class="article--tag"><a href="/tags/#{{ tag | downcase | replace:' ','_' }}">#{{ tag }}</a>
-              {% if forloop.last %}
-              {% else %}
-              &bull;
-              {% endif %}
-            </span>
-          {% endfor %}
-        </p>
-        <p>Written by <a href="http://google.com/+KevinGimbel">Kevin Gimbel</a></p>
-              {% if page.category == 'coding' %}
+      {% if page.category == 'coding' %}
         <div class="feedback">
           <h4 class="feedback--headline">Did you enjoy this?</h4>
-            <p>I would appreciate your feedback on <a href="http://twitter.com/_kevinatari">Twitter</a> or just say Hi! <a href="http://codepen.io/pen">Happy coding!</a></p>
+          <p>I would appreciate your feedback on <a href="http://twitter.com/_kevinatari">Twitter</a> or just say Hi! <a href="http://codepen.io/pen">Happy coding!</a></p>
         </div>
       {% endif %}
-
-    {% if page.comments %}
-      <div id="disqus_thread" class="disqus"></div>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-    {% endif %}
-
+        <div class="flex">
+          <div class="flex-child">
+            <p>
+              {% for tag in page.tags %}
+                <span class="article--tag"><a href="/tags/#{{ tag | downcase | replace:' ','_' }}">#{{ tag }}</a>
+                  {% if forloop.last %}
+                  {% else %}
+                    &mdash;
+                  {% endif %}
+                </span>
+              {% endfor %}
+            </p>
+          </div>
+        <div class="flex-child">
+          <p>Written by <a href="http://google.com/+KevinGimbel" rel="author" itemprop="author">Kevin Gimbel</a></p>
+        </div>
+      </div>
     {% include prev-next.html %}
     </footer>
   </div>
 </div>
 </article>
-{% if page.comments %}
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'kevingimbel';
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-{% endif %}
-
 {% include footer.html %}

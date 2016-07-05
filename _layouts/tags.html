@@ -10,7 +10,7 @@ layout: compress
             {% assign tags_max = tag[1].size %}
         {% endif %}
     {% endfor %}
-<section class="c-stage">
+<section class="c-stage" id="content">
   <div class="inner">
 {% for i in (1..tags_max) reversed %}
     {% for tag in site.tags %}
