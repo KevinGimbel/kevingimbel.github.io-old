@@ -10,7 +10,7 @@ layout: compress
     {% for post in site.posts  %}
   		<article class="inner" aria-describedby="excerpt-{{ forloop.index }}" aria-labeldby="heading-{{ forloop.index }}"  itemscope itemtype="http://schema.org/BlogPosting" role="article">
   			<h2 class="article--headline" id="heading-{{ forloop.index }}">
-          <a href="{{ post.url }}" title="Read '{{ post.title }}'" rel="bookmark">{{ post.title }}</a>
+          <a href="{{ post.url }}" title="Read '{{ post.title }}'" rel="bookmark" itemprop="headline name">{{ post.title }}</a>
         </h2>
         <div class="article__body">
           <p id="excerpt-{{ forloop.index }}">{{ post.excerpt }}</p>
@@ -19,7 +19,7 @@ layout: compress
 
 
   				<footer class="article__tags article__footer" role="contentinfo">
-            <span>Published </span><time itemprop="datePublished" datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%D" }}</time>
+            <span>Published </span><time itemprop="datePublished" datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%D" }}</time> by <span itemprop="author publisher">Kevin Gimbel</span>
             {% if post.category %}
             <span>in</span> <span articleSection="{{post.category}}">{{ post.category }}</span>
             {% endif %}
