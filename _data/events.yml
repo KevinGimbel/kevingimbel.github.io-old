@@ -1,3 +1,9 @@
+- name: View Source
+  description: Conference organized by Mozilla in Berlin.
+  price: 350€
+  url: https://viewsourceconf.org/berlin-2016/
+  date: 12-14. September 2016
+
 #- name: StuttgartJS
 #  description: A local JavaScript meetup in the City of Stuttgart. I'll hold a talk about <a href="https://bullg.it">bullgit</a> together with <a href="https://twitter.com/TimPietrusky">Tim Pietrusky</a>.
 #  price: free

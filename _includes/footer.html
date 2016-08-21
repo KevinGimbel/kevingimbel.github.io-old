@@ -10,7 +10,7 @@
   <div class="flex-child">
     <nav id="nav_footer" class="c-nav__footer">
       <ul>
-        <li><a href="https://github.com/kevingimbel">githubc.com/kevingimbel</a></li>
+        <li><a href="https://github.com/kevingimbel">github.com/kevingimbel</a></li>
         <li><a href="https://twitter.com/_kevinatari">@_kevinatari</a></li>
         <li><a href="https://google.com/+KevinGimbel">google.com/+KevinGimbel</a></li>
       </ul>
@@ -19,11 +19,9 @@
 </footer>
 </body>
 {% if page.scripts %}
-
   {% for script in page.scripts %}
-    <script src="{{ script }}"></script>
+    <script src="{{ script }}" type="text/javascript"></script>
   {% endfor %}
-
 {% endif %}
 <script type="text/javascript">
 function downloadJSOnload() {

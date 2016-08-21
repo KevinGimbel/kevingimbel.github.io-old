@@ -25,7 +25,7 @@
 
 - name: lazyLoad
   description: "Loads content such as images of iframe only when they are scrolled into view."
-  link: https://github.com/kevingimbel/portcheck
+  link: https://github.com/kevingimbel/lazyLoad
   category: JavaScript
 
 - name: CSS Link from The Ledgend of Zelda
