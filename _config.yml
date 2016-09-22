@@ -26,6 +26,3 @@ defaults:
   is_page: false
 
 excerpt_separator: "\n\n"
-
-gems:
-- jemoji
