@@ -1,3 +1,4 @@
 [09/22/2016] Trigger
 [09/22/2016] Change
 [09/22/2016] Testing
+[09/22/2016] Install jemoji
