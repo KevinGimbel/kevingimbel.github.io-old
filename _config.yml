@@ -14,7 +14,7 @@ exclude: [node_modules, README.md, CNAME, package.json, src, Guardfile]
 
 # Posts
 future: true
-permalink: :title
+permalink: /:title/
 
 markdown: kramdown
 markdown_ext: md
