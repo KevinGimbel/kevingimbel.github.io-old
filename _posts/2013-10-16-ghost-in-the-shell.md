@@ -25,12 +25,12 @@ If you see the Ghost site navigate to 127.0.0.1:2368/ghost and sign-up (again) f
 So far your Ghost page is running locally and you can start writing posts.
 
 ### Themes
-Themes in Ghost are something completely new for me. They're using [Handlebars.js](http://handlebarsjs.com/) which looks like [Liquid](http://docs.shopify.com/themes/liquid-basics) used by Jekyll on first sight. 
+Themes in Ghost are something completely new for me. They're using [Handlebars.js](http://handlebarsjs.com/) which looks like [Liquid](http://docs.shopify.com/themes/liquid-basics) used by Jekyll on first sight.
 
 After I wrapped my head around Handlebars and the Ghost default Theme "Casper" I found it easy to manipulate and build my first Theme.
 Basically Ghost can work with 3 layout files: post.hbs, default.hbs and index.hbs - they're pretty self-explaining though.
 
-#### index.hbs 
+#### index.hbs
 
 {% highlight html %}
 {% raw %}
@@ -55,18 +55,16 @@ I'll not get into detail on how to style `post.hbs` because it is nearly the sam
 First I thought this would be the "default" layout if no format is given (like in Jekyll) but it's a lot more important: `default.hbs` holds the entirely page and all the posts get included into it!
 
 {% highlight html %}
-{% raw %}
 <html>
   <head>
     ...
   </head>
   <body>
     # build your header and stuff here
-    {{body}}
+    {{%raw%}}{{body}}{{%endraw%}}
     # build your footer here
   </body>
 </html>
-{% endraw %}
 {% endhighlight %}
 
 The `body` handlebar is the point where another pages content gets included. To tell a layout that it will be included into another file you simply write `{% raw %}{{!< default}}{% endraw %}` in the first line of it.
@@ -80,7 +78,7 @@ This is a pretty handy feature I think. So far Ghost and building Themes for it 
 {% endraw %}
 {% endhighlight %}
 
-So Ghost, please tell me more about "important data and scripts". I haven't found any file that contains this data or scripts and I wasn't sure if this tag is only needed for the Casper Theme or if it's important for other stuff. In the end I just left it there. 
+So Ghost, please tell me more about "important data and scripts". I haven't found any file that contains this data or scripts and I wasn't sure if this tag is only needed for the Casper Theme or if it's important for other stuff. In the end I just left it there.
 
 Beside this tag I found another, kinda self-explaining tag: `{{pagination}}`    
 {% highlight html %}
@@ -90,17 +88,17 @@ Beside this tag I found another, kinda self-explaining tag: `{{pagination}}`
 {% endraw %}
 {% endhighlight %}
 
-Cool, so Ghost builds me a pagination! But wait, I'd like to style it. So...where's the pagination layout? I searched it inside my themes directory (because I copy/pasted the Casper Theme to modify it) but there was no file that holds the pagination. After searching around for quite some time I found it inside `core/server/helper/tpl` - I have no idea why this helper is here. However, it's a `*.bhs` file so customizing it is the same as with any other file. 
+Cool, so Ghost builds me a pagination! But wait, I'd like to style it. So...where's the pagination layout? I searched it inside my themes directory (because I copy/pasted the Casper Theme to modify it) but there was no file that holds the pagination. After searching around for quite some time I found it inside `core/server/helper/tpl` - I have no idea why this helper is here. However, it's a `*.bhs` file so customizing it is the same as with any other file.
 
 That's it on themes and structure for now, let's see how we get this Baby online!
 
 ### Deploying
 
-First of all you need two things: 1
+First of all you need two things:
 
 * Time
-* A server 
-  *with SSH connection via Terminal
+* A server
+  * with SSH connection via Terminal
   * Node.js
   * Daemons
   * sqlite3
@@ -113,14 +111,12 @@ I could tell you what exactly I did on my server but I'd rather like to redirect
 * (EN) [How to Setup Ghost on Uberspace.de](http://christophvoigt.com/how-to-setup-ghost-on-uberspace-de/) by Christoph Voigt
 * (EN) [Setting up Ghost in a Sub-Directory](http://ghost.jotbe.io/setting-up-ghost-on-uberspace/) by Jan Beilicke
 
-What I can tell so far is: If you're not familiar with working over SSH and logged-in via your terminal setting up Ghost is a pain in the ass. I'm ashamed to say I wasn't able to get it running even thought the service itself *is* running as my Log-Files tell me. 
-![Log file for Ghost Daemon](http://static.kevingimbel.com/blog/ghost/ghost_log_message.png)
+What I can tell so far is: If you're not familiar with working over SSH and logged-in via your terminal setting up Ghost is a pain in the ass. I'm ashamed to say I wasn't able to get it running even thought the service itself *is* running as my Log-Files tell me.
 
 The more I worked with Ghost on the server side one thing came to my mind: It's not just a blogging Software, it's made to sell hosting. As some other people already said it is a kinda smart decision to write a great Blog System that is not-so-easy to install so you can sell your own Hosting Services with it.
 
 ### Conclusion
-Non-Tech People will not be able to install Ghost on their servers, Ghost requires Node.js which isn't a default installation on servers yet (even though some have it), Ghost is at least locally fast and easy to setup. The Theme system with Handlebars is also pretty nice and they have the most beautiful back-end I saw so far. 
+Non-Tech People will not be able to install Ghost on their servers, Ghost requires Node.js which isn't a default installation on servers yet (even though some have it), Ghost is at least locally fast and easy to setup. The Theme system with Handlebars is also pretty nice and they have the most beautiful back-end I saw so far.
 Regardless of all the good aspects, overall I'm disappointed by Ghost. I'll stick to Jekyll and GitHub Hosting. I'll try to deploy Ghost and work around with it just for the sake of learning something new but as engine to build my Blog it has not convinced me so far.
-
 
 You may have noticed that the Title is a reference to [Ghost in the Shell](http://de.wikipedia.org/wiki/Ghost_in_the_Shell) which is a great Manga from 1989.
