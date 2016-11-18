@@ -142,7 +142,7 @@ body {
 
         <p class="prompt">show_repos.sh --user="kevingimbel" </p>
           <ul class="project__list">
-            {% assign repos = site.github.public_repositories %}
+            {% assign repos = site.github.public_repositories | sort: 'created_at' | reverse %}
             {% for repo in repos %}
 
               <li class="project">
