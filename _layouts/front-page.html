@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>kevingimbel.github.io</title>
+  <style type="text/css">
+  * {
+  box-sizing: border-box;
+}
+
+a {
+  color: #b5bd68;
+}
+a:hover {
+  color: #8abeb7;
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  height: 100vh;
+  width: 100vw;
+  background: -webkit-linear-gradient(top, #000, #333);
+  background: linear-gradient(to bottom, #000, #333);
+  overflow: hidden;
+}
+
+.term {
+  background: #1d1f21;
+  color: #c5c8c6;
+  max-width: 800px;
+  width: 100%;
+  height: 500px;
+  border-radius: 3px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.term__header {
+  background: #ddd;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 3px 3px 0 0;
+  padding-left: .5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.term__content {
+  padding: .5rem;
+  overflow-y: scroll;
+  height: 475px;
+}
+
+.prompt {
+  display: block;
+}
+.prompt:before {
+  content: '$ ';
+  color: #de935f;
+}
+
+.project__list {
+  list-style: none;
+}
+
+.project p {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: top;
+  -webkit-align-items: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+.label {
+  display: inline-block;
+  width: 120px;
+  padding-right: 1rem;
+  font-weight: 600;
+}
+
+.text {
+  padding-left: 1rem;
+}
+
+@media all and (max-width: 60rem) {
+  body {
+    width: auto;
+  }
+
+  .term {
+    max-width: 90%;
+    position: static;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    margin: 5rem auto 0 auto;
+  }
+
+  .project p {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="term">
+    <header class="term__header">~/github/kevingimbel</header>
+      <section class="term__content">
+      <p class="prompt">cat ~/.profile</p>
+      <p class="output">Developer at <a href="https://synoa.de">https://synoa.de</a>, doing mostly Front-End, PHP, Magento, and sometimes bash scripting.</p>
+      <p>Loves going to <a href="https://concerts.kevingimbel.me">concerts</a>, playing video games, or <a href="https://soundcloud.com/atarijunge">listening to music</a>.</p>
+      <p>Follow on twitter <a href="https://twitter.com/_kevinatari">@_kevinatari</a> or read the <a href="https://kevingimbel.com">blog at kevingimbel.com</a>.</p>
+
+        <p class="prompt">show_repos.sh --user="kevingimbel" </p>
+          <ul class="project__list">
+            {% assign repos = site.github.public_repositories | sort: 'created_at' %}
+            {% for repo in repos %}
+
+              <li class="project">
+                <p><span class="label">Name:</span> <span class="text">{{ repo.name }}</span></p>
+                <p><span class="label">Created:</span> <span class="text">{{ created_at }}</span></p>
+                <p><span class="label">Description:</span> <span class="text">{{ repo.description }}</span></p>
+                <p><span class="label">Hyperlink:</span>
+                  <span class="text">
+                  {% if repo.has_pages %}
+                      <a href="https://kevingimbel.github.io/{{ repo.name }}" title="View page for {{ repo.name }}">/{{ repo.name }}</a>
+                  {% else %}
+                      <a href="{{ repo.html_url }}" title="View {{ repo.name }} on GitHub">{{ repo.html_url }}</a>
+                  {% endif %}
+                  </span>
+                </p>
+              </li>
+            {% endfor %}
+          </ul>
+        </p>
+      </section>
+  </div>
+</body>
+</html>
