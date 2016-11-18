@@ -1,0 +1,8 @@
+permalink: :title
+baseurl: /
+
+# using site.github in development
+repository: kevingimbel/kevingimbel.github.io
+
+gems:
+  - 'jekyll-github-metadata'
