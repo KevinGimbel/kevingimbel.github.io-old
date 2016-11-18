@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>kevingimbel.github.io</title>
+  <title>~/github/kevingimbel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <style type="text/css">
   * {
   box-sizing: border-box;
@@ -82,6 +84,13 @@ body {
           align-items: top;
 }
 
+.project:after {
+  content: "********************************************************************************";
+  overflow: hidden;
+  max-width: 100%;
+  display: block;
+}
+
 .label {
   display: inline-block;
   width: 120px;
@@ -108,6 +117,10 @@ body {
     margin: 5rem auto 0 auto;
   }
 
+  .project__list {
+    padding-left: .5rem;
+  }
+
   .project p {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -129,12 +142,12 @@ body {
 
         <p class="prompt">show_repos.sh --user="kevingimbel" </p>
           <ul class="project__list">
-            {% assign repos = site.github.public_repositories | sort: 'created_at' %}
+            {% assign repos = site.github.public_repositories %}
             {% for repo in repos %}
 
               <li class="project">
                 <p><span class="label">Name:</span> <span class="text">{{ repo.name }}</span></p>
-                <p><span class="label">Created:</span> <span class="text">{{ created_at }}</span></p>
+                <p><span class="label">Created:</span> <span class="text">{{ repo.created_at }}</span></p>
                 <p><span class="label">Description:</span> <span class="text">{{ repo.description }}</span></p>
                 <p><span class="label">Hyperlink:</span>
                   <span class="text">
