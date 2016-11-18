@@ -26,6 +26,8 @@
   @include create_header_theme(#F8BBD0,#01579B);
 }
 
+
+
 @include breakpoint("medium", "and down") {
   .main__navigation {
     width: 100%;
